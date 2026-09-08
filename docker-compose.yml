@@ -1,0 +1,20 @@
+services:
+  dashboard:
+    build: .
+    container_name: cluster-dashboard
+    restart: unless-stopped
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+      - CLUSTER_API_URL=${CLUSTER_API_URL:-http://cluster:9094}
+    networks:
+      - default
+      - cluster-internal
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ipfs-dashboard.rule=Host(`${DOMAIN:-dashboard.localhost}`)"
+      - "traefik.http.services.ipfs-dashboard.loadbalancer.server.port=3000"
+
+networks:
+  cluster-internal:
+    external: true
