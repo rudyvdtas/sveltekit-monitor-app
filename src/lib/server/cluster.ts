@@ -59,20 +59,23 @@ export function getPins(): Promise<PinInfo[]> {
   return fetch(`${API}/pins`).then(async (res) => {
     const text = await res.text();
     if (!text || !text.trim()) return [];
-    const first = text.trim().slice(0, 1);
-    if (first === '[') {
-      const parsed = JSON.parse(text);
+    const trimmed = text.trim();
+    const lines = trimmed.split('\n');
+    if (lines.length > 1 && lines[0].startsWith('{') && lines[1].startsWith('{')) {
+      return lines.map((l) => JSON.parse(l)).filter((p) => p && p.cid);
+    }
+    if (trimmed[0] === '[') {
+      const parsed = JSON.parse(trimmed);
       if (Array.isArray(parsed)) return parsed;
       if (parsed.cid) return [parsed];
       return [];
     }
-    if (first === '{') {
-      const parsed = JSON.parse(text);
+    if (trimmed[0] === '{') {
+      const parsed = JSON.parse(trimmed);
       if (parsed.cid) return [parsed];
       return [];
     }
-    const lines = text.trim().split('\n');
-    return lines.map((l) => JSON.parse(l)).filter((p) => p && p.cid);
+    return [];
   });
 }
 
