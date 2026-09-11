@@ -56,11 +56,23 @@ export function getPeers(): Promise<PeerInfo> {
 }
 
 export function getPins(): Promise<PinInfo[]> {
-  return get('/pins').then((data) => {
-    if (!data) return [];
-    if (Array.isArray(data)) return data;
-    if (data.cid) return [data];
-    return [];
+  return fetch(`${API}/pins`).then(async (res) => {
+    const text = await res.text();
+    if (!text || !text.trim()) return [];
+    const first = text.trim().slice(0, 1);
+    if (first === '[') {
+      const parsed = JSON.parse(text);
+      if (Array.isArray(parsed)) return parsed;
+      if (parsed.cid) return [parsed];
+      return [];
+    }
+    if (first === '{') {
+      const parsed = JSON.parse(text);
+      if (parsed.cid) return [parsed];
+      return [];
+    }
+    const lines = text.trim().split('\n');
+    return lines.map((l) => JSON.parse(l)).filter((p) => p && p.cid);
   });
 }
 
