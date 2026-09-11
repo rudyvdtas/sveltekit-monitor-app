@@ -32,8 +32,12 @@
   <ol style="padding-left: 1.25rem; line-height: 2.2;">
     <li>
       <strong>Install Docker</strong>
-      <div class="text-muted text-sm">If you don't have Docker yet, run:</div>
-      <pre><code>curl -fsSL https://get.docker.com | sh</code></pre>
+      <div class="text-muted text-sm">
+        <strong>Linux / VPS / Raspberry Pi:</strong>
+        <pre><code>curl -fsSL https://get.docker.com | sh</code></pre>
+        <strong>macOS:</strong> Install <a href="https://docs.docker.com/desktop/setup/install/mac-install/" target="_blank" rel="noopener">Docker Desktop</a>
+        or via Homebrew: <code>brew install --cask docker</code>
+      </div>
     </li>
     <li>
       <strong>Clone the coordinator repository</strong>
