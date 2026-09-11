@@ -3,9 +3,14 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
   try {
-    const peer = await getId();
-    const peers = await getPeers();
+    const cluster = await getId();
+    const peersData = await getPeers();
     const pins = await getPins();
+    const peers = Array.isArray(peersData)
+      ? peersData.map((p: any) => ({ id: p.id, peername: p.peername, ipfsId: p.ipfs?.id, version: p.version, addresses: p.addresses }))
+      : [{ id: peersData.id, peername: peersData.peername, ipfsId: peersData.ipfs?.id, version: peersData.version, addresses: peersData.addresses }];
+
+    const volunteers = peers.length - 1;
 
     const statusCounts = { pinned: 0, pinning: 0, queued: 0, error: 0 };
     for (const pin of pins) {
@@ -30,10 +35,9 @@ export const load: PageServerLoad = async () => {
     );
 
     return {
-      peer: { id: peer.id, peername: peer.peername, ipfsId: peer.ipfs?.id, version: peer.version },
-      peers: Array.isArray(peers)
-        ? peers.map((p: any) => ({ id: p.id, peername: p.peername, ipfsId: p.ipfs?.id, version: p.version, addresses: p.addresses }))
-        : [{ id: peers.id, peername: peers.peername, ipfsId: peers.ipfs?.id, version: peers.version, addresses: peers.addresses }],
+      cluster: { id: cluster.id, peername: cluster.peername, ipfsId: cluster.ipfs?.id, version: cluster.version },
+      peers,
+      volunteers,
       pinStatuses,
       pinCount: pins.length,
       statusCounts

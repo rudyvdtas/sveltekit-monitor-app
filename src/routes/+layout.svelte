@@ -5,10 +5,10 @@
 
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="/" class="logo">IPFS Cluster</a>
+    <a href="/" class="logo">DRL Cluster</a>
     <div class="nav-links">
-      <a href="/">Overview</a>
-      <a href="/pins">Pins</a>
+      <a href="/">Dashboard</a>
+      <a href="/projects">Projects</a>
     </div>
   </div>
 </nav>
@@ -20,7 +20,8 @@
 <style>
   .navbar {
     border-bottom: 1px solid var(--border);
-    background: var(--bg-card);
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -30,17 +31,17 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 48px;
+    height: 50px;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .logo {
     font-weight: 700;
     font-size: 1rem;
     color: var(--text);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   .nav-links { display: flex; gap: 1.5rem; }
@@ -50,13 +51,13 @@
     color: var(--text-muted);
     padding: 0.25rem 0;
     border-bottom: 2px solid transparent;
-    transition: color 0.15s, border-color 0.15s;
+    transition: all 0.15s;
   }
 
-  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover { color: var(--accent); }
 
   .nav-links a[aria-current='page'] {
-    color: var(--text);
+    color: var(--accent-dark);
     border-bottom-color: var(--accent);
   }
 

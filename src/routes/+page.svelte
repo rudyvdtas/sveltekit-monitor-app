@@ -2,8 +2,9 @@
   let data = $props() as { data: any };
 
   let error = $derived(data.data?.error);
-  let peer = $derived(data.data?.peer);
+  let cluster = $derived(data.data?.cluster);
   let peers = $derived(data.data?.peers ?? []);
+  let volunteers = $derived(data.data?.volunteers ?? 0);
   let pinStatuses = $derived(data.data?.pinStatuses ?? []);
   let pinCount = $derived(data.data?.pinCount ?? 0);
   let counts = $derived(data.data?.statusCounts ?? { pinned: 0, pinning: 0, queued: 0, error: 0 });
@@ -11,22 +12,28 @@
 
 {#if error}
   <div class="card" style="border-color: var(--red); color: var(--red);">{error}</div>
-{:else if peer}
-  <h1 style="margin-bottom: 0.25rem;">DRL coordinator</h1>
-    <p class="text-muted" style="margin-bottom: 1.5rem;">
-      {peer.peername} · {peer.ipfsId?.slice(0, 12)}...
-    </p>
+{:else if cluster}
+  <h1 style="margin-bottom: 0.25rem;">DRL Coordinator</h1>
+  <p class="text-muted" style="margin-bottom: 1.5rem;">
+    {cluster.peername} · {cluster.ipfsId?.slice(0, 12)}...
+  </p>
 
-  <div class="grid grid-2 mb-md">
-    <div class="card">
+  <div class="grid grid-3 mb-md">
+    <div class="card card-accent">
       <h2>Peers</h2>
       <div style="font-size: 2rem; font-weight: 700;">{peers.length}</div>
       <div class="text-muted text-sm">{peers.length === 1 ? '1 peer in cluster' : `${peers.length} peers in cluster`}</div>
     </div>
 
-    <div class="card">
+    <div class="card card-accent">
+      <h2>Volunteers</h2>
+      <div style="font-size: 2rem; font-weight: 700;">{volunteers}</div>
+      <div class="text-muted text-sm">{volunteers === 0 ? 'No volunteers yet' : `${volunteers} volunteer${volunteers !== 1 ? 's' : ''} online`}</div>
+    </div>
+
+    <div class="card card-accent">
       <h2>Pins</h2>
-      <div class="flex gap-md" style="margin-top: 0.5rem;">
+      <div class="flex gap-md" style="margin-top: 0.5rem; flex-wrap:wrap;">
         <div>
           <div style="font-size: 1.5rem; font-weight: 700;">{counts.pinned}</div>
           <span class="badge badge-success">PINNED</span>
@@ -37,7 +44,7 @@
         </div>
         <div>
           <div style="font-size: 1.5rem; font-weight: 700;">{counts.queued}</div>
-          <span class="badge" style="background: rgba(88,166,255,0.15); color: var(--accent);">QUEUED</span>
+          <span class="badge badge-info">QUEUED</span>
         </div>
         {#if counts.error > 0}
           <div>
@@ -50,7 +57,9 @@
   </div>
 
   <div class="card mb-md">
-    <h2>Cluster Peers</h2>
+    <div class="flex-between mb-md">
+      <h2 style="margin-bottom:0;">Cluster Peers</h2>
+    </div>
     <table>
       <thead>
         <tr>
@@ -77,11 +86,11 @@
 
   <div class="card">
     <div class="flex-between mb-md">
-      <h2 style="margin-bottom:0;">Curated CIDs ({pinCount})</h2>
-      <a href="/pins">Bekijk alle →</a>
+      <h2 style="margin-bottom:0;">Project CIDs ({pinCount})</h2>
+      <a href="/projects">View Projects →</a>
     </div>
     {#if pinStatuses.length === 0}
-      <p class="text-muted">Curated list is leeg. De lijst wordt beheerd via <code>curated-cids.json</code> in de coordinator repo.</p>
+      <p class="text-muted">No CIDs pinned yet.</p>
     {:else}
       <table>
         <thead>
@@ -92,16 +101,20 @@
           </tr>
         </thead>
         <tbody>
-          {#each pinStatuses.slice(0, 10) as pin}
+          {#each pinStatuses.slice(0, 12) as pin}
             <tr>
-              <td><code class="truncate" style="display:inline-block;max-width:300px;" title={pin.name}>{pin.cid}</code></td>
+              <td>
+                <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
+                  <code style="color:var(--accent);">{pin.cid.slice(0, 28)}</code>
+                </a>
+              </td>
               <td>
                 {#if pin.status === 'pinned'}
                   <span class="badge badge-success">PINNED</span>
                 {:else if pin.status === 'pinning'}
                   <span class="badge badge-warning">PINNING</span>
                 {:else if pin.status === 'queued'}
-                  <span class="badge" style="background: rgba(88,166,255,0.15); color: var(--accent);">QUEUED</span>
+                  <span class="badge badge-info">QUEUED</span>
                 {:else if pin.status.includes('error')}
                   <span class="badge badge-error">{pin.status.toUpperCase()}</span>
                 {:else}
