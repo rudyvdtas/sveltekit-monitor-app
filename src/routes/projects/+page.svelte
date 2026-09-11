@@ -64,7 +64,8 @@
       </button>
     </div>
 
-<div class="card" style="margin-bottom: 1rem;">
+  {#if showCids && projectCids.length > 0}
+    <div class="card" style="margin-bottom: 1rem;">
         <h2>Curated CIDs ({projectCids.length})</h2>
         <div style="max-height: 350px; overflow-y: auto; margin-top: 0.5rem;">
           <table>
