@@ -2,17 +2,23 @@
   let data = $props() as { data: any };
   let pins = $derived(data.data?.pins ?? []);
   let error = $derived(data.data?.error);
+  let showList = $state(false);
 </script>
 
-<h1 style="margin-bottom: 1.5rem;">Curated CIDs</h1>
+<h1 style="margin-bottom: 1.5rem;">CyberWatch · TheGuild</h1>
 
-<div class="card mb-md" style="background: rgba(88,166,255,0.05); border-color: var(--accent);">
-  <p class="text-muted text-sm">
-    Deze lijst wordt beheerd via <code>curated-cids.json</code> in de 
-    <a href="https://github.com/rudyvdtas/ipfs-cluster-coordinator" target="_blank">coordinator repo</a>.
-    CIDs toevoegen of verwijderen doe je door dat bestand aan te passen en te pushen.
-    Het sync-script op de server pint de wijzigingen automatisch.
-  </p>
+<div class="card mb-md">
+  <div class="flex-between">
+    <h2>Curated CIDs ({pins.length})</h2>
+    <button onclick={() => showList = !showList} class="primary" style="font-size: 0.8rem;">
+      {showList ? 'Verberg lijst' : 'Toon CID lijst'}
+    </button>
+  </div>
+  {#if showList && pins.length > 0}
+    <div class="cid-list card" style="margin-top: 1rem; background: var(--bg); max-height: 400px; overflow-y: auto;">
+      <pre><code>{#each pins as pin, i}{i + 1}. {pin.cid}{"\n"}{/each}</code></pre>
+    </div>
+  {/if}
 </div>
 
 <div class="card">
