@@ -13,7 +13,7 @@
 {#if error}
   <div class="card" style="border-color: var(--red); color: var(--red);">{error}</div>
 {:else if cluster}
-  <h1 style="margin-bottom: 0.25rem;">DRL Coordinator</h1>
+  <h1 style="margin-bottom: 0.25rem;">DRL Co&ouml;rdinator</h1>
   <p class="text-muted" style="margin-bottom: 1.5rem;">
     {cluster.peername} · {cluster.ipfsId?.slice(0, 12)}...
   </p>
