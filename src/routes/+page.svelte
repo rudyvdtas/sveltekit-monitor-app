@@ -12,10 +12,10 @@
 {#if error}
   <div class="card" style="border-color: var(--red); color: var(--red);">{error}</div>
 {:else if peer}
-  <h1 style="margin-bottom: 1.5rem;">
-    {peer.peername}
-    <span class="text-muted text-sm" style="font-weight: 400;">— {peer.ipfsId?.slice(0, 12)}...</span>
-  </h1>
+  <h1 style="margin-bottom: 0.25rem;">DRL coordinator</h1>
+    <p class="text-muted" style="margin-bottom: 1.5rem;">
+      {peer.peername} · {peer.ipfsId?.slice(0, 12)}...
+    </p>
 
   <div class="grid grid-2 mb-md">
     <div class="card">

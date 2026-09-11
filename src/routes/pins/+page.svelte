@@ -6,7 +6,7 @@
   let gateway = $derived('https://ipfs.io/ipfs/');
 </script>
 
-<h1 style="margin-bottom: 1.5rem;">CyberWatch · TheGuild</h1>
+<h1 style="margin-bottom: 1.5rem;">DRL coordinator</h1>
 
 <div class="card mb-md">
   <div class="flex-between">
