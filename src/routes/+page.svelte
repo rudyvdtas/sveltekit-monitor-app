@@ -77,11 +77,11 @@
 
   <div class="card">
     <div class="flex-between mb-md">
-      <h2 style="margin-bottom:0;">Recent Pins</h2>
-      <a href="/pins">View all ({pinCount}) →</a>
+      <h2 style="margin-bottom:0;">Curated CIDs ({pinCount})</h2>
+      <a href="/pins">Bekijk alle →</a>
     </div>
     {#if pinStatuses.length === 0}
-      <p class="text-muted">No pins yet. <a href="/pins">Add your first CID</a>.</p>
+      <p class="text-muted">Curated list is leeg. De lijst wordt beheerd via <code>curated-cids.json</code> in de coordinator repo.</p>
     {:else}
       <table>
         <thead>
