@@ -3,6 +3,7 @@
   let pins = $derived(data.data?.pins ?? []);
   let error = $derived(data.data?.error);
   let showList = $state(false);
+  let gateway = $derived('https://ipfs.io/ipfs/');
 </script>
 
 <h1 style="margin-bottom: 1.5rem;">CyberWatch · TheGuild</h1>
@@ -16,7 +17,7 @@
   </div>
   {#if showList && pins.length > 0}
     <div class="cid-list card" style="margin-top: 1rem; background: var(--bg); max-height: 400px; overflow-y: auto;">
-      <pre><code>{#each pins as pin, i}{i + 1}. {pin.cid}{"\n"}{/each}</code></pre>
+      <pre><code>{#each pins as pin, i}{i + 1}. <a href="{gateway}{pin.cid}" target="_blank" rel="noopener">{pin.cid}</a>{"\n"}{/each}</code></pre>
     </div>
   {/if}
 </div>
@@ -41,10 +42,11 @@
           {@const peerEntries = Object.entries(pin.peer_map ?? {})}
           <tr>
             <td>
-              <div><code class="truncate" style="display:inline-block;max-width:350px;" title={pin.cid}>{pin.cid}</code></div>
-              {#if pin.name && pin.name !== pin.cid}
-                <div class="text-muted text-sm">{pin.name}</div>
-              {/if}
+              <div>
+                <a href="{gateway}{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
+                  <code class="truncate" style="display:inline-block;max-width:350px;color:var(--accent);">{pin.cid}</code>
+                </a>
+              </div>
             </td>
             <td><span class="text-sm">min {pin.replication_factor_min} / max {pin.replication_factor_max}</span></td>
             <td>
@@ -64,5 +66,8 @@
         {/each}
       </tbody>
     </table>
+    <p class="text-muted text-sm" style="margin-top: 0.5rem;">
+      CIDs openen via <a href="{gateway}" target="_blank" rel="noopener">ipfs.io</a> gateway.
+    </p>
   {/if}
 </div>
