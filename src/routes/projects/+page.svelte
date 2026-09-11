@@ -43,7 +43,7 @@
   </div>
 
   {#if activeProject}
-    <div class="card mb-md card-accent">
+    <div class="card card-accent" style="margin-bottom: 1rem;">
       <div class="flex-between" style="margin-bottom: 0.5rem;">
         <div>
           <strong style="font-size: 1rem;">{activeProject.name}</strong>
@@ -62,6 +62,28 @@
       >
         {showCids ? 'Hide CID list' : 'Show CID list'}
       </button>
+    </div>
+
+    <div class="card" style="margin-bottom: 1rem;">
+      <h2>Pin Status Explained</h2>
+      <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:0.75rem; margin-top:0.5rem;">
+        <div class="flex gap-sm" style="align-items:center;">
+          <span class="badge badge-success">PINNED</span>
+          <span class="text-sm text-muted">Content is stored on this peer. Data has been downloaded and verified.</span>
+        </div>
+        <div class="flex gap-sm" style="align-items:center;">
+          <span class="badge badge-warning">PINNING</span>
+          <span class="text-sm text-muted">Content is being fetched from the IPFS network. This may take a while for large files.</span>
+        </div>
+        <div class="flex gap-sm" style="align-items:center;">
+          <span class="badge badge-info">QUEUED</span>
+          <span class="text-sm text-muted">Content is waiting in line to be pinned. The cluster will process it when resources are available.</span>
+        </div>
+        <div class="flex gap-sm" style="align-items:center;">
+          <span class="badge badge-error">ERROR</span>
+          <span class="text-sm text-muted">Something went wrong. The content could not be fetched or stored. The cluster may retry automatically.</span>
+        </div>
+      </div>
     </div>
 
     {#if showCids && projectCids.length > 0}

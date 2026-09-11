@@ -86,11 +86,11 @@
 
   <div class="card">
     <div class="flex-between mb-md">
-      <h2 style="margin-bottom:0;">Project CIDs ({pinCount})</h2>
+      <h2 style="margin-bottom:0;">Activity on Volunteers</h2>
       <a href="/projects">View Projects →</a>
     </div>
     {#if pinStatuses.length === 0}
-      <p class="text-muted">No CIDs pinned yet.</p>
+      <p class="text-muted">No CIDs pinned yet. No volunteers connected.</p>
     {:else}
       <table>
         <thead>
@@ -101,7 +101,7 @@
           </tr>
         </thead>
         <tbody>
-          {#each pinStatuses.slice(0, 12) as pin}
+          {#each pinStatuses.slice(0, 10) as pin}
             <tr>
               <td>
                 <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
