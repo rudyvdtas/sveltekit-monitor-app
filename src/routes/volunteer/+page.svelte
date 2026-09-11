@@ -33,10 +33,12 @@
     <li>
       <strong>Install Docker</strong>
       <div class="text-muted text-sm">
-        <strong>Linux / VPS / Raspberry Pi:</strong>
+        <strong>Linux / VPS / Raspberry Pi (production):</strong>
         <pre><code>curl -fsSL https://get.docker.com | sh</code></pre>
-        <strong>macOS:</strong> Install <a href="https://docs.docker.com/desktop/setup/install/mac-install/" target="_blank" rel="noopener">Docker Desktop</a>
-        or via Homebrew: <code>brew install --cask docker</code>
+        <strong>macOS (testing only):</strong>
+        Docker Desktop via <code>brew install --cask docker</code>,
+        or <a href="https://docs.docker.com/desktop/setup/install/mac-install/" target="_blank" rel="noopener">download from docker.com</a>.
+        Note: macOS peers are not reachable from the public internet.
       </div>
     </li>
     <li>
@@ -57,13 +59,14 @@ nano .env</code></pre>
       </div>
     </li>
     <li>
-      <strong>Open your firewall</strong>
+      <strong>Open your firewall (Linux/VPS only)</strong>
       <div class="text-muted text-sm">Your node communicates with other peers on port 4001.</div>
       <pre><code>sudo ufw allow 4001/tcp
 sudo ufw allow 4001/udp</code></pre>
       <div class="text-muted text-sm">
         If you use a cloud provider (Hetzner, TransIP, etc.), also open port 4001
-        in their separate firewall panel.
+        in their separate firewall panel.<br>
+        <strong>macOS:</strong> Skip this step — firewall is not required for testing.
       </div>
     </li>
     <li>
