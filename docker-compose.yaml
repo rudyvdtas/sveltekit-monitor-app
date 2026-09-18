@@ -1,19 +1,20 @@
-# DEPRECATED — This docker-compose is no longer used for deployment.
-# The dashboard service is now part of ipfs-cluster-coordinator/docker-compose.yaml
-# as a unified stack so Docker Compose DNS resolves service names correctly.
-# Keep this file for local development reference only.
 services:
   dashboard:
     build: .
     container_name: cluster-dashboard
     restart: unless-stopped
     environment:
-      - HOST=0.0.0
+      - HOST=0.0.0.0
       - PORT=3000
       - CLUSTER_API_URL=${CLUSTER_API_URL:-http://cluster:9094}
-    ports:
-      - "3000:3000"
+    networks:
+      - default
+      - cluster-internal
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.ipfs-dashbaord.rule=Host(`${DOMAIN:-dashboar d.loc alhost}`)"
-      - "traefik.http.serv ices.ipfs-dashboard.lo adbalancer.ser ver.port=3000"
+      - "traefik.http.routers.ipfs-dashboard.rule=Host(`${DOMAIN:-dashboard.localhost}`)"
+      - "traefik.http.services.ipfs-dashboard.loadbalancer.server.port=3000"
+
+networks:
+  cluster-internal:
+    external: true
