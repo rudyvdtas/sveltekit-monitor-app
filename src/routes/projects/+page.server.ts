@@ -8,6 +8,6 @@ export const load: PageServerLoad = async () => {
     return { projects, pins };
   } catch (e) {
     console.error('Projects load failed', e);
-    return { error: 'Project data temporarily unavailable', projects: [], pins: [] };
+    return { error: 'Cluster data temporarily unavailable', projects: [], pins: [] };
   }
 };
