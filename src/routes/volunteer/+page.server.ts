@@ -10,6 +10,7 @@ export const load: PageServerLoad = async () => {
     const cidCount = pins.length;
     return { volunteers, cidCount, peerCount: peers.length };
   } catch (e) {
-    return { error: String(e), volunteers: 0, cidCount: 0, peerCount: 1 };
+    console.error('Volunteer load failed', e);
+    return { error: 'Cluster data temporarily unavailable', volunteers: 0, cidCount: 0, peerCount: 1 };
   }
 };

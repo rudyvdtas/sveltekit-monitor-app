@@ -43,6 +43,7 @@ export const load: PageServerLoad = async () => {
       statusCounts
     };
   } catch (e) {
-    return { error: String(e) };
+    console.error('Dashboard load failed', e);
+    return { error: 'Cluster data temporarily unavailable' };
   }
 };

@@ -7,6 +7,7 @@ export const load: PageServerLoad = async () => {
     const pins = await getPins();
     return { projects, pins };
   } catch (e) {
-    return { error: String(e), projects: [], pins: [] };
+    console.error('Projects load failed', e);
+    return { error: 'Project data temporarily unavailable', projects: [], pins: [] };
   }
 };
