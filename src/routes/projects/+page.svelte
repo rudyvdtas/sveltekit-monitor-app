@@ -10,14 +10,14 @@
   let activeProject = $derived(allProjects.find((p: any) => p.id === activeTab));
   let projectCids = $derived(pins.length > 0 ? pins : []);
   let pinnedCount = $derived(
-    projectCids.filter((p: any) => Object.values(p.peer_map ?? {}).some((i: any) => i.status === 'pinned')).length
+    projectCids.filter((p: any) => (p.peer_allocations ?? []).some((i: any) => i.status === 'pinned')).length
   );
   let peerCount = $derived(
-    projectCids.reduce((max: number, pin: any) => Math.max(max, Object.keys(pin.peer_map ?? {}).length), 0)
+    projectCids.reduce((max: number, pin: any) => Math.max(max, (pin.peer_allocations ?? []).length), 0)
   );
   let peerStats = $derived(
     projectCids.reduce((acc: Record<string, number>, pin: any) => {
-      Object.values(pin.peer_map ?? {}).forEach((info: any) => {
+      (pin.peer_allocations ?? []).forEach((info: any) => {
         acc[info.peername] = (acc[info.peername] || 0) + 1;
       });
       return acc;
@@ -78,7 +78,7 @@
             </thead>
             <tbody>
               {#each projectCids as pin}
-                {@const peerEntries = Object.entries(pin.peer_map ?? {})}
+                {@const peerEntries = pin.peer_allocations ?? []}
                 <tr>
                   <td>
                     <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
@@ -86,17 +86,17 @@
                     </a>
                   </td>
                   <td>
-                    {#each peerEntries as [, info]}
-                      <span class="badge {info.status === 'pinned' ? 'badge-success' : info.status === 'pinning' ? 'badge-warning' : info.status.includes('error') ? 'badge-error' : 'badge-info'}">
-                        {info.status}
-                      </span>
-                    {/each}
+{#each peerEntries as info}
+                                    <span class="badge {info.status === 'pinned' ? 'badge-success' : info.status === 'pinning' ? 'badge-warning' : info.status.includes('error') ? 'badge-error' : 'badge-info'}">
+                                      {info.status}
+                                    </span>
+                                  {/each}
                   </td>
                   <td>
                     <div class="flex gap-sm" style="flex-wrap: wrap;">
-                      {#each peerEntries as [, info]}
-                        <span class="text-muted text-sm">{info.peername}</span>
-                      {:else}
+{#each peerEntries as info}
+                                  <span class="text-muted text-sm">{info.peername}</span>
+                                {:else}
                         <span class="text-muted text-sm">—</span>
                       {/each}
                     </div>

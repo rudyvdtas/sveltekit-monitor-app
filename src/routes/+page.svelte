@@ -15,7 +15,7 @@
 {:else if cluster}
   <h1 style="margin-bottom: 0.25rem;">DRL Co&ouml;rdinator</h1>
   <p class="text-muted" style="margin-bottom: 1.5rem;">
-    {cluster.peername} · {cluster.ipfsId?.slice(0, 12)}...
+    {cluster.peername}
   </p>
 
   <div class="grid grid-3 mb-md">
@@ -64,20 +64,12 @@
       <thead>
         <tr>
           <th>Peer Name</th>
-          <th>Cluster ID</th>
-          <th>IPFS ID</th>
-          <th>Addresses</th>
-          <th>Version</th>
         </tr>
       </thead>
       <tbody>
         {#each peers as p}
           <tr>
             <td><strong>{p.peername}</strong></td>
-            <td><code class="truncate" style="display:inline-block;max-width:180px;" title={p.id}>{p.id.slice(0, 16)}...</code></td>
-            <td><code class="truncate" style="display:inline-block;max-width:180px;" title={p.ipfsId}>{p.ipfsId?.slice(0, 16)}...</code></td>
-            <td>{p.addresses?.length ?? 0} addresses</td>
-            <td class="text-muted text-sm">{p.version?.split('+')[0] ?? '—'}</td>
           </tr>
         {/each}
       </tbody>

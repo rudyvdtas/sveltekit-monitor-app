@@ -6,9 +6,10 @@ export const load: PageServerLoad = async () => {
     const cluster = await getId();
     const peersData = await getPeers();
     const pins = await getPins();
-    const peers = Array.isArray(peersData)
-      ? peersData.map((p: any) => ({ id: p.id, peername: p.peername, ipfsId: p.ipfs?.id, version: p.version, addresses: p.addresses }))
-      : [{ id: peersData.id, peername: peersData.peername, ipfsId: peersData.ipfs?.id, version: peersData.version, addresses: peersData.addresses }];
+
+    const peers = (Array.isArray(peersData) ? peersData : [peersData]).map((p: any) => ({
+      peername: p.peername
+    }));
 
     const volunteers = peers.length - 1;
 
@@ -23,19 +24,18 @@ export const load: PageServerLoad = async () => {
     }
 
     const pinStatuses = pins.flatMap((pin) =>
-      Object.entries(pin.peer_map ?? {}).map(([peerId, info]) => ({
+      Object.values(pin.peer_map ?? {}).map((info) => ({
         cid: pin.cid,
         name: pin.name || pin.cid,
         peername: info.peername,
         status: info.status,
-        allocations: pin.allocations ?? [],
         replication_factor_min: pin.replication_factor_min,
         replication_factor_max: pin.replication_factor_max
       }))
     );
 
     return {
-      cluster: { id: cluster.id, peername: cluster.peername, ipfsId: cluster.ipfs?.id, version: cluster.version },
+      cluster: { peername: cluster.peername },
       peers,
       volunteers,
       pinStatuses,
