@@ -117,8 +117,18 @@ docker compose up -d</code></pre>
     Your peer runs in <strong>follower mode</strong>
     (<code>CLUSTER_FOLLOWERMODE=true</code>), which means you can join the
     cluster, receive allocations, and host content, but pin and unpin operations
-    are disabled at the protocol level. Only the coordinator can manage the
-    pinset. CID allocation is handled automatically by the cluster.
+    are disabled at the protocol level. The curated CID list and the
+    authoritative cluster pinset are controlled exclusively by the coordinator.
+    CID allocation to peers is handled automatically by the cluster.
+  </p>
+  <p class="text-muted text-sm" style="margin-top: 0.75rem;">
+    <code>CLUSTER_CRDT_TRUSTEDPEERS=*</code> is used on the coordinator to
+    allow invited peers to participate in cluster synchronisation and receive
+    status/metrics. This setting does <strong>not</strong> grant pinset-management
+    authority — write access to the pinset is restricted to the coordinator
+    via <code>trusted_peers</code> in the cluster config, and the shared
+    <code>CLUSTER_SECRET</code> is still required to join the cluster at all.
+    Volunteers do not receive coordinator-level control.
   </p>
 </div>
 
@@ -190,10 +200,15 @@ docker compose up -d</code></pre>
     <strong>Can volunteers add or remove CIDs?</strong>
   </p>
   <p class="text-muted text-sm" style="margin-top: 0;">
-    No. Volunteer peers run in follower mode, which disables local pin and
-    unpin operations. The coordinator is the only peer allowed to manage
-    the pinset. The cluster handles all allocation automatically via
-    the curated CID list.
+    No. The curated CID list and the authoritative cluster pinset are
+    controlled exclusively by the coordinator. Volunteer peers run in follower
+    mode, which disables local pin and unpin operations at the protocol level.
+    <code>CLUSTER_CRDT_TRUSTEDPEERS=*</code> on the coordinator lets invited
+    peers synchronise cluster state and report metrics, but does not grant
+    pinset-management authority — only the coordinator can write to the
+    pinset. Joining the cluster still requires the shared
+    <code>CLUSTER_SECRET</code>, and volunteers do not receive
+    coordinator-level control.
   </p>
 
   <p class="text-sm" style="margin-top: 1rem; margin-bottom: 0.25rem;">
