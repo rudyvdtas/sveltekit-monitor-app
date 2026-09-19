@@ -88,12 +88,13 @@
         <thead>
           <tr>
             <th>CID</th>
-            <th>Status</th>
-            <th>Peer</th>
+            <th>Pinned</th>
+            <th>Replication</th>
           </tr>
         </thead>
         <tbody>
           {#each pinStatuses.slice(0, 10) as pin}
+            {@const ratio = pin.totalPeers > 0 ? pin.pinnedCount / pin.totalPeers : 0}
             <tr>
               <td>
                 <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
@@ -101,19 +102,15 @@
                 </a>
               </td>
               <td>
-                {#if pin.status === 'pinned'}
-                  <span class="badge badge-success">PINNED</span>
-                {:else if pin.status === 'pinning'}
-                  <span class="badge badge-warning">PINNING</span>
-                {:else if pin.status === 'queued'}
-                  <span class="badge badge-info">QUEUED</span>
-                {:else if pin.status.includes('error')}
-                  <span class="badge badge-error">{pin.status.toUpperCase()}</span>
+                {#if ratio >= 1}
+                  <span class="badge badge-success">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
+                {:else if ratio > 0}
+                  <span class="badge badge-warning">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
                 {:else}
-                  <span class="badge">{pin.status}</span>
+                  <span class="badge">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
                 {/if}
               </td>
-              <td class="text-muted text-sm">{pin.peername}</td>
+              <td class="text-muted text-sm">min {pin.replication_factor_min} / max {pin.replication_factor_max}</td>
             </tr>
           {/each}
         </tbody>

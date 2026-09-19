@@ -72,13 +72,16 @@
             <thead>
               <tr>
                 <th>CID</th>
-                <th>Status</th>
+                <th>Pinned</th>
                 <th>Peers</th>
               </tr>
             </thead>
             <tbody>
               {#each projectCids as pin}
                 {@const peerEntries = pin.peer_allocations ?? []}
+                {@const pinned = peerEntries.filter((e: any) => e.status === 'pinned').length}
+                {@const total = peerEntries.length}
+                {@const ratio = total > 0 ? pinned / total : 0}
                 <tr>
                   <td>
                     <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
@@ -86,17 +89,19 @@
                     </a>
                   </td>
                   <td>
-{#each peerEntries as info}
-                                    <span class="badge {info.status === 'pinned' ? 'badge-success' : info.status === 'pinning' ? 'badge-warning' : info.status.includes('error') ? 'badge-error' : 'badge-info'}">
-                                      {info.status}
-                                    </span>
-                                  {/each}
+                    {#if ratio >= 1}
+                      <span class="badge badge-success">{pinned}/{total} pinned</span>
+                    {:else if ratio > 0}
+                      <span class="badge badge-warning">{pinned}/{total} pinned</span>
+                    {:else}
+                      <span class="badge">{pinned}/{total} pinned</span>
+                    {/if}
                   </td>
                   <td>
                     <div class="flex gap-sm" style="flex-wrap: wrap;">
-{#each peerEntries as info}
-                                  <span class="text-muted text-sm">{info.peername}</span>
-                                {:else}
+                      {#each peerEntries as info}
+                        <span class="text-muted text-sm">{info.peername}</span>
+                      {:else}
                         <span class="text-muted text-sm">—</span>
                       {/each}
                     </div>

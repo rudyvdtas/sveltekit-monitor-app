@@ -23,16 +23,18 @@ export const load: PageServerLoad = async () => {
       }
     }
 
-    const pinStatuses = pins.flatMap((pin) =>
-      Object.values(pin.peer_map ?? {}).map((info) => ({
+    const pinStatuses = pins.map((pin) => {
+      const peers = Object.values(pin.peer_map ?? {});
+      const pinnedCount = peers.filter((i: any) => i.status === 'pinned').length;
+      return {
         cid: pin.cid,
         name: pin.name || pin.cid,
-        peername: info.peername,
-        status: info.status,
+        pinnedCount,
+        totalPeers: peers.length,
         replication_factor_min: pin.replication_factor_min,
         replication_factor_max: pin.replication_factor_max
-      }))
-    );
+      };
+    });
 
     return {
       cluster: { peername: cluster.peername },
