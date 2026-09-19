@@ -66,7 +66,14 @@ async function get(path: string) {
     throw new ClusterError('Response too large', 0, id);
   }
 
-  return JSON.parse(text);
+  const trimmed = text.trim();
+  if (trimmed[0] === '{') {
+    const lines = trimmed.split('\n');
+    if (lines.length > 1 && lines[1].startsWith('{')) {
+      return lines.map((l) => JSON.parse(l));
+    }
+  }
+  return JSON.parse(trimmed);
 }
 
 async function post(path: string) {
@@ -129,7 +136,7 @@ export function getId(): Promise<PeerInfo> {
   return get('/id');
 }
 
-export function getPeers(): Promise<PeerInfo> {
+export function getPeers(): Promise<PeerInfo | PeerInfo[]> {
   return get('/peers');
 }
 
