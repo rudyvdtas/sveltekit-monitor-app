@@ -4,7 +4,7 @@
   let cidCount = $derived(data.data.cidCount ?? 0);
   let peerCount = $derived(data.data.peerCount ?? 1);
 
-  type Setup = 'docker' | 'existing-ipfs' | 'artbox';
+  type Setup = 'docker' | 'existing-ipfs' | 'artbox' | 'faq';
   let selected: Setup = $state('docker');
 </script>
 
@@ -16,7 +16,7 @@
 
 <div class="tabs">
   <button class="tab" class:active={selected === 'docker'} onclick={() => selected = 'docker'}>
-    Volledige installatie
+Full install
   </button>
   <button class="tab" class:active={selected === 'existing-ipfs'} onclick={() => selected = 'existing-ipfs'}>
     IPFS node + Cluster
@@ -24,14 +24,17 @@
   <button class="tab" class:active={selected === 'artbox'} onclick={() => selected = 'artbox'}>
     Cluster + Artbox
   </button>
+  <button class="tab" class:active={selected === 'faq'} onclick={() => selected = 'faq'}>
+    FAQ
+  </button>
 </div>
 
 {#if selected === 'docker'}
   <div class="card mb-md card-accent">
-    <h2>Volledige installatie (Docker)</h2>
+    <h2>Full install (Docker)</h2>
     <p class="text-muted text-sm">
-      Voor een <strong>verse machine</strong> zonder bestaande IPFS node.
-      Dit zet Kubo + IPFS Cluster op via Docker Compose, alles in één keer.
+      For a <strong>fresh machine</strong> without an existing IPFS node.
+      This sets up Kubo + IPFS Cluster via Docker Compose, everything in one go.
     </p>
     <table>
       <thead>
@@ -47,7 +50,7 @@
     </table>
     <p style="margin-top: 0.75rem;">
       <a href="https://github.com/rudyvdtas/ipfs-cluster-coordinator/blob/main/volunteer-docker.md" target="_blank" rel="noopener" class="primary button-like">
-        Volledige gids → volunteer-docker.md
+        Full guide → volunteer-docker.md
       </a>
     </p>
   </div>
@@ -79,7 +82,7 @@
     </table>
     <p style="margin-top: 0.75rem;">
       <a href="https://github.com/rudyvdtas/ipfs-cluster-coordinator/blob/main/volunteer-existing-ipfs.md" target="_blank" rel="noopener" class="primary button-like">
-        Volledige gids → volunteer-existing-ipfs.md
+        Full guide → volunteer-existing-ipfs.md
       </a>
     </p>
   </div>
@@ -111,12 +114,13 @@
     </table>
     <p style="margin-top: 0.75rem;">
       <a href="https://github.com/rudyvdtas/ipfs-cluster-coordinator/blob/main/volunteer-artbox.md" target="_blank" rel="noopener" class="primary button-like">
-        Volledige gids → volunteer-artbox.md
+        Full guide → volunteer-artbox.md
       </a>
     </p>
   </div>
 {/if}
 
+{#if selected === 'faq'}
 <div class="card">
   <h2>Trust model</h2>
   <p class="text-muted text-sm">
@@ -223,28 +227,17 @@
   </p>
 
   <p class="text-sm" style="margin-top: 1rem; margin-bottom: 0.25rem;">
-    <strong>What if I am behind a home router or NAT?</strong>
-  </p>
-  <p class="text-muted text-sm" style="margin-top: 0;">
-    Open port 9096 in your firewall and forward it from your router to your
-    machine. Alternatively, install
-    <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a>
-    on both machines and set <code>CLUSTER_PEER_ADDRESSES</code> to your
-    Tailscale IP in <code>.env</code>. This lets the coordinator reach back
-    to your peer without opening any public ports.
-  </p>
-
-  <p class="text-sm" style="margin-top: 1rem; margin-bottom: 0.25rem;">
     <strong>Which setup should I choose?</strong>
   </p>
   <p class="text-muted text-sm" style="margin-top: 0;">
-    <strong>Volledige installatie</strong> is best for a fresh machine (VPS, laptop)
+    <strong>Full install</strong> is best for a fresh machine (VPS, laptop)
     with Docker available. <strong>IPFS node + Cluster</strong> is for when you already
     run Kubo and want to add cluster support. <strong>Cluster + Artbox</strong> is
     specifically for ArtBox owners who need a second, isolated Kubo to keep
     their personal pinset separate from cluster-managed CIDs.
   </p>
 </div>
+{/if}
 
 <style>
   a.button-like {
