@@ -62,7 +62,7 @@ Full install
     <p class="text-muted text-sm">
       Voor wie al een <strong>bestaande Kubo node</strong> draait. Je voegt
       IPFS Cluster toe als systemd service die jouw Kubo API gebruikt.
-      Jouw eigen pins blijven onaangetast via follower mode.
+      Jouw eigen pins blijven onaangetast — het cluster schrijft alleen naar het Cluster-Kubo, niet naar jouw eigen Kubo.
     </p>
     <pre><code>Jouw bestaande Kubo node (poort 5001)
 └── IPFS Cluster (systemd service)
@@ -128,12 +128,10 @@ Full install
     address — there is no open sign-up. The secret is the access gate.
   </p>
   <p class="text-muted text-sm" style="margin-top: 0.75rem;">
-    Your peer runs in <strong>follower mode</strong>
-    (<code>CLUSTER_FOLLOWERMODE=true</code>), which means you can join the
-    cluster, receive allocations, and host content, but pin and unpin operations
-    are disabled at the protocol level. The curated CID list and the
-    authoritative cluster pinset are controlled exclusively by the coordinator.
-    CID allocation to peers is handled automatically by the cluster.
+    Your peer runs with <strong>CRDT trusted-peer enforcement</strong>
+    (<code>CLUSTER_CRDT_TRUSTEDPEERS</code> restricted to the coordinator peer ID), which means
+    you can join the cluster, receive allocations, and host content, but pin and unpin
+    operations that modify the cluster pinset are not accepted from your peer.
   </p>
   <p class="text-muted text-sm" style="margin-top: 0.75rem;">
     <code>CLUSTER_CRDT_TRUSTEDPEERS=*</code> is used on the coordinator to
@@ -216,14 +214,10 @@ Full install
   </p>
   <p class="text-muted text-sm" style="margin-top: 0;">
     No. The curated CID list and the authoritative cluster pinset are
-    controlled exclusively by the coordinator. Volunteer peers run in follower
-    mode, which disables local pin and unpin operations at the protocol level.
-    <code>CLUSTER_CRDT_TRUSTEDPEERS=*</code> on the coordinator lets invited
-    peers synchronise cluster state and report metrics, but does not grant
-    pinset-management authority — only the coordinator can write to the
-    pinset. Joining the cluster still requires the shared
-    <code>CLUSTER_SECRET</code>, and volunteers do not receive
-    coordinator-level control.
+    controlled exclusively by the coordinator. Trusted-peer enforcement
+    (<code>CLUSTER_CRDT_TRUSTEDPEERS</code>) restricts pinset writes to the coordinator only,
+    and <code>pin_only_on_trusted_peers</code> in the cluster config prevents non-coordinator
+    peers from initiating pinset changes.
   </p>
 
   <p class="text-sm" style="margin-top: 1rem; margin-bottom: 0.25rem;">
