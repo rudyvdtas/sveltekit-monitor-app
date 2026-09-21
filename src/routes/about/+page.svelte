@@ -1,6 +1,6 @@
 <h1 style="margin-bottom: 0.25rem;">About Digital Art Rescue Lab</h1>
 <p class="text-muted" style="margin-bottom: 1.5rem;">
-  <a href="https://digitalartrescuelab.xyz" target="_blank" rel="noopener">digitalartrescuelab.xyz</a>
+  <a href="https://digitalrescuelab.xyz/" target="_blank" rel="noopener">digitalrescuelab.xyz</a>
 </p>
 
 <div class="card">
