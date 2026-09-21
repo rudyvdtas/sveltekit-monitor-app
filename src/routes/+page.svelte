@@ -149,28 +149,28 @@
           <td>2</td>
           <td>{Math.max(pinCount, 1000)}</td>
           <td>~1 TB</td>
-          <td>1 peer kan offline</td>
+          <td>1 peer can be offline</td>
         </tr>
         <tr>
           <td>3</td>
           <td>3</td>
           <td>{Math.max(pinCount, 1000)}</td>
           <td>~1 TB</td>
-          <td>2 peers kunnen offline</td>
+          <td>2 peers can be offline</td>
         </tr>
         <tr>
           <td>5</td>
           <td>3</td>
           <td>~600</td>
           <td>~600 GB</td>
-          <td>2 peers kunnen offline</td>
+          <td>2 peers can be offline</td>
         </tr>
         <tr>
           <td>10</td>
           <td>3</td>
           <td>~300</td>
           <td>~300 GB</td>
-          <td>2 peers kunnen offline</td>
+          <td>2 peers can be offline</td>
         </tr>
       </tbody>
     </table>
