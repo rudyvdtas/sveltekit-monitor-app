@@ -92,7 +92,7 @@ Full install
   <div class="card mb-md card-accent">
     <h2>Cluster + Artbox</h2>
     <p class="text-muted text-sm">
-      Voor <strong>ArtBox-eigenaren</strong> met een bestaande ArtBox-Kubo.
+      Voor <strong>ArtBox-eigenaren</strong> (<a href="https://vernis.art/" target="_blank" rel="noopener">vernis.art</a>) met een bestaande ArtBox-Kubo.
       We voegen een <strong>tweede, aparte Kubo instance</strong> toe exclusief
       voor cluster-verkeer. Hierdoor blijven ArtBox-pins en cluster-CIDs
       volledig geïsoleerd.
