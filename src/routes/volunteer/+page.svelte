@@ -169,8 +169,8 @@ docker compose up -d</code></pre>
         <pre><code>CLUSTER_VERSION="1.1.6"
 ARCH="linux-arm64"   # or linux-amd64
 
-wget "https://dist.ipfs.tech/ipfs-cluster-service/v${CLUSTER_VERSION}/ipfs-cluster-service_v${CLUSTER_VERSION}_${ARCH}.tar.gz"
-tar -xzf "ipfs-cluster-service_v${CLUSTER_VERSION}_${ARCH}.tar.gz"
+wget "https://dist.ipfs.tech/ipfs-cluster-service/v$CLUSTER_VERSION/ipfs-cluster-service_v$CLUSTER_VERSION_$ARCH.tar.gz"
+tar -xzf "ipfs-cluster-service_v$CLUSTER_VERSION_$ARCH.tar.gz"
 sudo cp ipfs-cluster-service/ipfs-cluster-service /usr/local/bin/
 sudo cp ipfs-cluster-service/ipfs-cluster-ctl /usr/local/bin/
 rm -rf ipfs-cluster-service *.tar.gz
@@ -196,8 +196,8 @@ COORDINATOR_PEER_ID="12D3KooWMRpaSMLHj3aoJqfxDMErRfu64HeHbwTttUynofsuBbzd"
 CLUSTER_PEERNAME="my-machine-name"
 COORDINATOR_IP="149.210.143.16"
 
-ipfs-cluster-service config set secret "${CLUSTER_SECRET}"
-ipfs-cluster-service config set peername "${CLUSTER_PEERNAME}"
+ipfs-cluster-service config set secret "$CLUSTER_SECRET"
+ipfs-cluster-service config set peername "$CLUSTER_PEERNAME"
 ipfs-cluster-service config set follower_mode true
 
 # Point to your existing Kubo API (change port if yours is different)
@@ -207,7 +207,7 @@ sed -i "s|/ip4/127.0.0.1/tcp/5001|/ip4/127.0.0.1/tcp/5001|" service.json
 sed -i "s|/ip4/127.0.0.1/tcp/9094|/ip4/127.0.0.1/tcp/9094/http|" service.json
 
 # Set bootstrap to the coordinator
-ipfs-cluster-service config set cluster.bootstrap "[\"/ip4/${COORDINATOR_IP}/tcp/9096/p2p/${COORDINATOR_PEER_ID}\"]"</code></pre>
+ipfs-cluster-service config set cluster.bootstrap "[\"/ip4/$COORDINATOR_IP/tcp/9096/p2p/$COORDINATOR_PEER_ID\"]"</code></pre>
       </li>
       <li>
         <strong>Create the systemd service</strong>
@@ -317,8 +317,8 @@ sudo -u ipfs ipfs config Path</code></pre>
 echo "$ARTBOX_KUBO_VERSION"
 
 cd /tmp
-wget "https://dist.ipfs.tech/kubo/${ARTBOX_KUBO_VERSION}/kubo_${ARTBOX_KUBO_VERSION}_linux-arm64.tar.gz"
-tar -xzf "kubo_${ARTBOX_KUBO_VERSION}_linux-arm64.tar.gz"
+wget "https://dist.ipfs.tech/kubo/$ARTBOX_KUBO_VERSION/kubo_&#123;$ARTBOX_KUBO_VERSION&#125;_linux-arm64.tar.gz"
+tar -xzf "kubo_&#123;$ARTBOX_KUBO_VERSION&#125;_linux-arm64.tar.gz"
 cd kubo
 sudo bash install.sh
 cd .. && rm -rf kubo kubo_*.tar.gz</code></pre>
@@ -380,8 +380,8 @@ curl http://127.0.0.1:5002/api/v0/version</code></pre>
         <pre><code>CLUSTER_VERSION="1.1.6"
 
 cd /tmp
-wget "https://dist.ipfs.tech/ipfs-cluster-service/v${CLUSTER_VERSION}/ipfs-cluster-service_v${CLUSTER_VERSION}_linux-arm64.tar.gz"
-tar -xzf "ipfs-cluster-service_v${CLUSTER_VERSION}_linux-arm64.tar.gz"
+wget "https://dist.ipfs.tech/ipfs-cluster-service/v$CLUSTER_VERSION/ipfs-cluster-service_v&#123;$CLUSTER_VERSION&#125;_linux-arm64.tar.gz"
+tar -xzf "ipfs-cluster-service_v&#123;$CLUSTER_VERSION&#125;_linux-arm64.tar.gz"
 sudo cp ipfs-cluster-service/ipfs-cluster-service /usr/local/bin/
 sudo cp ipfs-cluster-service/ipfs-cluster-ctl /usr/local/bin/
 rm -rf ipfs-cluster-service *.tar.gz
@@ -402,15 +402,15 @@ sudo -u ipfs bash -c '
   CLUSTER_PEERNAME="artbox-pi-jan"
   COORDINATOR_IP="149.210.143.16"
 
-  ipfs-cluster-service config set secret "${CLUSTER_SECRET}"
-  ipfs-cluster-service config set peername "${CLUSTER_PEERNAME}"
+  ipfs-cluster-service config set secret "$CLUSTER_SECRET"
+  ipfs-cluster-service config set peername "$CLUSTER_PEERNAME"
   ipfs-cluster-service config set follower_mode true
 
   # Point to Cluster-Kubo (port 5002), NOT the ArtBox-Kubo (5001)
   sed -i "s|/ip4/127.0.0.1/tcp/5001|/ip4/127.0.0.1/tcp/5002|" service.json
   sed -i "s|/ip4/127.0.0.1/tcp/9094|/ip4/127.0.0.1/tcp/9094/http|" service.json
 
-  ipfs-cluster-service config set cluster.bootstrap "[\"/ip4/${COORDINATOR_IP}/tcp/9096/p2p/${COORDINATOR_PEER_ID}\"]"
+  ipfs-cluster-service config set cluster.bootstrap "[\"/ip4/$COORDINATOR_IP/tcp/9096/p2p/$COORDINATOR_PEER_ID\"]"
 '</code></pre>
       </li>
       <li>
