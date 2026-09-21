@@ -64,12 +64,20 @@
       <thead>
         <tr>
           <th>Peer Name</th>
+          <th>Role</th>
         </tr>
       </thead>
       <tbody>
-        {#each peers as p}
+        {#each peers as p, i}
           <tr>
             <td><strong>{p.peername}</strong></td>
+            <td>
+              {#if i === 0}
+                <span class="badge badge-warning">Coordinator</span>
+              {:else}
+                <span class="badge badge-info">Volunteer</span>
+              {/if}
+            </td>
           </tr>
         {/each}
       </tbody>
@@ -180,7 +188,7 @@
       <div class="card" style="border-left: 3px solid var(--green-light);">
         <strong style="font-size:0.9rem;">Scaling up</strong>
         <p class="text-muted text-sm" style="margin-top:0.25rem;">
-          More peers = less storage per peer. The coordinator sets the target
+          More peers = less storage per peer. The coordinator (trusted peer) sets the target
           via <code>scripts/rebalance.sh</code> which redistributes CIDs across
           all available peers up to replication 3.
         </p>
