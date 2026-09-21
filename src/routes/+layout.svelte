@@ -33,7 +33,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 50px;
+    height: 56px;
     display: flex;
     align-items: center;
     gap: 2.5rem;
@@ -41,17 +41,17 @@
 
   .logo {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text);
     letter-spacing: -0.03em;
   }
 
-  .nav-links { display: flex; gap: 1.5rem; }
+  .nav-links { display: flex; gap: 1.75rem; }
 
   .nav-links a {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    padding: 0.25rem 0;
+    padding: 0.3rem 0;
     border-bottom: 2px solid transparent;
     transition: all 0.15s;
   }
