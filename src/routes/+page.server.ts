@@ -31,8 +31,6 @@ export const load: PageServerLoad = async () => {
         name: pin.name || pin.cid,
         pinnedCount,
         totalPeers: peers.length,
-        replication_factor_min: pin.replication_factor_min,
-        replication_factor_max: pin.replication_factor_max
       };
     });
 
