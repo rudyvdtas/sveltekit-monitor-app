@@ -88,7 +88,7 @@
         <thead>
           <tr>
             <th>CID</th>
-            <th>Pinned</th>
+            <th>Pinned on peers</th>
             <th>Replication</th>
           </tr>
         </thead>
@@ -103,14 +103,20 @@
               </td>
               <td>
                 {#if ratio >= 1}
-                  <span class="badge badge-success">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
+                  <span class="badge badge-success">{pin.pinnedCount} / {pin.totalPeers} peers</span>
                 {:else if ratio > 0}
-                  <span class="badge badge-warning">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
+                  <span class="badge badge-warning">{pin.pinnedCount} / {pin.totalPeers} peers</span>
                 {:else}
-                  <span class="badge">{pin.pinnedCount}/{pin.totalPeers} pinned</span>
+                  <span class="badge">{pin.pinnedCount} / {pin.totalPeers} peers</span>
                 {/if}
               </td>
-              <td class="text-muted text-sm">min {pin.replication_factor_min} / max {pin.replication_factor_max}</td>
+              <td class="text-muted text-sm">
+                {#if pin.replication_factor_min != null && pin.replication_factor_max != null}
+                  min {pin.replication_factor_min} / max {pin.replication_factor_max}
+                {:else}
+                  <span class="badge badge-warning">not set</span>
+                {/if}
+              </td>
             </tr>
           {/each}
         </tbody>
