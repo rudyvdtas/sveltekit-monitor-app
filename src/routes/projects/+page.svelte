@@ -72,7 +72,7 @@
             <thead>
               <tr>
                 <th>CID</th>
-                <th>Pinned</th>
+                <th>Pinned on peers</th>
                 <th>Peers</th>
               </tr>
             </thead>
@@ -90,11 +90,11 @@
                   </td>
                   <td>
                     {#if ratio >= 1}
-                      <span class="badge badge-success">{pinned}/{total} pinned</span>
+                      <span class="badge badge-success">{pinned} / {total} peers</span>
                     {:else if ratio > 0}
-                      <span class="badge badge-warning">{pinned}/{total} pinned</span>
+                      <span class="badge badge-warning">{pinned} / {total} peers</span>
                     {:else}
-                      <span class="badge">{pinned}/{total} pinned</span>
+                      <span class="badge">{pinned} / {total} peers</span>
                     {/if}
                   </td>
                   <td>
