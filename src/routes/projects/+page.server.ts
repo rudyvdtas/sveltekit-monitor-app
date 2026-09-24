@@ -11,10 +11,10 @@ export const load: PageServerLoad = async () => {
       name: pin.name,
       replication_factor_min: pin.replication_factor_min,
       replication_factor_max: pin.replication_factor_max,
-      peer_allocations: Object.values(pin.peer_map ?? {}).map((info) => ({
-        peername: info.peername,
-        status: info.status
-      }))
+      peer_allocations: (pin.allocations ?? []).map((peerId) => {
+        const info = pin.peer_map?.[peerId];
+        return info ? { peername: info.peername, status: info.status } : { peername: peerId, status: 'unknown' };
+      })
     }));
 
     return { projects, pins: safePins };
