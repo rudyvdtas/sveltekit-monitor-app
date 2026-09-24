@@ -12,6 +12,7 @@ WORKDIR /app
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/package.json ./
 COPY --from=builder --chown=app:app /app/node_modules ./node_modules
+COPY --from=builder /app/projects-data ./projects-data
 
 ENV HOST=0.0.0.0
 ENV PORT=3000
