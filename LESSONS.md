@@ -86,3 +86,60 @@ Deze lijst is gebaseerd op een statische review van de huidige `main`-branch. He
 - [ ] Runtime-container draait als non-root.
 - [ ] Dependency-, secret- en container-scans draaien in CI.
 - [ ] Securitytests voor de bovenstaande scenario's zijn toegevoegd.
+
+---
+
+# Performance fixes (september 2026)
+
+## Wat is er gewijzigd
+
+### Server-side cache met single-flight (src/lib/server/cache.ts)
+
+Er is een generieke TTL-cache toegevoegd die:
+- Factory results cached binnen de TTL.
+- Gelijktijdige cache-misses deelt één in-flight Promise (single-flight), zodat meerdere page loads niet allemaal `/pins` oproepen.
+- Foutresponses **niet** cached — een volgende call probeert opnieuw.
+- `invalidate()` laat de cache per key leegmaken (o.a. na `addPin`/`removePin`).
+
+### Cluster API client (src/lib/server/cluster.ts)
+
+- `getId()`, `getPeers()`, `getPins()` lopen nu door de cache.
+- Concurrency limit via semafoor — configureerbaar via env var.
+- `getPins()` valideert na het ophalen of het aantal pins en peer allocations binnen de ingestelde limieten valt; overschrijding geeft een gecontroleerde fout.
+- Malformed JSON / ongeldige response wordt gedetecteerd en geeft een fout, in plaats van stil `[]` te retourneren.
+- Observability: logging van requestduur, responsegrootte, pin/allocatie-aantallen, actieve requests, rejected requests.
+- Cache-invalidatie bij `addPin` en `removePin`.
+
+### Tests (src/lib/server/cache.test.ts, src/lib/server/cluster.test.ts)
+
+25 tests die dekken: cache hit/miss, single-flight, error caching, TTL-verloop, oversized responses, timeout, HTTP errors, malformed JSON, max pins, max peer allocations, cache-invalidatie na mutaties.
+
+## Nieuwe environment variables
+
+| Variable | Default | Beschrijving |
+|---|---|---|
+| `CACHE_TTL_MS` | `15000` | Cache TTL in ms voor cluster API responses |
+| `MAX_PINS` | `10000` | Maximaal aantal pins dat verwerkt wordt |
+| `MAX_PEER_ALLOCATIONS` | `100000` | Maximaal aantal peer allocation entries |
+| `MAX_CONCURRENT_CLUSTER_REQUESTS` | `5` | Maximaal aantal gelijktijdige requests naar cluster |
+| `CLUSTER_TIMEOUT_MS` | `10000` | Request timeout in ms |
+| `CLUSTER_MAX_RESPONSE_BYTES` | `5242880` | Maximale responsegrootte in bytes |
+
+## VPS monitoring
+
+Controleer OOM-kills en resource usage:
+
+```bash
+docker stats
+journalctl -k --since "24 hours ago" | grep -Ei "oom|out of memory|killed process"
+dmesg -T | grep -Ei "oom|out of memory|killed process"
+```
+
+## Validatie
+
+```bash
+npm ci
+npm run check
+npm test
+npm run build
+```
