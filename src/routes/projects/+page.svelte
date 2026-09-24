@@ -2,13 +2,13 @@
   let data = $props() as { data: any };
 
   let allProjects = $derived(data.data?.projects ?? []);
-  let pins = $derived(data.data?.pins ?? []);
+  let projectPins = $derived(data.data?.projectPins ?? {});
   let error = $derived(data.data?.error);
   let activeTab = $state(allProjects.length > 0 ? allProjects[0].id : null);
   let showCids = $state(false);
 
   let activeProject = $derived(allProjects.find((p: any) => p.id === activeTab));
-  let projectCids = $derived(pins.length > 0 ? pins : []);
+  let projectCids = $derived(projectPins[activeTab ?? ''] ?? []);
   let pinnedCount = $derived(
     projectCids.filter((p: any) => (p.peer_allocations ?? []).some((i: any) => i.status === 'pinned')).length
   );
