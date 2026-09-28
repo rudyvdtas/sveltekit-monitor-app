@@ -3,6 +3,16 @@ import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
 import type { PageServerLoad } from './$types';
 
+import cyberwatchImg from '$lib/assets/cyber_watch_theguild.avif';
+import theArcanaImg from '$lib/assets/The_Arcana_crypto_tarot.avif';
+import firstSupperImg from '$lib/assets/first_supper_async.avif';
+
+const projectImages: Record<string, string> = {
+  'cyberwatch': cyberwatchImg,
+  'the-arcana': theArcanaImg,
+  'async-first-supper': firstSupperImg,
+};
+
 export const load: PageServerLoad = async () => {
   try {
     const pins = await getPins();
@@ -29,7 +39,7 @@ export const load: PageServerLoad = async () => {
       projectPins[project.id] = safePins.filter((p) => cids.has(p.cid));
     }
 
-    return { projects, pins: safePins, projectPins };
+    return { projects, pins: safePins, projectPins, projectImages };
   } catch (e) {
     console.error('Projects load failed', e);
     return { error: 'Cluster data temporarily unavailable', projects: [], pins: [] };
