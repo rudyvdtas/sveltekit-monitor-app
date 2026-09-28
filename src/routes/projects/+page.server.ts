@@ -3,9 +3,9 @@ import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
 import type { PageServerLoad } from './$types';
 
-import cyberwatchImg from '$lib/assets/cyber_watch_theguild.avif';
-import theArcanaImg from '$lib/assets/The_Arcana_crypto_tarot.avif';
-import firstSupperImg from '$lib/assets/first_supper_async.avif';
+import cyberwatchImg from '$lib/assets/cyber_watch_theguild.jpg';
+import theArcanaImg from '$lib/assets/The_Arcana_crypto_tarot.jpg';
+import firstSupperImg from '$lib/assets/first_supper_async.jpg';
 
 const projectImages: Record<string, string> = {
   'cyberwatch': cyberwatchImg,
