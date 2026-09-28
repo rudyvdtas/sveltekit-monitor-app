@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CTA from '$lib/CTA.svelte';
   let data = $props() as { data: any };
 
   let error = $derived(data.data?.error);
@@ -204,14 +205,5 @@
     </div>
   </div>
 
-  <div class="card" style="text-align: center; margin-top: 1.5rem;">
-    <p style="margin-bottom: 0.75rem;">
-      Do you want to know more about the project?<br>
-      Would like to become active and join the cluster as a volunteer?<br>
-      Hit us up on X
-    </p>
-    <a href="https://x.com/digitalrescuelab" target="_blank" rel="noopener" class="primary" style="display: inline-block; padding: 0.5rem 1.5rem; text-decoration: none;">
-      @digitalrescuelab
-    </a>
-  </div>
+  <CTA />
 {/if}
