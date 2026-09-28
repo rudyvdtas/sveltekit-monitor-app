@@ -1,4 +1,3 @@
-import { getPins } from '$lib/server/cluster';
 import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
 import type { PageServerLoad } from './$types';
@@ -14,34 +13,13 @@ const projectImages: Record<string, string> = {
 };
 
 export const load: PageServerLoad = async () => {
-  try {
-    const pins = await getPins();
+  const projectsWithCids = projects.map((p) => ({
+    id: p.id,
+    name: p.name,
+    description: p.description,
+    image: projectImages[p.id] ?? null,
+    cids: Array.from(loadCids(p.cidFile)),
+  }));
 
-    const cidSets: Record<string, Set<string>> = {};
-    for (const project of projects) {
-      cidSets[project.id] = loadCids(project.cidFile);
-    }
-
-    const safePins = pins.map((pin) => ({
-      cid: pin.cid,
-      name: pin.name,
-      replication_factor_min: pin.replication_factor_min,
-      replication_factor_max: pin.replication_factor_max,
-      peer_allocations: (pin.allocations ?? []).map((peerId) => {
-        const info = pin.peer_map?.[peerId];
-        return info ? { peername: info.peername, status: info.status } : { peername: peerId, status: 'unknown' };
-      })
-    }));
-
-    const projectPins: Record<string, typeof safePins> = {};
-    for (const project of projects) {
-      const cids = cidSets[project.id];
-      projectPins[project.id] = safePins.filter((p) => cids.has(p.cid));
-    }
-
-    return { projects, pins: safePins, projectPins, projectImages };
-  } catch (e) {
-    console.error('Projects load failed', e);
-    return { error: 'Cluster data temporarily unavailable', projects: [], pins: [] };
-  }
+  return { projects: projectsWithCids };
 };

@@ -96,6 +96,7 @@
         <thead>
           <tr>
             <th>CID</th>
+            <th>Project</th>
             <th>Pinned on peers</th>
           </tr>
         </thead>
@@ -107,6 +108,13 @@
                 <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
                   <code style="color:var(--accent);">{pin.cid.slice(0, 28)}</code>
                 </a>
+              </td>
+              <td>
+                {#if pin.projectName}
+                  <span class="badge badge-info">{pin.projectName}</span>
+                {:else}
+                  <span class="text-muted text-sm">—</span>
+                {/if}
               </td>
               <td>
                 {#if ratio >= 1}
