@@ -1,8 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const dir = join(fileURLToPath(import.meta.url), '..', 'projects-data');
+const dir = join(process.cwd(), 'projects-data');
 
 const cache = new Map<string, Set<string>>();
 

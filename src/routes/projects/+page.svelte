@@ -3,6 +3,7 @@
 
   let allProjects = $derived(data.data?.projects ?? []);
   let projectPins = $derived(data.data?.projectPins ?? {});
+  let projectImages = $derived(data.data?.projectImages ?? {});
   let error = $derived(data.data?.error);
   let activeTab = $state(allProjects.length > 0 ? allProjects[0].id : null);
   let showCids = $state(false);
@@ -45,9 +46,18 @@
   {#if activeProject}
     <div class="card card-accent" style="margin-bottom: 1rem;">
       <div class="flex-between" style="margin-bottom: 0.5rem;">
-        <div>
-          <strong style="font-size: 1rem;">{activeProject.name}</strong>
-          <p class="text-muted text-sm" style="margin-top: 0.25rem;">{activeProject.description}</p>
+        <div class="flex gap-sm" style="align-items: flex-start;">
+          {#if projectImages[activeTab]}
+            <img
+              src={projectImages[activeTab]}
+              alt={activeProject.name}
+              style="width: 48px; height: 48px; object-fit: cover; border-radius: 6px; flex-shrink: 0;"
+            />
+          {/if}
+          <div>
+            <strong style="font-size: 1rem;">{activeProject.name}</strong>
+            <p class="text-muted text-sm" style="margin-top: 0.25rem;">{activeProject.description}</p>
+          </div>
         </div>
         <div class="flex gap-sm">
           <div class="badge badge-success">{pinnedCount} pinned</div>
