@@ -9,7 +9,6 @@
     <div class="nav-links">
       <a href="/">Dashboard</a>
       <a href="/projects">Projects</a>
-      <a href="/volunteer">Volunteer</a>
       <a href="/about">About</a>
     </div>
   </div>
