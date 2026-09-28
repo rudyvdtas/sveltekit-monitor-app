@@ -59,15 +59,32 @@
           <thead>
             <tr>
               <th>CID</th>
+              <th>Artwork</th>
+              <th>Artist</th>
             </tr>
           </thead>
           <tbody>
             {#each activeProject.cids as cid}
+              {@const info = activeProject.meta?.[cid]}
               <tr>
                 <td>
                   <a href="https://dweb.link/ipfs/{cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
                     <code style="color:var(--accent);">{cid.slice(0, 30)}...</code>
                   </a>
+                </td>
+                <td>
+                  {#if info?.artworkName}
+                    {info.artworkName}
+                  {:else}
+                    <span class="text-muted">—</span>
+                  {/if}
+                </td>
+                <td>
+                  {#if info?.artist}
+                    {info.artist}
+                  {:else}
+                    <span class="text-muted">—</span>
+                  {/if}
                 </td>
               </tr>
             {/each}
