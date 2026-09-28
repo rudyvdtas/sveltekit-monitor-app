@@ -27,6 +27,13 @@ export const projects: Project[] = [
     description: 'Async curated First Supper content — 115 CIDs',
     cidFile: 'async-first-supper',
     image: 'first_supper_async.jpg',
+  },
+  {
+    id: 'knownorigin-v1',
+    name: 'KnownOrigin V1',
+    description: 'KnownOrigin V1 Pinning Report — 303 NFTs, 84 unique metadata CIDs, 69 successful metadata, 15 failed metadata, 69 unique asset CIDs, 138 total CIDs to pin. Token coverage: 257/303 (85%).',
+    cidFile: 'knownorigin-v1',
+    image: 'knownorigin.avif',
   }
 ];
 
