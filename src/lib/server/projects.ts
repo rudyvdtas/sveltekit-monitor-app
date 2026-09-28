@@ -22,12 +22,6 @@ export const projects: Project[] = [
     image: 'The_Arcana_crypto_tarot.jpg',
   },
   {
-    id: 'async-cyberwatch',
-    name: 'Async CyberWatch · TheGuild',
-    description: 'Async curated CyberWatch content — 109 CIDs',
-    cidFile: 'async-cyberwatch',
-  },
-  {
     id: 'async-first-supper',
     name: 'Async · First Supper',
     description: 'Async curated First Supper content — 115 CIDs',
