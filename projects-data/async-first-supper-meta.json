@@ -10,8 +10,8 @@
   },
   "QmRoCMEQgSd6QQo9iA2HdDzwSuqoJ3TLEEzNrRdXm7cKYo": {
     "metadata": {
-      "name": "Classic",
-      "description": "Layer: Background by Shortcut",
+      "name": "Background",
+      "description": "Option: Classic",
       "attributes": {
         "artist": "Shortcut"
       }
@@ -22,8 +22,8 @@
   },
   "QmXuz6bWxYuB1atjpYt1WJsiT2yfnJ38qHDXWur65fXAsR": {
     "metadata": {
-      "name": "Light Oscillations",
-      "description": "Layer: Background by Shortcut",
+      "name": "Background",
+      "description": "Option: Light Oscillations",
       "attributes": {
         "artist": "Shortcut"
       }
@@ -34,8 +34,8 @@
   },
   "QmcmdZjGHTkkir2oe9wDTXQycKmujGUfDxL6B4Do8e9HyP": {
     "metadata": {
-      "name": "Dark Oscillations",
-      "description": "Layer: Background by Shortcut",
+      "name": "Background",
+      "description": "Option: Dark Oscillations",
       "attributes": {
         "artist": "Shortcut"
       }
@@ -46,8 +46,8 @@
   },
   "Qme8YVzNDjjFxNgwkgSK8RgXJHvQumEx24DgU6SyVZ7kYy": {
     "metadata": {
-      "name": "Electro Tiles",
-      "description": "Layer: Background by Shortcut",
+      "name": "Background",
+      "description": "Option: Electro Tiles",
       "attributes": {
         "artist": "Shortcut"
       }
@@ -69,8 +69,8 @@
   },
   "QmU3n7bquULDCqaWhoauaNMkTUMqdt79AZr9jy9mkC6huu": {
     "metadata": {
-      "name": "Blue/Red",
-      "description": "Layer: back-left-tapestry-content by BlackBoxDotArt",
+      "name": "back-left-tapestry-content",
+      "description": "Option: Blue/Red",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -81,8 +81,8 @@
   },
   "QmPnJq97hAjeyL1ujqjbJVGZhw4RSaqkg6hNrGKq6svaK8": {
     "metadata": {
-      "name": "Green/Purple",
-      "description": "Layer: back-left-tapestry-content by BlackBoxDotArt",
+      "name": "back-left-tapestry-content",
+      "description": "Option: Green/Purple",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -93,8 +93,8 @@
   },
   "QmVdRXDcynJgtt31rxu8SJPirxesLFvhbPq3LeuR7L9VKN": {
     "metadata": {
-      "name": "Fiat",
-      "description": "Layer: back-left-tapestry-content by BlackBoxDotArt",
+      "name": "back-left-tapestry-content",
+      "description": "Option: Fiat",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -105,8 +105,8 @@
   },
   "QmajQ7BH75xdKe3SKzM5QfVofBx8nEv8Eb8u171Xz7DPoK": {
     "metadata": {
-      "name": "Red/Blue",
-      "description": "Layer: back-left-tapestry-frame by BlackBoxDotArt",
+      "name": "back-left-tapestry-frame",
+      "description": "Option: Red/Blue",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -117,8 +117,8 @@
   },
   "QmTmV5ShAc61c1GhYJfhbnac5JksH65ihQFVJvSUaz4c4R": {
     "metadata": {
-      "name": "Gold",
-      "description": "Layer: back-left-tapestry-frame by BlackBoxDotArt",
+      "name": "back-left-tapestry-frame",
+      "description": "Option: Gold",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -129,8 +129,8 @@
   },
   "QmVRKtGYoRCZ3Erg6pNWoj4mG26aCrcCKz2yZeE7NaEbK1": {
     "metadata": {
-      "name": "Green/Purple",
-      "description": "Layer: back-left-tapestry-frame by BlackBoxDotArt",
+      "name": "back-left-tapestry-frame",
+      "description": "Option: Green/Purple",
       "attributes": {
         "artist": "BlackBoxDotArt"
       }
@@ -141,8 +141,8 @@
   },
   "QmUkR5kkZbq5Szi1P7wJGS5pa1QZvG1tgp9Cnu7fBNdsv5": {
     "metadata": {
-      "name": "Chapter 1",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 1",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -153,8 +153,8 @@
   },
   "QmbbSQbZzbFzWLoV3LooZQnjSr7tS3T9jdYSHbDk8WDRJX": {
     "metadata": {
-      "name": "Chapter 2",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 2",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -165,8 +165,8 @@
   },
   "QmfDrTqHU2BETm5a8XD5ykoWQCwcGPz4tGhuswyzr8oVJi": {
     "metadata": {
-      "name": "Chapter 3",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 3",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -177,8 +177,8 @@
   },
   "QmfWSv7XnTXc8EVM5VFYyEsC2vJB2vuVZ23UCymNuMbi73": {
     "metadata": {
-      "name": "Chapter 4",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 4",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -189,8 +189,8 @@
   },
   "QmRysFFhFFEKrVzLhnE4XDdwZUh5KhXCjnDte2mQ7Wvbsk": {
     "metadata": {
-      "name": "Chapter 5",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 5",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -201,8 +201,8 @@
   },
   "QmUWvx6Znf8csegRqy3XHd89YcSyi1xtJUnG1ofBRQisqJ": {
     "metadata": {
-      "name": "Chapter 6",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 6",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -213,8 +213,8 @@
   },
   "QmReVPtyoq9fBw3K6ZQbfqPA2NhtMVyTG15GcYpV9EeWqz": {
     "metadata": {
-      "name": "Chapter 7",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 7",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -225,8 +225,8 @@
   },
   "QmQdFQ4mfZ7qwMgNZyngaSjRKaYEcoZAc4X1D4xv6KyRTm": {
     "metadata": {
-      "name": "Chapter 8",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 8",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -237,8 +237,8 @@
   },
   "QmduBmonJWkrcXJBEmQEMHJuEqeRab6B1PrtYuZjzehHrd": {
     "metadata": {
-      "name": "Chapter 9",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 9",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -249,8 +249,8 @@
   },
   "QmaLp3h9LeEsDbadFF52tdnAEvGu89rnY4CABqHQ8HnUz8": {
     "metadata": {
-      "name": "Chapter 10",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 10",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -261,8 +261,8 @@
   },
   "QmZtZzFNS1bk8juCXwM6KRqSd76h6KAE641wkUQxC3xtuw": {
     "metadata": {
-      "name": "Chapter 11",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 11",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -273,8 +273,8 @@
   },
   "QmSEVYYJX2SErmWi3SzCKABZhNXe5CnifBmN7QSZv9uMGu": {
     "metadata": {
-      "name": "Chapter 12",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 12",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -285,8 +285,8 @@
   },
   "Qmcx6hznGczCo9e7QCkoBD7ZUDe7mm9RMJHbdr53Kq6kgj": {
     "metadata": {
-      "name": "Chapter 13",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 13",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -297,8 +297,8 @@
   },
   "QmZxxUW98SnbcQ9TF37v9FfZGaWjbZ4EnU4vxoNLdPa48f": {
     "metadata": {
-      "name": "Chapter 14",
-      "description": "Layer: back-right-tapestry-content by MLIBTY",
+      "name": "back-right-tapestry-content",
+      "description": "Option: Chapter 14",
       "attributes": {
         "artist": "MLIBTY"
       }
@@ -309,8 +309,8 @@
   },
   "QmQjjrvBmDuLnrdnXkohx5j1nt5zebgRGRYVwfBFLUVdrE": {
     "metadata": {
-      "name": "Turquoise",
-      "description": "Layer: back-right-tapestry-frame by VansDesign",
+      "name": "back-right-tapestry-frame",
+      "description": "Option: Turquoise",
       "attributes": {
         "artist": "VansDesign"
       }
@@ -321,8 +321,8 @@
   },
   "QmaSafsQtTzCeJRkmENJLk3p2tySQB7Jbk7KVHqMSgNWx5": {
     "metadata": {
-      "name": "Blue",
-      "description": "Layer: back-right-tapestry-frame by VansDesign",
+      "name": "back-right-tapestry-frame",
+      "description": "Option: Blue",
       "attributes": {
         "artist": "VansDesign"
       }
@@ -333,8 +333,8 @@
   },
   "QmdQ9gQp5cag5MwPPFDiccc2BVkX6B6dca2wA4L33gVGLc": {
     "metadata": {
-      "name": "Gold",
-      "description": "Layer: back-right-tapestry-frame by VansDesign",
+      "name": "back-right-tapestry-frame",
+      "description": "Option: Gold",
       "attributes": {
         "artist": "VansDesign"
       }
@@ -345,8 +345,8 @@
   },
   "QmXpkL6cVuYNWgATUSeSqsKqJgiomTA5Y25Zgq6YWD7f5y": {
     "metadata": {
-      "name": "Green",
-      "description": "Layer: back-right-tapestry-frame by VansDesign",
+      "name": "back-right-tapestry-frame",
+      "description": "Option: Green",
       "attributes": {
         "artist": "VansDesign"
       }
@@ -357,8 +357,8 @@
   },
   "QmWn3aKsnEZTnDehFSE6q5mhkQ6tCU2h9LtXDRd7iCze2T": {
     "metadata": {
-      "name": "Purple",
-      "description": "Layer: back-right-tapestry-frame by VansDesign",
+      "name": "back-right-tapestry-frame",
+      "description": "Option: Purple",
       "attributes": {
         "artist": "VansDesign"
       }
@@ -380,8 +380,8 @@
   },
   "QmToLrAD88Pec7B6dpRteJk4xE97B66UEYuNNaQBf3Lg39": {
     "metadata": {
-      "name": "Meat",
-      "description": "Layer: left-back-wall by TwistedVacancy",
+      "name": "left-back-wall",
+      "description": "Option: Meat",
       "attributes": {
         "artist": "TwistedVacancy"
       }
@@ -392,8 +392,8 @@
   },
   "QmYCVDL1YxTBqZm5SAQhjtsbGmv89jTcz8D6Let5FDFwm9": {
     "metadata": {
-      "name": "Async",
-      "description": "Layer: left-back-wall by TwistedVacancy",
+      "name": "left-back-wall",
+      "description": "Option: Async",
       "attributes": {
         "artist": "TwistedVacancy"
       }
@@ -404,8 +404,8 @@
   },
   "QmdnnPW6KsV9o47vuyRP83oLusnBtce2nACNqtp6jBp9zo": {
     "metadata": {
-      "name": "Drinks",
-      "description": "Layer: right-back-wall by Coldie",
+      "name": "right-back-wall",
+      "description": "Option: Drinks",
       "attributes": {
         "artist": "Coldie"
       }
@@ -416,8 +416,8 @@
   },
   "QmVjmLh6we1ATQaH9hvcLcw63i8ZiWr9S8KWnHWr2Z1np6": {
     "metadata": {
-      "name": "Culture",
-      "description": "Layer: right-back-wall by Coldie",
+      "name": "right-back-wall",
+      "description": "Option: Culture",
       "attributes": {
         "artist": "Coldie"
       }
@@ -428,8 +428,8 @@
   },
   "QmZq3yqA8GZDdkCymZSNxuPQT8e4QdyGJgqBTPN98WiQkW": {
     "metadata": {
-      "name": "Staff Only",
-      "description": "Layer: left-front-wall by Hackatao",
+      "name": "left-front-wall",
+      "description": "Option: Staff Only",
       "attributes": {
         "artist": "Hackatao"
       }
@@ -440,8 +440,8 @@
   },
   "QmdyaJEZEftc5aaRcwaFKxwWsUWytSFyvFXxUN5nCfweyh": {
     "metadata": {
-      "name": "Void",
-      "description": "Layer: left-front-wall by Hackatao",
+      "name": "left-front-wall",
+      "description": "Option: Void",
       "attributes": {
         "artist": "Hackatao"
       }
@@ -452,8 +452,8 @@
   },
   "QmXc6UYiJ4EXyAUg9dPa42z8nCkyD9J1VJL9SJawVHZt7d": {
     "metadata": {
-      "name": "Flesh & Blood ATM",
-      "description": "Layer: right-front-wall by XCOPY",
+      "name": "right-front-wall",
+      "description": "Option: Flesh & Blood ATM",
       "attributes": {
         "artist": "XCOPY"
       }
@@ -464,8 +464,8 @@
   },
   "QmPcbRWv5XzQ957SJMbdLkW7i21t5AAUrR93pjFdDcgLdh": {
     "metadata": {
-      "name": "Jesus",
-      "description": "Layer: right-front-wall by XCOPY",
+      "name": "right-front-wall",
+      "description": "Option: Jesus",
       "attributes": {
         "artist": "XCOPY"
       }
@@ -476,8 +476,8 @@
   },
   "QmaX7RR8E4GARyzLoGuyZz54n4cs9K65EzeY6gPFVnDRXW": {
     "metadata": {
-      "name": "BTC",
-      "description": "Layer: right-front-wall by XCOPY",
+      "name": "right-front-wall",
+      "description": "Option: BTC",
       "attributes": {
         "artist": "XCOPY"
       }
@@ -488,8 +488,8 @@
   },
   "QmfEWiRPVYD5MLYYZKC9vHgdLCkhioEzGwaKQXUASoJsxZ": {
     "metadata": {
-      "name": "Outside",
-      "description": "Layer: right-front-wall by XCOPY",
+      "name": "right-front-wall",
+      "description": "Option: Outside",
       "attributes": {
         "artist": "XCOPY"
       }
@@ -500,8 +500,8 @@
   },
   "QmVQr7dYkgS2dsK5hVjVBmVM8qAr8ehpRXy6V2EcPzUjD7": {
     "metadata": {
-      "name": "Checkerboard",
-      "description": "Layer: floor by Rutger van der Tas",
+      "name": "floor",
+      "description": "Option: Checkerboard",
       "attributes": {
         "artist": "Rutger van der Tas"
       }
@@ -512,8 +512,8 @@
   },
   "QmdHUWLS3UefruphgieB4X2iu31dxwKvNKYbEnwZqZEFrN": {
     "metadata": {
-      "name": "Pattern 2",
-      "description": "Layer: floor by Rutger van der Tas",
+      "name": "floor",
+      "description": "Option: Pattern 2",
       "attributes": {
         "artist": "Rutger van der Tas"
       }
@@ -524,8 +524,8 @@
   },
   "QmXJkmaK7ggN2ZyAynMR1Q6aJ4Un1CXsAjbMX49CMgYhtQ": {
     "metadata": {
-      "name": "Space",
-      "description": "Layer: floor by Rutger van der Tas",
+      "name": "floor",
+      "description": "Option: Space",
       "attributes": {
         "artist": "Rutger van der Tas"
       }
@@ -536,8 +536,8 @@
   },
   "QmctnyEcJ6s3udvDgRuLUHz4r8P8FNBvRfnP1aio7mT1cD": {
     "metadata": {
-      "name": "Cat",
-      "description": "Layer: ceiling by Matt Kane",
+      "name": "ceiling",
+      "description": "Option: Cat",
       "attributes": {
         "artist": "Matt Kane"
       }
@@ -548,8 +548,8 @@
   },
   "QmTyo4SNzTE1ncupJjzM8RubU5wDGd2cVK5XainWQWjJQk": {
     "metadata": {
-      "name": "Space + Metal",
-      "description": "Layer: ceiling by Matt Kane",
+      "name": "ceiling",
+      "description": "Option: Space + Metal",
       "attributes": {
         "artist": "Matt Kane"
       }
@@ -560,8 +560,8 @@
   },
   "QmZUbQ5BLMK1xHqstvHHr5JYAXJhV64Baf7PRZpEuW9wWd": {
     "metadata": {
-      "name": "After DaVinci",
-      "description": "Layer: table by Connie Digital",
+      "name": "table",
+      "description": "Option: After DaVinci",
       "attributes": {
         "artist": "Connie Digital"
       }
@@ -572,8 +572,8 @@
   },
   "QmThY8TsFrd2Wyugyk3QwAuxeqKXuiLLGivQ2U7h4dxVX7": {
     "metadata": {
-      "name": "Blue Diamonds",
-      "description": "Layer: table by Connie Digital",
+      "name": "table",
+      "description": "Option: Blue Diamonds",
       "attributes": {
         "artist": "Connie Digital"
       }
@@ -584,8 +584,8 @@
   },
   "Qmdu6x53VXFuvUT3dxWxtD5dLFpwL7Ex6V9PntFa2Yfjcx": {
     "metadata": {
-      "name": "Maggots",
-      "description": "Layer: table by Connie Digital",
+      "name": "table",
+      "description": "Option: Maggots",
       "attributes": {
         "artist": "Connie Digital"
       }

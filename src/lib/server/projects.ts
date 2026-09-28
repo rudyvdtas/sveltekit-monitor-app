@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     id: 'async-first-supper',
     name: 'Async · First Supper',
-    description: 'Async curated First Supper content — 115 CIDs',
+    description: 'We, cryptoartists, gather in this place to celebrate a new dawn for collaboration, creativity, and interaction between artist, collector, and art-lover alike. We hold these tokens to be self-evident, that all layers are created uniquely by individual artists, that each is endowed by their creator with specific immutable rights; that among these are state, rotation, scale, XY position, visibility, opacity, hue, and RGB. That whenever a token holder desires, it is their sole privilege to alter the value of these rights and constitute a new image. — Features 13 artists: Shortcut, Josie Bellini, BlackBoxDotArt, MLIBTY, VansDesign, Alotta Money, TwistedVacancy, Coldie, Hackatao, XCOPY, Rutger van der Tas, Matt Kane, Connie Digital. 115 CIDs across layer options and composite image.',
     cidFile: 'async-first-supper',
     image: 'first_supper_async.jpg',
   },
