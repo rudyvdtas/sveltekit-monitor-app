@@ -1,5 +1,6 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
+  import DonationButton from '$lib/DonationButton.svelte';
 </script>
 
 <h1 style="margin-bottom: 0.25rem;">About Digital Art Rescue Lab</h1>
@@ -100,4 +101,7 @@
   </p>
 </div>
 
-<CTA />
+<div class="flex gap-sm" style="flex-wrap: wrap;">
+  <CTA />
+  <DonationButton />
+</div>
