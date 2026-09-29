@@ -1,5 +1,6 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
+  import DonationButton from '$lib/DonationButton.svelte';
   let data = $props() as { data: any };
   let allProjects = $derived(data.data?.projects ?? []);
   let activeTab = $state(allProjects.length > 0 ? allProjects[0].id : null);
@@ -95,4 +96,7 @@
   {/if}
 {/if}
 
-<CTA />
+<div class="flex gap-sm" style="flex-wrap: wrap;">
+  <CTA />
+  <DonationButton />
+</div>

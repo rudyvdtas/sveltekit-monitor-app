@@ -1,5 +1,6 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
+  import DonationButton from '$lib/DonationButton.svelte';
   let data = $props() as { data: any };
 
   let error = $derived(data.data?.error);
@@ -205,5 +206,8 @@
     </div>
   </div>
 
-  <CTA />
+  <div class="flex gap-sm" style="flex-wrap: wrap; margin-top: 0;">
+    <CTA />
+    <DonationButton />
+  </div>
 {/if}
