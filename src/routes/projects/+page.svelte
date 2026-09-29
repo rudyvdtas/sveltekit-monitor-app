@@ -38,7 +38,7 @@
         {/if}
         <div>
           <strong style="font-size: 1rem;">{activeProject.name}</strong>
-          <p class="text-muted text-sm" style="margin-top: 0.25rem;">{activeProject.description}</p>
+          <p class="text-muted text-sm" style="margin-top: 0.25rem; white-space: pre-line;">{activeProject.description}</p>
         </div>
       </div>
       <div class="badge badge-info">{activeProject.cids.length} CIDs</div>
