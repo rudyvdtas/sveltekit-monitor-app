@@ -143,3 +143,27 @@ npm run check
 npm test
 npm run build
 ```
+
+# Failed CIDs tracker (oktober 2026)
+
+## Wat is er gewijzigd
+
+### Tracker client (`src/lib/server/failed-cids.ts`)
+
+Er is een nieuwe client-module toegevoegd die `GET /failed-cids` oproept bij de tracker-service (`http://tracker:9095`). De tracker zelf is een los Python-script (`track-failed-cids.py`) dat de cluster `/pins` API bewaakt en CIDs met herhaalde errors na 5 opeenvolgende tellingen automatisch unpint via `DELETE /pins/{cid}`.
+
+Deze module:
+- Haalt periodiek de lijst met gefaalde CIDs op van de tracker.
+- Faalt stil (`[]` terug) bij netwerkfouten of HTTP errors, zodat het dashboard niet breekt als de tracker offline is.
+- Gebruikt `AbortSignal.timeout(5000)` voor een korte timeout.
+
+### Dashboard (`src/routes/+page.server.ts`, `src/routes/+page.svelte`)
+
+- De `load`-functie roept `getFailedCids()` aan en koppelt projectnamen aan de CIDs via de bestaande `cidToProject`-map.
+- Op het dashboard is een nieuwe Failed CIDs-kaart toegevoegd, alleen zichtbaar als er gefaalde CIDs zijn. Deze staat naast de bestaande Activity/Redundancy-secties.
+
+### Environment
+
+| Variable | Default | Beschrijving |
+|---|---|---|
+| `TRACKER_API_URL` | `http://tracker:9095` | URL van de failed-CID tracker API |
