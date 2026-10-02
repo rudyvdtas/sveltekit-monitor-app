@@ -56,6 +56,13 @@ Sparrow, Silje Thorn, Surreal Serpentine, FtrSaroth, Loudsqueak, Lapin Mignon, T
     description: 'KnownOrigin V1 Pinning Report — 303 NFTs, 84 unique metadata CIDs, 69 successful metadata, 15 failed metadata, 69 unique asset CIDs, 138 total CIDs to pin. Token coverage: 257/303 (85%).',
     cidFile: 'knownorigin-v1',
     image: 'knownorigin.avif',
+  },
+  {
+    id: 'knownorigin-v2-batch-1',
+    name: 'KnownOrigin V2 · Batch 1',
+    description: 'KnownOrigin V2 — eerste batch van 10 GB (3336 CIDs). Wordt in batches gepind voor monitoring.',
+    cidFile: 'kov2-batch-1',
+    image: 'knownorigin.avif',
   }
 ];
 
