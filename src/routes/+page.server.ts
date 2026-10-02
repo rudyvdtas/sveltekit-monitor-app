@@ -1,4 +1,5 @@
 import { getId, getPeers, getPins } from '$lib/server/cluster';
+import { getFailedCids } from '$lib/server/failed-cids';
 import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
 import type { PageServerLoad } from './$types';
@@ -45,13 +46,19 @@ export const load: PageServerLoad = async () => {
       };
     });
 
+    const failedCids = (await getFailedCids()).map((cid) => ({
+      cid,
+      projectName: cidToProject[cid] ?? null,
+    }));
+
     return {
       cluster: { peername: cluster.peername },
       peers,
       volunteers,
       pinStatuses,
       pinCount: pins.length,
-      statusCounts
+      statusCounts,
+      failedCids
     };
   } catch (e) {
     console.error('Dashboard load failed', e);

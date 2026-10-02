@@ -10,6 +10,7 @@
   let pinStatuses = $derived(data.data?.pinStatuses ?? []);
   let pinCount = $derived(data.data?.pinCount ?? 0);
   let counts = $derived(data.data?.statusCounts ?? { pinned: 0, pinning: 0, queued: 0, error: 0 });
+  let failedCids = $derived(data.data?.failedCids ?? []);
 </script>
 
 {#if error}
@@ -133,6 +134,41 @@
       </table>
     {/if}
   </div>
+
+  {#if failedCids.length > 0}
+    <div class="card" style="border-color: var(--red);">
+      <div class="flex-between mb-md">
+        <h2 style="margin-bottom:0; color:var(--red);">Failed CIDs</h2>
+        <span class="badge badge-error">{failedCids.length} failed</span>
+      </div>
+      <p class="text-muted text-sm" style="margin-bottom: 0.75rem;">
+        These CIDs have been unpinned after repeated errors. The tracker
+        monitors them automatically.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>CID</th>
+            <th>Project</th>
+          </tr>
+        </thead>
+        <tbody>
+          {#each failedCids as fc}
+            <tr>
+              <td><code>{fc.cid.slice(0, 28)}</code></td>
+              <td>
+                {#if fc.projectName}
+                  <span class="badge badge-info">{fc.projectName}</span>
+                {:else}
+                  <span class="text-muted text-sm">—</span>
+                {/if}
+              </td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  {/if}
 
   <div class="card">
     <h2>Creating Redundancy</h2>
