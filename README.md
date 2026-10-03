@@ -21,6 +21,34 @@ cluster REST API over the shared `cluster-internal` Docker network.
 
 ## Deploy
 
+**Production (current):** direct Node.js via systemd, no Docker — see
+`DEPLOY.md`-style notes below. The `Dockerfile`/`docker-compose.yaml` in this
+repo still work for local development or an alternative host, but are not
+what runs in production anymore (see `LESSONS.md` for why).
+
+### Deploy op VPS (production, systemd)
+
+```bash
+# Op je Mac: bouw lokaal, geen build op de VPS
+npm ci && npm run build
+
+# Kopieer alleen de output + production deps-bron naar de VPS
+scp -r build package.json package-lock.json projects-data root@<vps>:/opt/sveltekit-monitor-app/
+
+# Op de VPS
+cd /opt/sveltekit-monitor-app && npm ci --omit=dev
+systemctl restart sveltekit-monitor
+```
+
+`.env` op de VPS bevat `HOST=127.0.0.1`, `PORT=3000`, `CLUSTER_API_URL=http://127.0.0.1:9094`,
+`TRACKER_API_URL=http://127.0.0.1:9095` (loopback, geen Docker-netwerkalias —
+het proces draait niet in een container). De systemd-unit
+(`/etc/systemd/system/sveltekit-monitor.service`) zet `MemoryMax=256M` en
+basis-hardening. Caddy (host-level, `/etc/caddy/Caddyfile`) is de reverse proxy
+en regelt HTTPS voor `glimmy.xyz`.
+
+### Deploy via Docker (alternatief / lokale ontwikkeling)
+
 ```
 docker compose up -d --build
 ```
