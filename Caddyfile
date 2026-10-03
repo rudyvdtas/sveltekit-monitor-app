@@ -1,0 +1,16 @@
+# Host-level Caddy config — vervangt coolify-proxy (Traefik) als reverse proxy.
+# Dit bestand hoort NIET in Docker te draaien; installeer Caddy als systemd-service
+# op de VPS zelf (`apt install caddy`) en kopieer dit naar /etc/caddy/Caddyfile.
+#
+# Vervang <jouw-domein> door het echte domein dat nu naar 149.210.143.16 wijst
+# (zie DNS A-record / huidige Traefik-config in Coolify vóór je dit live zet).
+
+<jouw-domein> {
+	reverse_proxy localhost:3000
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		X-Frame-Options "DENY"
+	}
+}

@@ -167,3 +167,29 @@ Deze module:
 | Variable | Default | Beschrijving |
 |---|---|---|
 | `TRACKER_API_URL` | `http://tracker:9095` | URL van de failed-CID tracker API |
+
+# Migratie weg van Coolify (oktober 2026) — in uitvoering
+
+## Aanleiding
+
+VPS heeft maar 1.8GB RAM. `docker stats` liet zien dat Coolify's eigen beheerstack
+(sentinel + coolify + db + redis + realtime + proxy) ~424MB gebruikte — bijna evenveel
+als de hele cluster-workload (`cluster` + `ipfs` samen ~422MB), met `coolify` zelf
+pieken tot 90% CPU. Gecombineerd met het ontbreken van memory-limits op alle containers
+en een ongecontroleerde rebalance van 3336 nieuwe CIDs is dit een belangrijke oorzaak
+van de VPS-crashes. Volledig stappenplan: zie `TODO.md` in de workspace-root.
+
+## Branch
+
+`architecture-moving-away-from-coolify`
+
+## Fase 1 (lokaal voorbereid)
+
+`Caddyfile` toegevoegd aan de repo-root als vervanging voor Coolify's Traefik-proxy
+(`coolify-proxy`). Reverse-proxyt naar `localhost:3000` met dezelfde security headers
+die nu al via `hooks.server.ts` worden gezet. Domeinnaam is nog een placeholder
+(`<jouw-domein>`) — moet vóór gebruik vervangen worden met het echte DNS-record.
+
+Installatie van Caddy zelf (`apt install caddy`), het plaatsen van dit bestand op
+`/etc/caddy/Caddyfile`, en syntax-validatie (`caddy validate`) moeten op de VPS zelf
+gebeuren — dat kan niet vanuit de lokale werkomgeving.
