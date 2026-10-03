@@ -193,3 +193,46 @@ die nu al via `hooks.server.ts` worden gezet. Domeinnaam is nog een placeholder
 Installatie van Caddy zelf (`apt install caddy`), het plaatsen van dit bestand op
 `/etc/caddy/Caddyfile`, en syntax-validatie (`caddy validate`) moeten op de VPS zelf
 gebeuren — dat kan niet vanuit de lokale werkomgeving.
+
+**Status: Fase 1 t/m 4 volledig afgerond (3 okt 2026).** Caddy draait live op
+`glimmy.xyz` + `www.glimmy.xyz`, `coolify-proxy` is gestopt (niet verwijderd).
+
+## Fase 3 — monitor draait nu via systemd, niet via Docker
+
+**Beslissing:** `package.json` heeft maar 1 runtime-dependency
+(`@sveltejs/adapter-node`), geen native/platform-specifieke packages. Dat maakt
+Docker voor dit proces overbodige overhead: bouw lokaal (`npm run build` op de
+Mac), scp alleen de output, en draai `node build/index.js` rechtstreeks via
+systemd. Voordelen: geen `npm ci` + `vite build`-piek op de VPS tijdens elke
+deploy (dat was een apart geïdentificeerd risico), en een harde `MemoryMax` via
+systemd — iets wat met de Docker-aanpak tot nu toe nergens was ingesteld.
+
+**Uitgevoerd:**
+- Node.js 20.20.2 op de VPS (NodeSource apt-repo, zelfde versie als de oude
+  Docker-image).
+- Non-root systemuser `monitor`, draait in `/opt/sveltekit-monitor-app`.
+- `.env`: `HOST=127.0.0.1` (nooit `0.0.0.0` — zonder Docker-netwerkisolatie zou dat
+  de app rechtstreeks publiek blootstellen buiten Caddy om), `CLUSTER_API_URL` en
+  `TRACKER_API_URL` gewijzigd naar `http://127.0.0.1:<poort>` in plaats van de
+  Docker-netwerkaliassen `cluster`/`tracker` (die resolven niet vanaf de host).
+- Hiervoor was een aanvullende wijziging in `ipfs-cluster-coordinator` nodig: de
+  cluster REST API (9094) is nu ook aan `127.0.0.1` gebonden op de host (zie dat
+  repo's `LESSONS.md`).
+- systemd-unit met `MemoryHigh=192M` / `MemoryMax=256M` + hardening
+  (`NoNewPrivileges`, `ProtectSystem=strict`, `ProtectHome=yes`, `PrivateTmp=yes`).
+- Oude Coolify-dashboard-container gestopt (niet verwijderd, voor rollback).
+
+**Kritieke ontdekking tijdens verificatie:** `GET /pins` geeft een **31MB**
+JSON-respons terug (3336+ gepinde CIDs). Een los request duurt ~4-5s, maar tijdens
+het testen vielen drie zware requests toevallig samen (eigen diagnose-commando's +
+de tracker's reguliere 60s-poll) — één daarvan overschreed de 30s-timeout en gaf
+tijdelijk "Cluster data temporarily unavailable". Zodra de gelijktijdigheid wegviel,
+werkte alles weer meteen zonder verdere ingreep.
+
+**Dit bevestigt rechtstreeks de hypothese waarmee dit hele traject begon:**
+de monitor (en de losse tracker-sidecar) doen allebei onafhankelijk zware
+`/pins`-aanroepen; als die toevallig samenvallen met elkaar of met handmatige
+`ipfs-cluster-ctl`-commando's, kan de cluster-API tijdelijk onbereikbaar lijken
+zonder dat er iets kapot is. Niet opgelost in deze sessie (bewust, buiten scope
+van de Coolify-migratie) — mogelijke vervolgstap: gedeelde rate-limiting/caching
+tussen monitor én tracker, of een lichtere `/pins`-variant per poll.
