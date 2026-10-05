@@ -236,3 +236,13 @@ de monitor (en de losse tracker-sidecar) doen allebei onafhankelijk zware
 zonder dat er iets kapot is. Niet opgelost in deze sessie (bewust, buiten scope
 van de Coolify-migratie) — mogelijke vervolgstap: gedeelde rate-limiting/caching
 tussen monitor én tracker, of een lichtere `/pins`-variant per poll.
+
+---
+
+## Batch 2 — KnownOrigin V2 verrijkte metadata (5 okt 2026)
+
+`kov2-batch-2-enriched.json` toegevoegd aan `projects-data/`. Bevat 1922 entries
+(961 metadata + 961 assets) uit KOv2 batch 2, ~10 GB, met token-namen, artiesten,
+bestandsgroottes, MIME-types. Formaat compatibel met `enriched-meta.ts`.
+CIDs zijn gepind op joera + vernis-artbox (replicatie 2). Zie
+`ipfs-cluster-coordinator/LESSONS.md` voor de cluster-kant.
