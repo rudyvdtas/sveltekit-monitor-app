@@ -9,6 +9,12 @@
   let pagedCids = $derived(data.data?.pagedCids ?? []);
   let totalPages = $derived(data.data?.totalPages ?? 0);
   let pinStatusMap = $derived(data.data?.pinStatusMap ?? {});
+  let groupLogos = $derived(data.data?.groupLogos ?? {});
+
+  let groups = $derived(['async', 'knownorigin', 'fails']);
+  let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
+  let activeGroup = $derived(activeProject?.group ?? 'async');
+  let groupProjects = $derived(allProjects.filter((p: any) => p.group === activeGroup));
 
   function formatSize(mb: number | null): string {
     if (mb == null) return '—';
@@ -17,13 +23,16 @@
     return `${mb.toFixed(2)} MB`;
   }
 
-  let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
-
   function projectUrl(id: string): string {
     const p = new URLSearchParams();
     p.set('project', id);
     p.set('page', '1');
     return `?${p.toString()}`;
+  }
+
+  function groupUrl(g: string): string {
+    const first = allProjects.find((p: any) => p.group === g);
+    return first ? projectUrl(first.id) : '?';
   }
 
   function linkify(text: string): string {
@@ -42,11 +51,23 @@
 
 <h1 style="margin-bottom: 0.25rem;">Projects</h1>
 <p class="text-muted" style="margin-bottom: 1rem;">
-  Curated CIDs grouped by project — each project's content is replicated across volunteer peers.
+  Curated CIDs grouped by platform — each project's content is replicated across volunteer peers.
 </p>
 
+<div class="group-tabs">
+  {#each groups as g}
+    <a href={groupUrl(g)} class="group-tab {activeGroup === g ? 'active' : ''}" role="button">
+      {#if g === 'fails'}
+        <span class="emoji-logo">🚨</span> FAILS
+      {:else}
+        <img src={groupLogos[g]} alt={g} class="group-logo" />
+      {/if}
+    </a>
+  {/each}
+</div>
+
 <div class="tabs">
-  {#each allProjects as project}
+  {#each groupProjects as project}
     <a
       href={projectUrl(project.id)}
       class="tab {activeId === project.id ? 'active' : ''}"
@@ -203,5 +224,46 @@
   }
   a.tab.active {
     font-weight: 600;
+  }
+  .group-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.25rem;
+  }
+  .group-tab {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .group-tab:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+  }
+  .group-tab.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  .group-logo {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+  .emoji-logo {
+    font-size: 1.2rem;
+    vertical-align: middle;
   }
 </style>

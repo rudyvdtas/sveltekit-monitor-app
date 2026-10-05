@@ -11,13 +11,12 @@
   let pinCount = $derived(data.data?.pinCount ?? 0);
   let counts = $derived(data.data?.statusCounts ?? { pinned: 0, pinning: 0, queued: 0, error: 0 });
   let failedCids = $derived(data.data?.failedCids ?? []);
+  let totalActualSizeMb = $derived(data.data?.totalActualSizeMb ?? 0);
 
-  function formatStorage(cids: number): string {
-    const tb = cids * 0.001;
-    if (tb >= 1) return `~${tb.toFixed(1)} TB`;
-    const gb = cids * 1;
-    if (gb >= 1) return `~${gb.toFixed(0)} GB`;
-    return `~${cids * 1000} MB`;
+  function formatStorage(mb: number): string {
+    if (mb >= 1048576) return `~${(mb / 1048576).toFixed(2)} TB`;
+    if (mb >= 1024) return `~${(mb / 1024).toFixed(1)} GB`;
+    return `~${mb.toFixed(0)} MB`;
   }
 </script>
 
@@ -45,7 +44,7 @@
     <div class="card card-accent">
       <h2>Pins</h2>
       <div style="font-size: 2rem; font-weight: 700;">{pinCount.toLocaleString()}</div>
-      <div class="text-muted text-sm">{pinCount.toLocaleString()} CIDs, ~{formatStorage(pinCount)} total</div>
+      <div class="text-muted text-sm">{pinCount.toLocaleString()} CIDs, {formatStorage(totalActualSizeMb)} total</div>
       {#if counts.error > 0}
         <p class="text-sm" style="margin-top: 0.5rem; color: var(--red);">
           {counts.error} error{counts.error > 1 ? 's' : ''} — {counts.pinning} pinning, {counts.queued} queued

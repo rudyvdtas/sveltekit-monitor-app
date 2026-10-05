@@ -1,1379 +1,830 @@
 {
   "QmY4dPtWemsfNSVeeMB6FrzaFjzKEtndwR2DYArFNGatyu": {
     "metadata": {
-      "name": "CoinJournal X CoinFest (Night)",
-      "description": "Giant ape dressed as a banker, fighting a giant Bitcoin on top of the Beetham tower",
-      "image": "https://ipfs.infura.io/ipfs/QmdvYTeymswDR4ts7ySYTgQXm2WCXranXUYXzPd29R7Nj5/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmdvYTeymswDR4ts7ySYTgQXm2WCXranXUYXzPd29R7Nj5/other"
+      "name": "CoinJournal X CoinFest (Night)"
     },
-    "assetCids": [
-      "QmdvYTeymswDR4ts7ySYTgQXm2WCXranXUYXzPd29R7Nj5"
-    ]
+    "assetCids": []
+  },
+  "QmdvYTeymswDR4ts7ySYTgQXm2WCXranXUYXzPd29R7Nj5": {
+    "metadata": {
+      "name": "CoinJournal X CoinFest (Night)"
+    },
+    "assetCids": []
   },
   "QmWgZHLgoP4Ck9j6fnJY2utB864smvGjnYbYuL35EkvbZq": {
     "metadata": {
-      "name": "Disrupting Finance Since 2009",
-      "description": "300GSM print depicting a giant Bitcoin dressed as a dinosaur, disrupting a financial district",
-      "image": "https://ipfs.infura.io/ipfs/QmRzngc9nFTfZZXq9uY4QtkWNMxvrFHXhBVpN6L7dNRQw5/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRzngc9nFTfZZXq9uY4QtkWNMxvrFHXhBVpN6L7dNRQw5/other"
+      "name": "Disrupting Finance Since 2009"
     },
-    "assetCids": [
-      "QmRzngc9nFTfZZXq9uY4QtkWNMxvrFHXhBVpN6L7dNRQw5"
-    ]
+    "assetCids": []
+  },
+  "QmRzngc9nFTfZZXq9uY4QtkWNMxvrFHXhBVpN6L7dNRQw5": {
+    "metadata": {
+      "name": "Disrupting Finance Since 2009"
+    },
+    "assetCids": []
   },
   "QmczAcafyGNWMVkr9DMCDRCDBEnx1h6FncAGZpgR8KQoau": {
     "metadata": {
-      "name": "Lisbon",
-      "description": "Limited edition digital illustration",
-      "image": "https://ipfs.infura.io/ipfs/QmcqmtZTNwAKpLQboz8sfgkVuKThgwo49C2ZGN6RGwwKtF/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmcqmtZTNwAKpLQboz8sfgkVuKThgwo49C2ZGN6RGwwKtF/other"
+      "name": "Lisbon"
     },
-    "assetCids": [
-      "QmcqmtZTNwAKpLQboz8sfgkVuKThgwo49C2ZGN6RGwwKtF"
-    ]
+    "assetCids": []
+  },
+  "QmcqmtZTNwAKpLQboz8sfgkVuKThgwo49C2ZGN6RGwwKtF": {
+    "metadata": {
+      "name": "Lisbon"
+    },
+    "assetCids": []
   },
   "QmYtPBJyn2Mtvo6uhusHZS9oVyzzGTTLxE4heMBQpA7xpv": {
     "metadata": {
-      "name": "Family tree",
-      "description": "Inspired by the amazing Wes Anderson film 'Fantastic Mr Fox'.",
-      "image": "https://ipfs.infura.io/ipfs/QmcY7oWfakk62bPEdxLP3tBkiAeZ43t4HpRYpgnNd3cxox/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmcY7oWfakk62bPEdxLP3tBkiAeZ43t4HpRYpgnNd3cxox/other"
+      "name": "Family tree"
     },
-    "assetCids": [
-      "QmcY7oWfakk62bPEdxLP3tBkiAeZ43t4HpRYpgnNd3cxox"
-    ]
+    "assetCids": []
+  },
+  "QmcY7oWfakk62bPEdxLP3tBkiAeZ43t4HpRYpgnNd3cxox": {
+    "metadata": {
+      "name": "Family tree"
+    },
+    "assetCids": []
   },
   "QmdU2jFym9padrzCBrH1ADz277qkug4gXRXhZAHVREzJKY": {
     "metadata": {
-      "name": "Boo!",
-      "description": "Taking the scare out of scary.",
-      "image": "https://ipfs.infura.io/ipfs/QmQg1w5G8M7KJyjZqQchnUKyR9UnV7nxTgjaJZvHvqAJDK/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmQg1w5G8M7KJyjZqQchnUKyR9UnV7nxTgjaJZvHvqAJDK/other"
+      "name": "Boo!"
     },
-    "assetCids": [
-      "QmQg1w5G8M7KJyjZqQchnUKyR9UnV7nxTgjaJZvHvqAJDK"
-    ]
+    "assetCids": []
+  },
+  "QmQg1w5G8M7KJyjZqQchnUKyR9UnV7nxTgjaJZvHvqAJDK": {
+    "metadata": {
+      "name": "Boo!"
+    },
+    "assetCids": []
   },
   "QmX8MoKPQZNCRz34u24Ah9UQcjYKTNfuxHJA1WhHdxdJiV": {
     "metadata": {
-      "name": "Up&down",
-      "description": "III/III Looping Landscapes",
-      "image": "https://ipfs.infura.io/ipfs/QmYcqBXkn7R2H6rA3u1nGUSLK9dZL1owd7iJauEV4keE1o/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmYcqBXkn7R2H6rA3u1nGUSLK9dZL1owd7iJauEV4keE1o/other"
+      "name": "Up&down"
     },
-    "assetCids": [
-      "QmYcqBXkn7R2H6rA3u1nGUSLK9dZL1owd7iJauEV4keE1o"
-    ]
+    "assetCids": []
+  },
+  "QmYcqBXkn7R2H6rA3u1nGUSLK9dZL1owd7iJauEV4keE1o": {
+    "metadata": {
+      "name": "Up&down"
+    },
+    "assetCids": []
   },
   "QmSzvg5qJusbSyDPE1DHaotP44aXjNMQqes95F6L9YHYMq": {
     "metadata": {
-      "name": "Wake",
-      "description": "II/III Looping Landscapes",
-      "image": "https://ipfs.infura.io/ipfs/QmbmadXT7nM3kKomh2UsPgLNSoN2vXTc4vzsdB5hnUFJyS/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmbmadXT7nM3kKomh2UsPgLNSoN2vXTc4vzsdB5hnUFJyS/other"
+      "name": "Wake"
     },
-    "assetCids": [
-      "QmbmadXT7nM3kKomh2UsPgLNSoN2vXTc4vzsdB5hnUFJyS"
-    ]
+    "assetCids": []
+  },
+  "QmbmadXT7nM3kKomh2UsPgLNSoN2vXTc4vzsdB5hnUFJyS": {
+    "metadata": {
+      "name": "Wake"
+    },
+    "assetCids": []
   },
   "Qmd9N4GpbdcTQVEPueeFUdv9rm5EWjniu9EKhcTFDmDmrX": {
     "metadata": {
-      "name": "Kurushi",
-      "description": "I/III Looping Landscapes",
-      "image": "https://ipfs.infura.io/ipfs/QmRounaqMhvxdp9qBgv5ccbisWzppPQZzzUoU1fwxRBchn/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRounaqMhvxdp9qBgv5ccbisWzppPQZzzUoU1fwxRBchn/other"
+      "name": "Kurushi"
     },
-    "assetCids": [
-      "QmRounaqMhvxdp9qBgv5ccbisWzppPQZzzUoU1fwxRBchn"
-    ]
+    "assetCids": []
+  },
+  "QmRounaqMhvxdp9qBgv5ccbisWzppPQZzzUoU1fwxRBchn": {
+    "metadata": {
+      "name": "Kurushi"
+    },
+    "assetCids": []
   },
   "QmQUF5WDQNpahXuoVG6g22jU6HG9jVRMG2Jn9QMo7EMAUz": {
     "metadata": {
-      "name": "Peep",
-      "description": "Paper collage, using salvaged and original watercolour papers",
-      "image": "https://ipfs.infura.io/ipfs/Qmb1WBPbgMUYNVtXksbbMThpWtxU7jkDooyoUiLprzubc8/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmb1WBPbgMUYNVtXksbbMThpWtxU7jkDooyoUiLprzubc8/other"
+      "name": "Peep"
     },
-    "assetCids": [
-      "Qmb1WBPbgMUYNVtXksbbMThpWtxU7jkDooyoUiLprzubc8"
-    ]
+    "assetCids": []
+  },
+  "Qmb1WBPbgMUYNVtXksbbMThpWtxU7jkDooyoUiLprzubc8": {
+    "metadata": {
+      "name": "Peep"
+    },
+    "assetCids": []
   },
   "QmZsEYjbPw3tiTPpce41FUJKTmPxRcrnb9EMrZ1BUCTZ5J": {
     "metadata": {
-      "name": "Manchester",
-      "description": "Limited edition digital illustration",
-      "image": "https://ipfs.infura.io/ipfs/Qmc7ymjNjaqsqJsZ5tNskcvUeuBFpuDxtkE4sKXkyoYeVu/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmc7ymjNjaqsqJsZ5tNskcvUeuBFpuDxtkE4sKXkyoYeVu/other"
+      "name": "Manchester"
     },
-    "assetCids": [
-      "Qmc7ymjNjaqsqJsZ5tNskcvUeuBFpuDxtkE4sKXkyoYeVu"
-    ]
+    "assetCids": []
+  },
+  "Qmc7ymjNjaqsqJsZ5tNskcvUeuBFpuDxtkE4sKXkyoYeVu": {
+    "metadata": {
+      "name": "Manchester"
+    },
+    "assetCids": []
   },
   "QmZ9NQCuCrgD8UW36kgxUcceGdaT5h5VbFTUax2FYPomqX": {
     "metadata": {
-      "name": "Happy Arctic Fox",
-      "description": "Happy Arctic Fox",
-      "attributes": {
-        "tags": [
-          "illustration",
-          "character",
-          "fox",
-          "cute"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmT9iCuqkB9i9U2KXm6YhH5bn6jY7YJwWJHMu1EAsTtB4o/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmT9iCuqkB9i9U2KXm6YhH5bn6jY7YJwWJHMu1EAsTtB4o/other"
+      "name": "Happy Arctic Fox"
     },
-    "assetCids": [
-      "QmT9iCuqkB9i9U2KXm6YhH5bn6jY7YJwWJHMu1EAsTtB4o"
-    ]
+    "assetCids": []
+  },
+  "QmT9iCuqkB9i9U2KXm6YhH5bn6jY7YJwWJHMu1EAsTtB4o": {
+    "metadata": {
+      "name": "Happy Arctic Fox"
+    },
+    "assetCids": []
   },
   "QmYooVHGsAoPoM9uWpSYvEA9Hz264eqVyDy53ZwfKvdhFx": {
     "metadata": {
-      "name": "Red",
-      "description": "Digital still life",
-      "attributes": {
-        "tags": [
-          "drawing",
-          "red",
-          "vector",
-          "3d render",
-          "still life"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmbtM2yqaNZ65zG7mJpg93aYkvbjdcbQcP4tzqBRFzxeKV/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmbtM2yqaNZ65zG7mJpg93aYkvbjdcbQcP4tzqBRFzxeKV/other"
+      "name": "Red"
     },
-    "assetCids": [
-      "QmbtM2yqaNZ65zG7mJpg93aYkvbjdcbQcP4tzqBRFzxeKV"
-    ]
+    "assetCids": []
+  },
+  "QmbtM2yqaNZ65zG7mJpg93aYkvbjdcbQcP4tzqBRFzxeKV": {
+    "metadata": {
+      "name": "Red"
+    },
+    "assetCids": []
   },
   "QmVuAWunBXXsLQbo5NZyozqbngdRdykuwuwe1DHiCKUfKY": {
     "metadata": {
-      "name": "Blue",
-      "description": "Digital still life",
-      "attributes": {
-        "tags": [
-          "drawing",
-          "blue",
-          "vector",
-          "3d render",
-          "still life"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmW6YzvhpkbNZJaH1efq8riGfL7YRab1h3iVtCn2K9qTuV/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmW6YzvhpkbNZJaH1efq8riGfL7YRab1h3iVtCn2K9qTuV/other"
+      "name": "Blue"
     },
-    "assetCids": [
-      "QmW6YzvhpkbNZJaH1efq8riGfL7YRab1h3iVtCn2K9qTuV"
-    ]
+    "assetCids": []
+  },
+  "QmW6YzvhpkbNZJaH1efq8riGfL7YRab1h3iVtCn2K9qTuV": {
+    "metadata": {
+      "name": "Blue"
+    },
+    "assetCids": []
   },
   "QmdvJxRb2kV9riwzAdoZ1M29AVbda1ktt3waxdcgKUmyXY": {
     "metadata": {
-      "name": "Green",
-      "description": "Digital still life",
-      "attributes": {
-        "tags": [
-          "drawing",
-          "green",
-          "vector",
-          "3d render",
-          "still life"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmZ6bCyQysKJHeUWHik7XZPvAT5JZZjUbbrwKMteaF9Jyr/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmZ6bCyQysKJHeUWHik7XZPvAT5JZZjUbbrwKMteaF9Jyr/other"
+      "name": "Green"
     },
-    "assetCids": [
-      "QmZ6bCyQysKJHeUWHik7XZPvAT5JZZjUbbrwKMteaF9Jyr"
-    ]
+    "assetCids": []
+  },
+  "QmZ6bCyQysKJHeUWHik7XZPvAT5JZZjUbbrwKMteaF9Jyr": {
+    "metadata": {
+      "name": "Green"
+    },
+    "assetCids": []
   },
   "QmdH4J3vhRE7qEJZWFvLaFmvo5WDoczcjndJGkFf4xnutp": {
     "metadata": {
-      "name": "Void",
-      "description": "SuperCluster Colour Series",
-      "attributes": {
-        "tags": [
-          "high res",
-          "vector"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/Qmajje45W41xUyyrADD7Tshns7MHTbi5VCRqRQMA2Nrp1M/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmajje45W41xUyyrADD7Tshns7MHTbi5VCRqRQMA2Nrp1M/other"
+      "name": "Void"
     },
-    "assetCids": [
-      "Qmajje45W41xUyyrADD7Tshns7MHTbi5VCRqRQMA2Nrp1M"
-    ]
+    "assetCids": []
+  },
+  "Qmajje45W41xUyyrADD7Tshns7MHTbi5VCRqRQMA2Nrp1M": {
+    "metadata": {
+      "name": "Void"
+    },
+    "assetCids": []
   },
   "QmRgRG5LCfAbFLxg8e6TZLDK9kBGTpRopJRxrG2ex1rqCo": {
     "metadata": {
-      "name": "Filament",
-      "description": "SuperCluster Colour Series",
-      "attributes": {
-        "tags": [
-          "high res",
-          "vector"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmVKcRZJNpyXCpv99RtTojqgJwBL5rmY69V8vhcZrnQMQq/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmVKcRZJNpyXCpv99RtTojqgJwBL5rmY69V8vhcZrnQMQq/other"
+      "name": "Filament"
     },
-    "assetCids": [
-      "QmVKcRZJNpyXCpv99RtTojqgJwBL5rmY69V8vhcZrnQMQq"
-    ]
+    "assetCids": []
+  },
+  "QmVKcRZJNpyXCpv99RtTojqgJwBL5rmY69V8vhcZrnQMQq": {
+    "metadata": {
+      "name": "Filament"
+    },
+    "assetCids": []
   },
   "QmVTDkwubtkzG9KofFpQ7d9MPn8DgXarrUCEr3MuhpFpYj": {
     "metadata": {
-      "name": "Stellar",
-      "description": "SuperCluster Colour Series",
-      "attributes": {
-        "tags": [
-          "high res",
-          "vector"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmQ6TtUt3e2Dj292Tq3e5ikB14VCMquZiKASbb65NeBp4f/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmQ6TtUt3e2Dj292Tq3e5ikB14VCMquZiKASbb65NeBp4f/other"
+      "name": "Stellar"
     },
-    "assetCids": [
-      "QmQ6TtUt3e2Dj292Tq3e5ikB14VCMquZiKASbb65NeBp4f"
-    ]
+    "assetCids": []
+  },
+  "QmQ6TtUt3e2Dj292Tq3e5ikB14VCMquZiKASbb65NeBp4f": {
+    "metadata": {
+      "name": "Stellar"
+    },
+    "assetCids": []
   },
   "QmQwHSwu2iTPF5FVBHNL7TNmg2birznkTg4sFRiF8Wd9Vo": {
     "metadata": {
-      "name": "Pebble",
-      "description": "SuperCluster Colour Series",
-      "attributes": {
-        "tags": [
-          "high res",
-          "vector"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/Qmc8gU49U852aU4wkk8qgzAxBFeHNGj9gtoZqMBxLMZ4Sc/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmc8gU49U852aU4wkk8qgzAxBFeHNGj9gtoZqMBxLMZ4Sc/other"
+      "name": "Pebble"
     },
-    "assetCids": [
-      "Qmc8gU49U852aU4wkk8qgzAxBFeHNGj9gtoZqMBxLMZ4Sc"
-    ]
+    "assetCids": []
+  },
+  "Qmc8gU49U852aU4wkk8qgzAxBFeHNGj9gtoZqMBxLMZ4Sc": {
+    "metadata": {
+      "name": "Pebble"
+    },
+    "assetCids": []
   },
   "QmaRLAyMpNkpPVw75zgZVGSQq6Y7hEKpFNpANW34uTsCrH": {
     "metadata": {
-      "name": "Priestess",
-      "description": "Limited edition digital illustration",
-      "attributes": {
-        "tags": [
-          "illustration",
-          "pen",
-          "ink"
-        ]
-      },
-      "external_uri": "http://knownorigin.io",
-      "image": "https://ipfs.infura.io/ipfs/QmRVz3iXXNeowwme3FGS8w71LaFureWu1XGHbPo53TRHWN/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRVz3iXXNeowwme3FGS8w71LaFureWu1XGHbPo53TRHWN/other"
+      "name": "Priestess"
     },
-    "assetCids": [
-      "QmRVz3iXXNeowwme3FGS8w71LaFureWu1XGHbPo53TRHWN"
-    ]
+    "assetCids": []
+  },
+  "QmRVz3iXXNeowwme3FGS8w71LaFureWu1XGHbPo53TRHWN": {
+    "metadata": {
+      "name": "Priestess"
+    },
+    "assetCids": []
   },
   "QmSKFZiGYupMWj34pP2DNM6QwAi328hegSY1EdvKRXdaPs": {
     "metadata": {
-      "name": "DDF1",
-      "description": "Dope Dead Frog 1 (DDF1) combines deathly amphibious emoji with bright vapor wave notes and tart pixelated highlights",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "asset",
-          "rare",
-          "character",
-          "frog"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OBX/editions/OBXDDF1000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmYdFXbAkxBc2uCN6qXs9xsH9xVioYECDGwsCLYGWW6UsA/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmYdFXbAkxBc2uCN6qXs9xsH9xVioYECDGwsCLYGWW6UsA/other"
+      "name": "DDF1"
     },
-    "assetCids": [
-      "QmYdFXbAkxBc2uCN6qXs9xsH9xVioYECDGwsCLYGWW6UsA"
-    ]
+    "assetCids": []
+  },
+  "QmYdFXbAkxBc2uCN6qXs9xsH9xVioYECDGwsCLYGWW6UsA": {
+    "metadata": {
+      "name": "DDF1"
+    },
+    "assetCids": []
   },
   "QmYC1CHvgaHsit4SrCdM5qBxHFSLBroe7Fuw4rokjRjKK2": {
     "metadata": {
-      "name": "Happy Friday Bird",
-      "description": "Happy Friday Bird",
-      "attributes": {
-        "tags": [
-          "high res",
-          "illustration",
-          "character",
-          "bird",
-          "friday",
-          "cute"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STJ/editions/STJHPYFRIBIRDDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmWvF9H5ejccr5sVvvdM7Yj34pPP2iZGwkbyqQ2xvCKJka/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmWvF9H5ejccr5sVvvdM7Yj34pPP2iZGwkbyqQ2xvCKJka/other"
+      "name": "Happy Friday Bird"
     },
-    "assetCids": [
-      "QmWvF9H5ejccr5sVvvdM7Yj34pPP2iZGwkbyqQ2xvCKJka"
-    ]
+    "assetCids": []
+  },
+  "QmWvF9H5ejccr5sVvvdM7Yj34pPP2iZGwkbyqQ2xvCKJka": {
+    "metadata": {
+      "name": "Happy Friday Bird"
+    },
+    "assetCids": []
   },
   "QmZLwcWfoWprBrwNMHmwdVjusBoChnpdRxXH5ysbDL2HLM": {
     "metadata": {
-      "name": "Spring Morning!",
-      "description": "Spring Morning!",
-      "attributes": {
-        "tags": [
-          "high res",
-          "illustration",
-          "character",
-          "spring",
-          "morning",
-          "cute"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STJ/editions/STJSPGMRN0001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTenX8zYBzCPy3HPDWiDLMPAAjtvC4muqWDW5A1yp6BeB/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTenX8zYBzCPy3HPDWiDLMPAAjtvC4muqWDW5A1yp6BeB/other"
+      "name": "Spring Morning!"
     },
-    "assetCids": [
-      "QmTenX8zYBzCPy3HPDWiDLMPAAjtvC4muqWDW5A1yp6BeB"
-    ]
+    "assetCids": []
+  },
+  "QmTenX8zYBzCPy3HPDWiDLMPAAjtvC4muqWDW5A1yp6BeB": {
+    "metadata": {
+      "name": "Spring Morning!"
+    },
+    "assetCids": []
   },
   "QmZZZYtNL76GybxkyZCLVuzf4wJXDKbks57RAfmWYsMc9W": {
     "metadata": {
-      "name": "Running Riot",
-      "description": "Running Riot",
-      "attributes": {
-        "tags": [
-          "high res",
-          "illustration",
-          "character",
-          "running",
-          "riot",
-          "cute"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STJ/editions/STJRUNRIOT001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmVpFrBK5gupqGZNHCrGH65Ju79SivaeiWcsNkjCQDJLF6/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmVpFrBK5gupqGZNHCrGH65Ju79SivaeiWcsNkjCQDJLF6/other"
+      "name": "Running Riot"
     },
-    "assetCids": [
-      "QmVpFrBK5gupqGZNHCrGH65Ju79SivaeiWcsNkjCQDJLF6"
-    ]
+    "assetCids": []
+  },
+  "QmVpFrBK5gupqGZNHCrGH65Ju79SivaeiWcsNkjCQDJLF6": {
+    "metadata": {
+      "name": "Running Riot"
+    },
+    "assetCids": []
   },
   "QmNvBCKVFAantUX3UG93UJnjtRepCW3Wm7kYBh7epMfgKa": {
     "metadata": {
-      "name": "Emoji #1",
-      "description": "Fun spiral fractal featuring a the laughing emoji",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "fractal",
-          "fun",
-          "spiral",
-          "laughing"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STREMOJI10000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTHshtetAEz6YQBGVHj3FwWRvsrgo1iixxRH3DpL4LmWf/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTHshtetAEz6YQBGVHj3FwWRvsrgo1iixxRH3DpL4LmWf/other"
+      "name": "Emoji #1"
     },
-    "assetCids": [
-      "QmTHshtetAEz6YQBGVHj3FwWRvsrgo1iixxRH3DpL4LmWf"
-    ]
+    "assetCids": []
+  },
+  "QmTHshtetAEz6YQBGVHj3FwWRvsrgo1iixxRH3DpL4LmWf": {
+    "metadata": {
+      "name": "Emoji #1"
+    },
+    "assetCids": []
   },
   "QmQKv7aJucW11XKvmzUc6CddWRF7n6w63dE28TWSjMDwUw": {
     "metadata": {
-      "name": "Treating the Symptoms",
-      "description": "Brilliant 3D fractal flower. The light cannot be contained!",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "3d",
-          "fractal",
-          "flower"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRTRTSYM0001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmbyCn7o7f3DSrK28TmvbgqW4rH3zYJfyDp3G8TWYYYKbH/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmbyCn7o7f3DSrK28TmvbgqW4rH3zYJfyDp3G8TWYYYKbH/other"
+      "name": "Treating the Symptoms"
     },
-    "assetCids": [
-      "QmbyCn7o7f3DSrK28TmvbgqW4rH3zYJfyDp3G8TWYYYKbH"
-    ]
+    "assetCids": []
+  },
+  "QmbyCn7o7f3DSrK28TmvbgqW4rH3zYJfyDp3G8TWYYYKbH": {
+    "metadata": {
+      "name": "Treating the Symptoms"
+    },
+    "assetCids": []
   },
   "QmUYY3LmsqHtruuCWwjTC4EsgbdkkZ7zLEo3gQDvyrgRC6": {
     "metadata": {
-      "name": "Hype Death of the Scotty",
-      "description": "Digital Artwork",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "hype",
-          "death",
-          "scotty"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKAHYPDTHSTY0DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmZNZSGmWidnSoDZ6BcTouyehqi8AwmKqHMfxdptBYHi9D/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmZNZSGmWidnSoDZ6BcTouyehqi8AwmKqHMfxdptBYHi9D/other"
+      "name": "Hype Death of the Scotty"
     },
-    "assetCids": [
-      "QmZNZSGmWidnSoDZ6BcTouyehqi8AwmKqHMfxdptBYHi9D"
-    ]
+    "assetCids": []
+  },
+  "QmZNZSGmWidnSoDZ6BcTouyehqi8AwmKqHMfxdptBYHi9D": {
+    "metadata": {
+      "name": "Hype Death of the Scotty"
+    },
+    "assetCids": []
   },
   "QmSBN8zqqoZvknF5PZjTqgS8mTQeXquNM9mFR4Z3mgx434": {
     "metadata": {
-      "name": "Liquify",
-      "description": "Original fractal artwork designed to make your head spin",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "fractal",
-          "fun",
-          "head-spin"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRLIQUIFY001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmVULN1KKYaJfbegHUrgMyLBtCyTyoD6A4ZbjJQ5mLLi5k/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmVULN1KKYaJfbegHUrgMyLBtCyTyoD6A4ZbjJQ5mLLi5k/other"
+      "name": "Liquify"
     },
-    "assetCids": [
-      "QmVULN1KKYaJfbegHUrgMyLBtCyTyoD6A4ZbjJQ5mLLi5k"
-    ]
+    "assetCids": []
+  },
+  "QmVULN1KKYaJfbegHUrgMyLBtCyTyoD6A4ZbjJQ5mLLi5k": {
+    "metadata": {
+      "name": "Liquify"
+    },
+    "assetCids": []
   },
   "QmeLxUi7trfYB2EY6aZ2WfeuiJRSWSdNmdhzi57P7jt3Lq": {
     "metadata": {
-      "name": "Daffy Rain",
-      "description": "Digital Artwork",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "character",
-          "glitchy",
-          "daffy",
-          "rain"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKADAFFY0RAINDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRUXoMgq5sbzxWGXUUETCMYW6jQnnzmv6wie5svbGSNKW/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRUXoMgq5sbzxWGXUUETCMYW6jQnnzmv6wie5svbGSNKW/other"
+      "name": "Daffy Rain"
     },
-    "assetCids": [
-      "QmRUXoMgq5sbzxWGXUUETCMYW6jQnnzmv6wie5svbGSNKW"
-    ]
+    "assetCids": []
+  },
+  "QmRUXoMgq5sbzxWGXUUETCMYW6jQnnzmv6wie5svbGSNKW": {
+    "metadata": {
+      "name": "Daffy Rain"
+    },
+    "assetCids": []
   },
   "QmPNHQ66BQTUWpbhb4vUZjpsuZ4HCXAC96UcbDnmNiQvoR": {
     "metadata": {
-      "name": "Taming the Lion",
-      "description": "Dark abstract fractal artwork.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "abstract",
-          "dark"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRTAMINGLIONDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmQ1dv5fyL5uLaKZLRdVDphpGXD8CBt288nrnx8DhE6D1R/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmQ1dv5fyL5uLaKZLRdVDphpGXD8CBt288nrnx8DhE6D1R/other"
+      "name": "Taming the Lion"
     },
-    "assetCids": [
-      "QmQ1dv5fyL5uLaKZLRdVDphpGXD8CBt288nrnx8DhE6D1R"
-    ]
+    "assetCids": []
+  },
+  "QmQ1dv5fyL5uLaKZLRdVDphpGXD8CBt288nrnx8DhE6D1R": {
+    "metadata": {
+      "name": "Taming the Lion"
+    },
+    "assetCids": []
   },
   "QmUuQmqpqZv9vyhy8HpAB14odZaRifteJ5zrJ4makq4sLH": {
     "metadata": {
-      "name": "Too Many Noodles",
-      "description": "Crazy psychedelic fractal artwork. It's too much fun!",
-      "attributes": {
-        "tags": [
-          "digital",
-          "crazy",
-          "psychedelic",
-          "fractal",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRTOOMNYNOONDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRC6asEghMxsqKCatkK1eNgHBUHxvrXpwrvGLVJ3FCZyd/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRC6asEghMxsqKCatkK1eNgHBUHxvrXpwrvGLVJ3FCZyd/other"
+      "name": "Too Many Noodles"
     },
-    "assetCids": [
-      "QmRC6asEghMxsqKCatkK1eNgHBUHxvrXpwrvGLVJ3FCZyd"
-    ]
+    "assetCids": []
+  },
+  "QmRC6asEghMxsqKCatkK1eNgHBUHxvrXpwrvGLVJ3FCZyd": {
+    "metadata": {
+      "name": "Too Many Noodles"
+    },
+    "assetCids": []
   },
   "QmaTYHj9DzyQLHmjoDq8K6Uj8GZHioV6irpu5jeBpjxd7z": {
     "metadata": {
-      "name": "Grass Roots",
-      "description": "Powerful embossed spiral that goes on forever.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "powerful",
-          "embossed",
-          "spiral",
-          "grass",
-          "roots",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRGRASSROOTSDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmPqBWBe712KULEamLZkDBst5TLz7kGJRMjpg6BNbpSGT6/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmPqBWBe712KULEamLZkDBst5TLz7kGJRMjpg6BNbpSGT6/other"
+      "name": "Grass Roots"
     },
-    "assetCids": [
-      "QmPqBWBe712KULEamLZkDBst5TLz7kGJRMjpg6BNbpSGT6"
-    ]
+    "assetCids": []
+  },
+  "QmPqBWBe712KULEamLZkDBst5TLz7kGJRMjpg6BNbpSGT6": {
+    "metadata": {
+      "name": "Grass Roots"
+    },
+    "assetCids": []
   },
   "Qmbgc7xgU5bDDwkJfEEyRW1EdsHHwt7sq6AbadL95huWhS": {
     "metadata": {
-      "name": "Soft Face",
-      "description": "Smooth and intertwining fractal",
-      "attributes": {
-        "tags": [
-          "digital",
-          "smooth",
-          "intertwining",
-          "fractal",
-          "soft",
-          "face",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRSOFTFACE01DIG",
-      "image": "https://ipfs.infura.io/ipfs/Qmf45K1MsTrfPeiaZFarurPzjREPEnvPcgJX6dDhcEtK39/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmf45K1MsTrfPeiaZFarurPzjREPEnvPcgJX6dDhcEtK39/other"
+      "name": "Soft Face"
     },
-    "assetCids": [
-      "Qmf45K1MsTrfPeiaZFarurPzjREPEnvPcgJX6dDhcEtK39"
-    ]
+    "assetCids": []
+  },
+  "Qmf45K1MsTrfPeiaZFarurPzjREPEnvPcgJX6dDhcEtK39": {
+    "metadata": {
+      "name": "Soft Face"
+    },
+    "assetCids": []
   },
   "QmSErLQkxawcBqBfSrtoRZDJzdDxK6pEyLYFLxfHQEXeLt": {
     "metadata": {
-      "name": "Bunny Bags",
-      "description": "Glitchy Rich. Digital print.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "character",
-          "glitchy",
-          "bunny",
-          "bags",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKABUNNYBAGS0DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmZnxsBjuDCMr22na5qjoZFNMytG5xBexTdVC5HPQaLkFT/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmZnxsBjuDCMr22na5qjoZFNMytG5xBexTdVC5HPQaLkFT/other"
+      "name": "Bunny Bags"
     },
-    "assetCids": [
-      "QmZnxsBjuDCMr22na5qjoZFNMytG5xBexTdVC5HPQaLkFT"
-    ]
+    "assetCids": []
+  },
+  "QmZnxsBjuDCMr22na5qjoZFNMytG5xBexTdVC5HPQaLkFT": {
+    "metadata": {
+      "name": "Bunny Bags"
+    },
+    "assetCids": []
   },
   "QmYmssaNPKZLq5dTQddGTUTA6tas5sSvChZGfrPuoywQEh": {
     "metadata": {
-      "name": "DDF5",
-      "description": "Classical rarity of old school amphibious persuasion",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "character"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OBX/editions/OBXDDF5000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmeEwVK34xSB6s3cBJQsvHUwDeKkjvBu2i8b9SnLjhQGQa/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmeEwVK34xSB6s3cBJQsvHUwDeKkjvBu2i8b9SnLjhQGQa/other"
+      "name": "DDF5"
     },
-    "assetCids": [
-      "QmeEwVK34xSB6s3cBJQsvHUwDeKkjvBu2i8b9SnLjhQGQa"
-    ]
+    "assetCids": []
+  },
+  "QmeEwVK34xSB6s3cBJQsvHUwDeKkjvBu2i8b9SnLjhQGQa": {
+    "metadata": {
+      "name": "DDF5"
+    },
+    "assetCids": []
   },
   "QmUkQDkrkxEg5mUQdM1iH1K3F1uJXmDK3ceVPfg8hHS4pz": {
     "metadata": {
-      "name": "Insta Tweety",
-      "description": "Glitchy Rich. Digital print.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "character",
-          "glitchy",
-          "insta",
-          "tweety",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKAINSTATWEETDIG",
-      "image": "https://ipfs.infura.io/ipfs/Qmbdf5KBGAkNeGthdZXdqzKM6J2FLvnqv1PRh74ehxo76L/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmbdf5KBGAkNeGthdZXdqzKM6J2FLvnqv1PRh74ehxo76L/other"
+      "name": "Insta Tweety"
     },
-    "assetCids": [
-      "Qmbdf5KBGAkNeGthdZXdqzKM6J2FLvnqv1PRh74ehxo76L"
-    ]
+    "assetCids": []
+  },
+  "Qmbdf5KBGAkNeGthdZXdqzKM6J2FLvnqv1PRh74ehxo76L": {
+    "metadata": {
+      "name": "Insta Tweety"
+    },
+    "assetCids": []
   },
   "QmbTmXPL5F5pttPUJsMwctG2o9SWUGrAVXGpXZeHenovMZ": {
     "metadata": {
-      "name": "NEOPLA",
-      "description": "Generative image, made in processing",
-      "attributes": {
-        "tags": [
-          "digital",
-          "generative",
-          "image",
-          "processing"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MNO/editions/MNONEOPLA0001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmUtcC7s2aLN6ExSDRq7NF5YizZRTcKiXBxdfJnzj3cHGx/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmUtcC7s2aLN6ExSDRq7NF5YizZRTcKiXBxdfJnzj3cHGx/other"
+      "name": "NEOPLA"
     },
-    "assetCids": [
-      "QmUtcC7s2aLN6ExSDRq7NF5YizZRTcKiXBxdfJnzj3cHGx"
-    ]
+    "assetCids": []
+  },
+  "QmUtcC7s2aLN6ExSDRq7NF5YizZRTcKiXBxdfJnzj3cHGx": {
+    "metadata": {
+      "name": "NEOPLA"
+    },
+    "assetCids": []
   },
   "QmZ64rsedoh7GWCdcD5roG9ceEPKConDMEejnW9S9xxHnS": {
     "metadata": {
-      "name": "Reflection of the forms. Series #01. Art #01",
-      "description": "Investigations of the tensions that create forms and colors between them.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LOS/editions/LOSSER01ART01DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmPbJSNvftbMiTGseCLbZ5JK6i4o8ZtJkT2tjconcLceNA/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmPbJSNvftbMiTGseCLbZ5JK6i4o8ZtJkT2tjconcLceNA/other"
+      "name": "Reflection of the forms. Series #01. Art #01"
     },
-    "assetCids": [
-      "QmPbJSNvftbMiTGseCLbZ5JK6i4o8ZtJkT2tjconcLceNA"
-    ]
+    "assetCids": []
+  },
+  "QmPbJSNvftbMiTGseCLbZ5JK6i4o8ZtJkT2tjconcLceNA": {
+    "metadata": {
+      "name": "Reflection of the forms. Series #01. Art #01"
+    },
+    "assetCids": []
   },
   "QmdpsyWiFh8a1Lh5BhnpP4RSkmADU4HQNVLNqC2XcuymCY": {
     "metadata": {
-      "name": "Reflection of the forms. Series #01. Art #02",
-      "description": "Investigations of the tensions that create forms and colors between them.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LOS/editions/LOSSER01ART02DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTniGDzAi7MUrDzBY3ifPQc6uQTJuhPaxXCezRSef6VtW/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTniGDzAi7MUrDzBY3ifPQc6uQTJuhPaxXCezRSef6VtW/other"
+      "name": "Reflection of the forms. Series #01. Art #02"
     },
-    "assetCids": [
-      "QmTniGDzAi7MUrDzBY3ifPQc6uQTJuhPaxXCezRSef6VtW"
-    ]
+    "assetCids": []
+  },
+  "QmTniGDzAi7MUrDzBY3ifPQc6uQTJuhPaxXCezRSef6VtW": {
+    "metadata": {
+      "name": "Reflection of the forms. Series #01. Art #02"
+    },
+    "assetCids": []
   },
   "Qma5erf8N2YU64myn8SBPgEFDDhE4VToAaTYcvVJALRhWM": {
     "metadata": {
-      "name": "Martian Bang",
-      "description": "Glitchy Rich. Digital print.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "character",
-          "glitchy",
-          "martian",
-          "bang",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKAMARTIANBNGDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmXpsBob8uD4FxWDjh74qkY3uH4CdEy5eCyStB2YQKu7uK/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmXpsBob8uD4FxWDjh74qkY3uH4CdEy5eCyStB2YQKu7uK/other"
+      "name": "Martian Bang"
     },
-    "assetCids": [
-      "QmXpsBob8uD4FxWDjh74qkY3uH4CdEy5eCyStB2YQKu7uK"
-    ]
+    "assetCids": []
+  },
+  "QmXpsBob8uD4FxWDjh74qkY3uH4CdEy5eCyStB2YQKu7uK": {
+    "metadata": {
+      "name": "Martian Bang"
+    },
+    "assetCids": []
   },
   "QmPQ7WcYJeDXbRJDTyhVYV3SZKLLpgoeqLid4mxYPXQ3zY": {
     "metadata": {
-      "name": "Burning Fiat",
-      "description": "Glitchy Rich. Digital print.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "illustration",
-          "character",
-          "glitchy",
-          "burning",
-          "fiat",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/FKA/editions/FKABURNINFIATDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmZ5aFJypwSSLbaQUwejUAUGXyuHfvV9LGMCvQQckacKAY/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmZ5aFJypwSSLbaQUwejUAUGXyuHfvV9LGMCvQQckacKAY/other"
+      "name": "Burning Fiat"
     },
-    "assetCids": [
-      "QmZ5aFJypwSSLbaQUwejUAUGXyuHfvV9LGMCvQQckacKAY"
-    ]
+    "assetCids": []
+  },
+  "QmZ5aFJypwSSLbaQUwejUAUGXyuHfvV9LGMCvQQckacKAY": {
+    "metadata": {
+      "name": "Burning Fiat"
+    },
+    "assetCids": []
   },
   "QmT5ATCMKrXu3KTafuoJGYvC4vBQfVt3PuFVGQxTEoxYav": {
     "metadata": {
-      "name": "Taka",
-      "description": "End Of Chaos is Common",
-      "attributes": {
-        "tags": [
-          "digital",
-          "mix-media",
-          "paint",
-          "taka",
-          "chaos"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/TKO/editions/TKOTAKACMNCOSDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRXk1NshTPfKnS1h2KCUPL6kCFUuuporqwfA9biAysxZo/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRXk1NshTPfKnS1h2KCUPL6kCFUuuporqwfA9biAysxZo/other"
+      "name": "Taka"
     },
-    "assetCids": [
-      "QmRXk1NshTPfKnS1h2KCUPL6kCFUuuporqwfA9biAysxZo"
-    ]
+    "assetCids": []
+  },
+  "QmRXk1NshTPfKnS1h2KCUPL6kCFUuuporqwfA9biAysxZo": {
+    "metadata": {
+      "name": "Taka"
+    },
+    "assetCids": []
   },
   "Qme4Uzb7RPLRUJ2Zb31E4ddfqUAtTPnbeTEe5AEdfVUbyb": {
     "metadata": {
-      "name": "Miracle",
-      "description": "Spacescape featuring peaceful planets from outer space and incorporating fractal artwork into the design.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRMIRACLE001DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmVKjY4LsM7hK1FQjmznoGmQwt5hMQQoRzz7tkwu44eHDK/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmVKjY4LsM7hK1FQjmznoGmQwt5hMQQoRzz7tkwu44eHDK/other"
+      "name": "Miracle"
     },
-    "assetCids": [
-      "QmVKjY4LsM7hK1FQjmznoGmQwt5hMQQoRzz7tkwu44eHDK"
-    ]
+    "assetCids": []
+  },
+  "QmVKjY4LsM7hK1FQjmznoGmQwt5hMQQoRzz7tkwu44eHDK": {
+    "metadata": {
+      "name": "Miracle"
+    },
+    "assetCids": []
   },
   "QmPtcQ6pKYhFWyqsPdzysixZnFzbNnEEgUszuc5ymri5aC": {
     "metadata": {
-      "name": "Apparently Aimless",
-      "description": "Digital creation of jellyfish swimming aimlessly in the sea.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STR/editions/STRAPPAIMLESSDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTJVFZCcpYAUxs4XPsbYCmmsDpuNHxg7ro3KTmdU5S8bE/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTJVFZCcpYAUxs4XPsbYCmmsDpuNHxg7ro3KTmdU5S8bE/other"
+      "name": "Apparently Aimless"
     },
-    "assetCids": [
-      "QmTJVFZCcpYAUxs4XPsbYCmmsDpuNHxg7ro3KTmdU5S8bE"
-    ]
+    "assetCids": []
+  },
+  "QmTJVFZCcpYAUxs4XPsbYCmmsDpuNHxg7ro3KTmdU5S8bE": {
+    "metadata": {
+      "name": "Apparently Aimless"
+    },
+    "assetCids": []
   },
   "QmPyX5uJX19ihncWPwUG5AKFx6uQB2vNb21HCLaCckUirf": {
     "metadata": {
-      "name": "Reflection of the forms. Series #01. Art #03",
-      "description": "Investigations of the tensions that create forms and colors between them.",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LOS/editions/LOSSER01ART03DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRTdEmN8DfSGbY3N7B1Ypf3gD9M7p1co5Vv2ccFkNQBS2/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRTdEmN8DfSGbY3N7B1Ypf3gD9M7p1co5Vv2ccFkNQBS2/other"
+      "name": "Reflection of the forms. Series #01. Art #03"
     },
-    "assetCids": [
-      "QmRTdEmN8DfSGbY3N7B1Ypf3gD9M7p1co5Vv2ccFkNQBS2"
-    ]
+    "assetCids": []
+  },
+  "QmRTdEmN8DfSGbY3N7B1Ypf3gD9M7p1co5Vv2ccFkNQBS2": {
+    "metadata": {
+      "name": "Reflection of the forms. Series #01. Art #03"
+    },
+    "assetCids": []
   },
   "QmdLRyaCtZCGBWb7V6vBnWFyfz6WQcj65K6Ar2waTRYbMz": {
     "metadata": {
-      "name": "Bitopian",
-      "description": "Limited edition digital illustration",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LHD/editions/LHDBITOPIAN01DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmXzv4bJNZJeBRU8NgQcJYufyNXVp6jF1ew7gQ8iXidFyu/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmXzv4bJNZJeBRU8NgQcJYufyNXVp6jF1ew7gQ8iXidFyu/other"
+      "name": "Bitopian"
     },
-    "assetCids": [
-      "QmXzv4bJNZJeBRU8NgQcJYufyNXVp6jF1ew7gQ8iXidFyu"
-    ]
+    "assetCids": []
+  },
+  "QmXzv4bJNZJeBRU8NgQcJYufyNXVp6jF1ew7gQ8iXidFyu": {
+    "metadata": {
+      "name": "Bitopian"
+    },
+    "assetCids": []
   },
   "QmTFfsWwJDKm8sGcXjmDobtK1hHnsKUfMQ4cfwKKjFpEzo": {
     "metadata": {
-      "name": "Ethereum Inside",
-      "description": "Limited edition digital illustration",
-      "attributes": {
-        "tags": [
-          "high res",
-          "digital",
-          "illustration"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LHD/editions/LHDETHINSIDE1DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmYnJymCbHhwmyXeECMxoc786Qsn47X99kSTb41x1kv4MA/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmYnJymCbHhwmyXeECMxoc786Qsn47X99kSTb41x1kv4MA/other"
+      "name": "Ethereum Inside"
     },
-    "assetCids": [
-      "QmYnJymCbHhwmyXeECMxoc786Qsn47X99kSTb41x1kv4MA"
-    ]
+    "assetCids": []
+  },
+  "QmYnJymCbHhwmyXeECMxoc786Qsn47X99kSTb41x1kv4MA": {
+    "metadata": {
+      "name": "Ethereum Inside"
+    },
+    "assetCids": []
   },
   "QmXfRtJGXZf5mgh3TnuWVLKZeDzFb3kHMPv45fBrBqefeA": {
     "metadata": {
-      "name": "Punkin",
-      "description": "A fractal super-entity that floats around the etheric heavens in a state of pure bliss.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "digital",
-          "illustration",
-          "asset",
-          "rare",
-          "card",
-          "punkin"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVPUNKINCARDDIG",
-      "image": "https://ipfs.infura.io/ipfs/QmP6BaQMT4iox8XHVRuZzGqgGckHvRWJFJDHUJfjDRyotP/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmP6BaQMT4iox8XHVRuZzGqgGckHvRWJFJDHUJfjDRyotP/other"
+      "name": "Punkin"
     },
-    "assetCids": [
-      "QmP6BaQMT4iox8XHVRuZzGqgGckHvRWJFJDHUJfjDRyotP"
-    ]
+    "assetCids": []
+  },
+  "QmP6BaQMT4iox8XHVRuZzGqgGckHvRWJFJDHUJfjDRyotP": {
+    "metadata": {
+      "name": "Punkin"
+    },
+    "assetCids": []
   },
   "QmXui6AHrntr7EZfEeYmHre9NFQnsyBxZ9hvqWjMzniG1E": {
     "metadata": {
-      "name": "Hornsbee",
-      "description": "A demonic entity reborn from fire who is able to exert psychic control over spiky balls that are said to be made out of igneous rock which hardened from the lava that Hornsbee was able to psychically manipulate.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "illustration",
-          "asset",
-          "rare",
-          "card",
-          "hornsbee"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVHORNSBEE66DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmbtgiqztsJgBwTZgNxz5zAbuvP3Ara5EpZbLsRsPdhH3Q/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmbtgiqztsJgBwTZgNxz5zAbuvP3Ara5EpZbLsRsPdhH3Q/other"
+      "name": "Hornsbee"
     },
-    "assetCids": [
-      "QmbtgiqztsJgBwTZgNxz5zAbuvP3Ara5EpZbLsRsPdhH3Q"
-    ]
+    "assetCids": []
+  },
+  "QmbtgiqztsJgBwTZgNxz5zAbuvP3Ara5EpZbLsRsPdhH3Q": {
+    "metadata": {
+      "name": "Hornsbee"
+    },
+    "assetCids": []
   },
   "QmaaK5Xk12bhnfWp4366JZU6mNmG15LUyg9gXRq2vwWTEN": {
     "metadata": {
-      "name": "Hornsbin",
-      "description": "Bouncing around in a state of perpetual fear, Hornsbin was doomed from the start to wander while between the jaws of the evil Framr.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "illustration",
-          "asset",
-          "rare",
-          "card",
-          "hornsbin"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVHORNSBIN21DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmWvTDCmUCEk1ATpGZxBPXb1XFQTHLQ6YP2X4KcHgGwyvZ/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmWvTDCmUCEk1ATpGZxBPXb1XFQTHLQ6YP2X4KcHgGwyvZ/other"
+      "name": "Hornsbin"
     },
-    "assetCids": [
-      "QmWvTDCmUCEk1ATpGZxBPXb1XFQTHLQ6YP2X4KcHgGwyvZ"
-    ]
+    "assetCids": []
+  },
+  "QmWvTDCmUCEk1ATpGZxBPXb1XFQTHLQ6YP2X4KcHgGwyvZ": {
+    "metadata": {
+      "name": "Hornsbin"
+    },
+    "assetCids": []
   },
   "QmQSGyF9QnBN8FharuDGVZ9yhsY9iuve3tww5fr2iqAM8U": {
     "metadata": {
-      "name": "Tamed Lines Two (Diptych)",
-      "description": "Digital painting",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "painting"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MLO/editions/MLOTAMEDLNES2DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmSeC12QZ7HafsE7oktXdcEGncF5dbjo5Kjn6JzDCneTr3/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmSeC12QZ7HafsE7oktXdcEGncF5dbjo5Kjn6JzDCneTr3/other"
+      "name": "Tamed Lines Two (Diptych)"
     },
-    "assetCids": [
-      "QmSeC12QZ7HafsE7oktXdcEGncF5dbjo5Kjn6JzDCneTr3"
-    ]
+    "assetCids": []
+  },
+  "QmSeC12QZ7HafsE7oktXdcEGncF5dbjo5Kjn6JzDCneTr3": {
+    "metadata": {
+      "name": "Tamed Lines Two (Diptych)"
+    },
+    "assetCids": []
   },
   "Qmeid2bjFJq93u7AYYujP5Kj4871V8CvSjmdTnRipENFMM": {
     "metadata": {
-      "name": "Pigalow",
-      "description": "Neither a man, nor a pig, but a conglomeration of two spirits.",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "illustration",
-          "asset",
-          "rare",
-          "card",
-          "pigalow"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVPIGALOW032DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmbXJJiaBcgRA65vpZzVHhRZLhmM53nTrYdRhaTnmgUunt/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmbXJJiaBcgRA65vpZzVHhRZLhmM53nTrYdRhaTnmgUunt/other"
+      "name": "Pigalow"
     },
-    "assetCids": [
-      "QmbXJJiaBcgRA65vpZzVHhRZLhmM53nTrYdRhaTnmgUunt"
-    ]
+    "assetCids": []
+  },
+  "QmbXJJiaBcgRA65vpZzVHhRZLhmM53nTrYdRhaTnmgUunt": {
+    "metadata": {
+      "name": "Pigalow"
+    },
+    "assetCids": []
   },
   "Qmav393uKBvWXWBBWRCAa3yUNgXxPiEWePdrtpcLUWGNrv": {
     "metadata": {
-      "name": "They Live",
-      "description": "Artwork inspired by Carpenter's 80s cult movie, They Live. The actuality of the movie's message is always alive. Therefore, do not sleep too quietly.",
-      "attributes": {
-        "artist": "hackatao",
-        "scarcity": "rare",
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "cult",
-          "movie",
-          "they",
-          "live"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/HKT/editions/HKTTHEYLIVE00DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTbJvdAMQAPuyHiv3i6W4nDKguTQZpqfocn4YJ6Pps7H1/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTbJvdAMQAPuyHiv3i6W4nDKguTQZpqfocn4YJ6Pps7H1/other"
+      "name": "They Live"
     },
-    "assetCids": [
-      "QmTbJvdAMQAPuyHiv3i6W4nDKguTQZpqfocn4YJ6Pps7H1"
-    ]
+    "assetCids": []
+  },
+  "QmTbJvdAMQAPuyHiv3i6W4nDKguTQZpqfocn4YJ6Pps7H1": {
+    "metadata": {
+      "name": "They Live"
+    },
+    "assetCids": []
   },
   "QmNu91p6RFodeE8nB4YzfEPkRMDP5zM1jrrQyVWqxDa652": {
     "metadata": {
-      "name": "Trigalow",
-      "description": "Trigalows seek the blue gel that Pigalow produces. They were once little bugs who were very picky eaters unlike the rest of their bretheren.",
-      "attributes": {
-        "artist": "lev polyakov",
-        "artworkName": "trigalow",
-        "scarcity": "common",
-        "tags": [
-          "digital",
-          "high res",
-          "illustration",
-          "card"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVTRIGALOW05DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmWY94iFXVYS8gTV1hvnmZufDnX5EZcEwMoJ5mpJ3Gny4g/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmWY94iFXVYS8gTV1hvnmZufDnX5EZcEwMoJ5mpJ3Gny4g/other"
+      "name": "Trigalow"
     },
-    "assetCids": [
-      "QmWY94iFXVYS8gTV1hvnmZufDnX5EZcEwMoJ5mpJ3Gny4g"
-    ]
+    "assetCids": []
+  },
+  "QmWY94iFXVYS8gTV1hvnmZufDnX5EZcEwMoJ5mpJ3Gny4g": {
+    "metadata": {
+      "name": "Trigalow"
+    },
+    "assetCids": []
   },
   "QmXVVZU7HseWdsDDsarQ6EPo9KSYX9CFy4VrfKYzWDF33v": {
     "metadata": {
-      "name": "DDF2",
-      "description": "Deluxe experience",
-      "attributes": {
-        "artist": "obxium",
-        "scarcity": "ultra rare",
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "character"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OBX/editions/OBXDDF2000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/Qmbs3BGdB1HPkjULSHsH9kFBAqpPUX7yzGmRfXnAX6jBHU/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmbs3BGdB1HPkjULSHsH9kFBAqpPUX7yzGmRfXnAX6jBHU/other"
+      "name": "DDF2"
     },
-    "assetCids": [
-      "Qmbs3BGdB1HPkjULSHsH9kFBAqpPUX7yzGmRfXnAX6jBHU"
-    ]
+    "assetCids": []
+  },
+  "Qmbs3BGdB1HPkjULSHsH9kFBAqpPUX7yzGmRfXnAX6jBHU": {
+    "metadata": {
+      "name": "DDF2"
+    },
+    "assetCids": []
   },
   "QmQ9BGkKHhJnBag8dRbjFCyJdbtsSfK93yYr1eqGBEDPXy": {
     "metadata": {
-      "name": "B.",
-      "description": "Minimalist character illustration, combining bold geometric line work with textured fills",
-      "attributes": {
-        "artist": "stina jones",
-        "scarcity": "common",
-        "tags": [
-          "illustration",
-          "digital",
-          "character",
-          "minimalist",
-          "fox",
-          "cute",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/STJ/editions/STJBEE0000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRMCQeMyxRvxFuzpe388VnYsqaSP2NXLwwRKEPedJE8dE/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRMCQeMyxRvxFuzpe388VnYsqaSP2NXLwwRKEPedJE8dE/other"
+      "name": "B."
     },
-    "assetCids": [
-      "QmRMCQeMyxRvxFuzpe388VnYsqaSP2NXLwwRKEPedJE8dE"
-    ]
+    "assetCids": []
+  },
+  "QmRMCQeMyxRvxFuzpe388VnYsqaSP2NXLwwRKEPedJE8dE": {
+    "metadata": {
+      "name": "B."
+    },
+    "assetCids": []
   },
   "QmWYHFrHpyYUUVgR58WVUVnvmLpEhs133XJFKdZCSLXE8d": {
     "metadata": {
-      "name": "Emerging Shapes Two (Triptych)",
-      "description": "Digital Painting. 2018",
-      "attributes": {
-        "artist": "martin lukas ostachowski",
-        "scarcity": "ultra rare",
-        "tags": [
-          "high res",
-          "digital",
-          "painting",
-          "emerging",
-          "shapes",
-          "triptych"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MLO/editions/MLOEMERGESHP2DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTz3QQMAX4JCSFb54qtY3gkpkeeS8fHyaB7VQ5vQWAQGn/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTz3QQMAX4JCSFb54qtY3gkpkeeS8fHyaB7VQ5vQWAQGn/other"
+      "name": "Emerging Shapes Two (Triptych)"
     },
-    "assetCids": [
-      "QmTz3QQMAX4JCSFb54qtY3gkpkeeS8fHyaB7VQ5vQWAQGn"
-    ]
+    "assetCids": []
+  },
+  "QmTz3QQMAX4JCSFb54qtY3gkpkeeS8fHyaB7VQ5vQWAQGn": {
+    "metadata": {
+      "name": "Emerging Shapes Two (Triptych)"
+    },
+    "assetCids": []
   },
   "QmQxYJTwjgaXJWqnE3wZmAXNYfFQWydd7jTpqiVP9CSZcc": {
     "metadata": {
-      "name": "Emerging Shapes Three (Triptych)",
-      "description": "Digital Painting. 2018",
-      "attributes": {
-        "artist": "martin lukas ostachowski",
-        "scarcity": "ultra rare",
-        "tags": [
-          "high res",
-          "digital",
-          "painting",
-          "emerging",
-          "shapes",
-          "triptych"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MLO/editions/MLOEMERGESHP3DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmfQdEScZiUP7hN8VxN6wukZbFKCuxnNp1mMdWGbyRjRnF/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmfQdEScZiUP7hN8VxN6wukZbFKCuxnNp1mMdWGbyRjRnF/other"
+      "name": "Emerging Shapes Three (Triptych)"
     },
-    "assetCids": [
-      "QmfQdEScZiUP7hN8VxN6wukZbFKCuxnNp1mMdWGbyRjRnF"
-    ]
+    "assetCids": []
+  },
+  "QmfQdEScZiUP7hN8VxN6wukZbFKCuxnNp1mMdWGbyRjRnF": {
+    "metadata": {
+      "name": "Emerging Shapes Three (Triptych)"
+    },
+    "assetCids": []
   },
   "QmPzk5raHryh278i1aYXS1j7aEZqKGQ1dhvJGzXMttvMFp": {
     "metadata": {
-      "name": "Etherman F",
-      "description": "The ethereal god of burning. Loved by all for his hot energy as well as his barbecuing skills. Sets the example for the other ethermen inspiring a fiery red hot passion in the pursuit of glory.",
-      "attributes": {
-        "artist": "lev polyakov",
-        "scarcity": "ultra rare",
-        "tags": [
-          "digital",
-          "high res",
-          "illustration",
-          "asset",
-          "card"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/LEV/editions/LEVETHERMANF0DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTjU1bV8fZtBuJv9hW4Yccgp31ZyaDM9E1yNQBbhbGpiu/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTjU1bV8fZtBuJv9hW4Yccgp31ZyaDM9E1yNQBbhbGpiu/other"
+      "name": "Etherman F"
     },
-    "assetCids": [
-      "QmTjU1bV8fZtBuJv9hW4Yccgp31ZyaDM9E1yNQBbhbGpiu"
-    ]
+    "assetCids": []
+  },
+  "QmTjU1bV8fZtBuJv9hW4Yccgp31ZyaDM9E1yNQBbhbGpiu": {
+    "metadata": {
+      "name": "Etherman F"
+    },
+    "assetCids": []
   },
   "QmXCWEWE4FggifgUfqWgN2DZCPm8DV26gQvLzwSqvafzPL": {
     "metadata": {
-      "name": "OwnMe (black)",
-      "description": "Creative Challenge - 0xCert Collaboration",
-      "attributes": {
-        "artist": "hackatao",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/HKT/editions/HKTOWNMEBLK00DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmTEe9ToKkCwhVaL2GaJnaWg6uR5qgxjWRsPXRyKhauxWc/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmTEe9ToKkCwhVaL2GaJnaWg6uR5qgxjWRsPXRyKhauxWc/other"
+      "name": "OwnMe (black)"
     },
-    "assetCids": [
-      "QmTEe9ToKkCwhVaL2GaJnaWg6uR5qgxjWRsPXRyKhauxWc"
-    ]
+    "assetCids": []
+  },
+  "QmTEe9ToKkCwhVaL2GaJnaWg6uR5qgxjWRsPXRyKhauxWc": {
+    "metadata": {
+      "name": "OwnMe (black)"
+    },
+    "assetCids": []
   },
   "QmYpFifMm2LEqpmn4yVopPWVB9cyqtwiWG18jnKvBvTJFG": {
     "metadata": {
-      "name": "Tamed Lines One (Diptych)",
-      "description": "Digital painting",
-      "attributes": {
-        "tags": [
-          "digital",
-          "high res",
-          "painting"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MLO/editions/MLOTAMEDLNES1DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmfFHLgrmFnABLGcK6gDsDJ9itXtEBMWUxj7FX4VQ7m37f/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmfFHLgrmFnABLGcK6gDsDJ9itXtEBMWUxj7FX4VQ7m37f/other"
+      "name": "Tamed Lines One (Diptych)"
     },
-    "assetCids": [
-      "QmfFHLgrmFnABLGcK6gDsDJ9itXtEBMWUxj7FX4VQ7m37f"
-    ]
+    "assetCids": []
+  },
+  "QmfFHLgrmFnABLGcK6gDsDJ9itXtEBMWUxj7FX4VQ7m37f": {
+    "metadata": {
+      "name": "Tamed Lines One (Diptych)"
+    },
+    "assetCids": []
   },
   "QmborrEQ2etM5smfTLUKANgwTw7U1SZDSmsx2kx5ywdc1F": {
     "metadata": {
-      "name": "Like a Human 1",
-      "description": "Creative Challenge  - 0xCert Collaboration",
-      "attributes": {
-        "artist": "hackatao",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/HKT/editions/HKTHUMANONE00DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmRpqFDQyQHHNzSTHpbMzyFUZkcPzh2tRWpz5qQxwVnuL5/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmRpqFDQyQHHNzSTHpbMzyFUZkcPzh2tRWpz5qQxwVnuL5/other"
+      "name": "Like a Human 1"
     },
-    "assetCids": [
-      "QmRpqFDQyQHHNzSTHpbMzyFUZkcPzh2tRWpz5qQxwVnuL5"
-    ]
+    "assetCids": []
+  },
+  "QmRpqFDQyQHHNzSTHpbMzyFUZkcPzh2tRWpz5qQxwVnuL5": {
+    "metadata": {
+      "name": "Like a Human 1"
+    },
+    "assetCids": []
   },
   "QmSdS6wUcwDEoiPFBwt1ujSgcZmw5Zwcu56x96pFAx7uSw": {
     "metadata": {
-      "name": "DDF3",
-      "description": "128 Cryptocurrencies contribute chaotically chosen choreography",
-      "attributes": {
-        "artist": "obxium",
-        "scarcity": "ultra rare",
-        "tags": [
-          "high res",
-          "digital",
-          "illustration",
-          "character"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OBX/editions/OBXDDF3000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmeKY15NvAap5hYyGXQymyQjq5JQ74Lrvmm4MUPYmcPAau/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmeKY15NvAap5hYyGXQymyQjq5JQ74Lrvmm4MUPYmcPAau/other"
+      "name": "DDF3"
     },
-    "assetCids": [
-      "QmeKY15NvAap5hYyGXQymyQjq5JQ74Lrvmm4MUPYmcPAau"
-    ]
+    "assetCids": []
+  },
+  "QmeKY15NvAap5hYyGXQymyQjq5JQ74Lrvmm4MUPYmcPAau": {
+    "metadata": {
+      "name": "DDF3"
+    },
+    "assetCids": []
   },
   "QmQXaq9kEAN8jGko3p6CTxwHaYDPa2xcuvaCDrWuxVYVw2": {
     "metadata": {
-      "name": "Emerging Shapes One (Triptych)",
-      "description": "Digital Painting. 2018",
-      "attributes": {
-        "artist": "martin lukas ostachowski",
-        "scarcity": "ultra rare",
-        "tags": [
-          "high res",
-          "digital",
-          "painting",
-          "emerging",
-          "shapes",
-          "triptych"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/MLO/editions/MLOEMERGESHP1DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmaGsWX9aeciTv5myHphr8xgKHRJW3vvgMSgtpQQYB6NJT/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmaGsWX9aeciTv5myHphr8xgKHRJW3vvgMSgtpQQYB6NJT/other"
+      "name": "Emerging Shapes One (Triptych)"
     },
-    "assetCids": [
-      "QmaGsWX9aeciTv5myHphr8xgKHRJW3vvgMSgtpQQYB6NJT"
-    ]
+    "assetCids": []
+  },
+  "QmaGsWX9aeciTv5myHphr8xgKHRJW3vvgMSgtpQQYB6NJT": {
+    "metadata": {
+      "name": "Emerging Shapes One (Triptych)"
+    },
+    "assetCids": []
   },
   "QmTu54dUw3Jn2HjiC5HDh31hHPVE1dHBcn3BHHUeps2WTN": {
     "metadata": {
-      "name": "Melt",
-      "description": "Creative Challenge  - 0xCert Collaboration",
-      "attributes": {
-        "artist": "aktiv protesk",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/AKP/editions/AKPMELT000000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmctDZHWLHh87kNp7qvNXJupfj2Pt7GE7UegfkR1ctcnMP/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmctDZHWLHh87kNp7qvNXJupfj2Pt7GE7UegfkR1ctcnMP/other"
+      "name": "Melt"
     },
-    "assetCids": [
-      "QmctDZHWLHh87kNp7qvNXJupfj2Pt7GE7UegfkR1ctcnMP"
-    ]
+    "assetCids": []
+  },
+  "QmctDZHWLHh87kNp7qvNXJupfj2Pt7GE7UegfkR1ctcnMP": {
+    "metadata": {
+      "name": "Melt"
+    },
+    "assetCids": []
   },
   "QmPBDAedauUJUz4Fw9skwuY6ZnF9PtE4VRvjvkwbWWhnru": {
     "metadata": {
-      "name": "Tempo",
-      "description": "Creative Challenge  - 0xCert Collaboration",
-      "attributes": {
-        "artist": "aktiv protesk",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/AKP/editions/AKPTEMPO00000DIG",
-      "image": "https://ipfs.infura.io/ipfs/Qmc1g4ddA9TynUfMKCjr6ZFZtcobm4Bswjq763HFe3QsE9/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmc1g4ddA9TynUfMKCjr6ZFZtcobm4Bswjq763HFe3QsE9/other"
+      "name": "Tempo"
     },
-    "assetCids": [
-      "Qmc1g4ddA9TynUfMKCjr6ZFZtcobm4Bswjq763HFe3QsE9"
-    ]
+    "assetCids": []
+  },
+  "Qmc1g4ddA9TynUfMKCjr6ZFZtcobm4Bswjq763HFe3QsE9": {
+    "metadata": {
+      "name": "Tempo"
+    },
+    "assetCids": []
   },
   "QmfPHJGGq2sSia4d9osWw7T2STJbMw7RJz6x1PLDv8whqL": {
     "metadata": {
-      "name": "CoinZuki",
-      "description": "Creative Challenge  - 0xCert Collaboration",
-      "attributes": {
-        "artist": "coinjournal",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/CNJ/editions/CNJCOINZUKI00DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmQvcmPP83hnvzeRnuB1oJm9E1iuoTR4VXZpVeDRj66tmK/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmQvcmPP83hnvzeRnuB1oJm9E1iuoTR4VXZpVeDRj66tmK/other"
+      "name": "CoinZuki"
     },
-    "assetCids": [
-      "QmQvcmPP83hnvzeRnuB1oJm9E1iuoTR4VXZpVeDRj66tmK"
-    ]
+    "assetCids": []
+  },
+  "QmQvcmPP83hnvzeRnuB1oJm9E1iuoTR4VXZpVeDRj66tmK": {
+    "metadata": {
+      "name": "CoinZuki"
+    },
+    "assetCids": []
   },
   "QmcCdppXXyQ4UboiUzse7iV5muMMRFmNrNZ9WVT1QYkW9B": {
     "metadata": {
-      "name": "Cells",
-      "description": "Creative Challenge  - 0xCert Collaboration",
-      "attributes": {
-        "artist": "oficinas tk",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "nifty",
-          "0xcert",
-          "creative challenge"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OTK/editions/OTKCELLS00000DIG",
-      "image": "https://ipfs.infura.io/ipfs/Qmb5oFEmSJRFBZaiRZxgMqWwiPkqHL4ARq2v1XBgfnawvF/image",
-      "meta": "https://ipfs.infura.io/ipfs/Qmb5oFEmSJRFBZaiRZxgMqWwiPkqHL4ARq2v1XBgfnawvF/other"
+      "name": "Cells"
     },
-    "assetCids": [
-      "Qmb5oFEmSJRFBZaiRZxgMqWwiPkqHL4ARq2v1XBgfnawvF"
-    ]
+    "assetCids": []
+  },
+  "Qmb5oFEmSJRFBZaiRZxgMqWwiPkqHL4ARq2v1XBgfnawvF": {
+    "metadata": {
+      "name": "Cells"
+    },
+    "assetCids": []
   },
   "QmWC639z6D9Mo9j8fKSa8gvn4uSHbfPfB3U2fceg1VJSw5": {
     "metadata": {
-      "name": "Devilish run.",
-      "description": "A cute devil girl going for a run! Followed by her friend, Devi.",
-      "attributes": {
-        "artist": "drawingly willingly",
-        "scarcity": "rare",
-        "tags": [
-          "high res",
-          "illustration",
-          "digital",
-          "character",
-          "devilish",
-          "run",
-          "cute"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/DWW/editions/DWWDEVILRUN00DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmeL43j1gkKmGkmHcwmZqvevKu69LVhULDkgnsmTLP7TCQ/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmeL43j1gkKmGkmHcwmZqvevKu69LVhULDkgnsmTLP7TCQ/other"
+      "name": "Devilish run."
     },
-    "assetCids": [
-      "QmeL43j1gkKmGkmHcwmZqvevKu69LVhULDkgnsmTLP7TCQ"
-    ]
+    "assetCids": []
+  },
+  "QmeL43j1gkKmGkmHcwmZqvevKu69LVhULDkgnsmTLP7TCQ": {
+    "metadata": {
+      "name": "Devilish run."
+    },
+    "assetCids": []
   },
   "QmcESe9H27GKiykJei29og9ubezc3ZA241BikVKk3am3pC": {
     "metadata": {
-      "name": "Nr. 418 - A Crystal Formation",
-      "description": "Fragments and artifacts from a fictional expedition; each card depicts a scene from the wondrous world found by Prof. Kirsch during his travels in the Multiverse.",
-      "attributes": {
-        "artist": "oficinas tk",
-        "scarcity": "rare",
-        "tags": [
-          "digital",
-          "painting",
-          "nr. 418",
-          "multiverse",
-          "expedition",
-          "crystal",
-          "formation",
-          "high res"
-        ]
-      },
-      "external_uri": "https://knownorigin.io/artists/OTK/editions/OTKNR41800000DIG",
-      "image": "https://ipfs.infura.io/ipfs/QmPjGxiqCvkESUEcJeTqWeiMzBNYQDCTeUCNo4NfQdgeCC/image",
-      "meta": "https://ipfs.infura.io/ipfs/QmPjGxiqCvkESUEcJeTqWeiMzBNYQDCTeUCNo4NfQdgeCC/other"
+      "name": "Nr. 418 - A Crystal Formation"
     },
-    "assetCids": [
-      "QmPjGxiqCvkESUEcJeTqWeiMzBNYQDCTeUCNo4NfQdgeCC"
-    ]
+    "assetCids": []
+  },
+  "QmPjGxiqCvkESUEcJeTqWeiMzBNYQDCTeUCNo4NfQdgeCC": {
+    "metadata": {
+      "name": "Nr. 418 - A Crystal Formation"
+    },
+    "assetCids": []
   }
 }

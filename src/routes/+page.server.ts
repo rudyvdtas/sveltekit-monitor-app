@@ -2,6 +2,7 @@ import { getId, getPeers, getAllocations } from '$lib/server/cluster';
 import { getFailedCids, getSummary } from '$lib/server/failed-cids';
 import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
+import { loadEnrichedMeta } from '$lib/server/enriched-meta';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
@@ -12,10 +13,15 @@ export const load: PageServerLoad = async () => {
     const allocations = await getAllocations();
 
     const cidToProject: Record<string, string> = {};
+    let totalActualSizeMb = 0;
     for (const project of projects) {
       const cids = loadCids(project.cidFile);
       for (const cid of cids) {
         cidToProject[cid] = project.name;
+      }
+      const enriched = loadEnrichedMeta(project.cidFile);
+      if (enriched?.project?.totalSizeMb) {
+        totalActualSizeMb += enriched.project.totalSizeMb;
       }
     }
 
@@ -52,7 +58,8 @@ export const load: PageServerLoad = async () => {
       recentPins,
       pinCount,
       statusCounts,
-      failedCids
+      failedCids,
+      totalActualSizeMb
     };
   } catch (e) {
     console.error('Dashboard load failed', e);
