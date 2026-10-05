@@ -37,14 +37,6 @@ async function withConcurrencyLimit<T>(fn: () => Promise<T>): Promise<T> {
   }
 }
 
-function currentMaxPins(): number {
-  return Number(process.env.MAX_PINS) || 10_000;
-}
-
-function currentMaxPeerAllocations(): number {
-  return Number(process.env.MAX_PEER_ALLOCATIONS) || 100_000;
-}
-
 function currentMaxConcurrentRequests(): number {
   return Number(process.env.MAX_CONCURRENT_CLUSTER_REQUESTS) || 5;
 }
@@ -54,7 +46,7 @@ function currentCacheTtl(): number {
 }
 
 function currentTimeoutMs(): number {
-  return Number(process.env.CLUSTER_TIMEOUT_MS) || 10_000;
+  return Number(process.env.CLUSTER_TIMEOUT_MS) || 30_000;
 }
 
 function currentMaxResponseBytes(): number {
@@ -167,7 +159,7 @@ export type PinInfo = {
 
 const CACHE_KEY_ID = 'id';
 const CACHE_KEY_PEERS = 'peers';
-const CACHE_KEY_PINS = 'pins';
+const CACHE_KEY_ALLOCATIONS = 'allocations';
 
 export function getId(): Promise<PeerInfo> {
   return withConcurrencyLimit(() =>
@@ -181,86 +173,55 @@ export function getPeers(): Promise<PeerInfo | PeerInfo[]> {
   );
 }
 
-export async function getPins(): Promise<PinInfo[]> {
-  const pins = await withConcurrencyLimit(() =>
-    getOrSet(CACHE_KEY_PINS, () => fetchPins(), currentCacheTtl())
+/**
+ * Live per-CID redundancy status (`GET /pins/{cid}`) — cost scales with peer count,
+ * not pinset size, so this stays cheap at 200K+ CIDs.
+ * An unknown/unpinned CID is not an error: the cluster returns HTTP 200 with
+ * `allocations: []` and every peer reporting `status: "unpinned"`.
+ */
+export function getPinStatus(cid: string): Promise<PinInfo> {
+  return withConcurrencyLimit(() =>
+    getOrSet(
+      `pin:${cid}`,
+      () => get(`/pins/${encodeURIComponent(cid)}`) as Promise<PinInfo>,
+      currentCacheTtl()
+    )
   );
-
-  if (pins.length > currentMaxPins()) {
-    throw new ClusterError(`Pin count ${pins.length} exceeds maximum ${currentMaxPins()}`, 0, nextId());
-  }
-
-  const maxAllocs = currentMaxPeerAllocations();
-  let allocCount = 0;
-  for (const pin of pins) {
-    allocCount += Object.keys(pin.peer_map ?? {}).length;
-    if (allocCount > maxAllocs) {
-      throw new ClusterError(`Peer allocation count ${allocCount} exceeds maximum ${maxAllocs}`, 0, nextId());
-    }
-  }
-
-  return pins;
 }
 
-async function fetchPins(): Promise<PinInfo[]> {
-  const id = nextId();
-  const start = Date.now();
-  let rejected = rejectedCount;
-  try {
-    const res = await fetchWithTimeout(`${API}/pins`);
-    if (!res.ok) {
-      const err = await res.text().catch(() => '');
-      console.error(`[${id}] GET /pins: HTTP ${res.status} — ${sanitize(err)}`);
-      throw new ClusterError('Cluster request failed', res.status, id);
-    }
-    const cl = res.headers.get('content-length');
-    if (cl && Number(cl) > currentMaxResponseBytes()) {
-      console.error(`[${id}] GET /pins: response too large (${cl} bytes)`);
-      throw new ClusterError('Response too large', 0, id);
-    }
-    const text = await res.text();
-    if (!text || !text.trim()) return [];
-    if (text.length > currentMaxResponseBytes()) {
-      console.error(`[${id}] GET /pins: response exceeded limit (${text.length} bytes)`);
-      throw new ClusterError('Response too large', 0, id);
-    }
-    const trimmed = text.trim();
-    const lines = trimmed.split('\n');
-    let pins: PinInfo[];
-    try {
-      if (lines.length > 1 && lines[0].startsWith('{') && lines[1].startsWith('{')) {
-        pins = lines.map((l) => JSON.parse(l)).filter((p) => p && p.cid);
-      } else if (trimmed[0] === '[') {
-        const parsed = JSON.parse(trimmed);
-        pins = Array.isArray(parsed) ? parsed : parsed.cid ? [parsed] : [];
-      } else if (trimmed[0] === '{') {
-        const parsed = JSON.parse(trimmed);
-        pins = parsed.cid ? [parsed] : [];
-      } else {
-        throw new ClusterError('Invalid response format: expected JSON array or NDJSON', 0, id);
-      }
-    } catch (e) {
-      if (e instanceof ClusterError) throw e;
-      throw new ClusterError('Invalid response format: malformed JSON', 0, id);
-    }
+/**
+ * Lichte pinset-ophaling (`GET /allocations`) — retourneert de CID-lijst met
+ * replicatiefactor en toegewezen peers, maar géén live per-peer status.
+ * Schaalbaar tot 200K+ CIDs (~100MB respons is acceptabel server-side).
+ * Gebruik voor overzichten en tellingen i.p.v. bulk-`/pins`.
+ */
+export type AllocationInfo = {
+  cid: string;
+  name: string;
+  allocations: string[];
+  replication_factor_min: number;
+  replication_factor_max: number;
+};
 
-    const allocCount = pins.reduce((sum, p) => sum + Object.keys(p.peer_map ?? {}).length, 0);
-    console.log(
-      `[${id}] GET /pins: ${text.length} bytes, ${pins.length} pins, ` +
-      `${allocCount} allocations in ${Date.now() - start}ms ` +
-      `(active: ${activeRequests}, rejected: ${rejectedCount - rejected})`
-    );
+export function getAllocations(): Promise<AllocationInfo[]> {
+  return withConcurrencyLimit(() =>
+    getOrSet(CACHE_KEY_ALLOCATIONS, () => getAllocationsRaw(), currentCacheTtl())
+  );
+}
 
-    return pins;
-  } catch (e) {
-    if (e instanceof ClusterError) throw e;
-    console.error(`[${id}] GET /pins: request failed after ${Date.now() - start}ms`, e);
-    throw new ClusterError('Cluster unavailable', 0, id);
+async function getAllocationsRaw(): Promise<AllocationInfo[]> {
+  const data = await get('/allocations');
+  if (Array.isArray(data)) return data as AllocationInfo[];
+  if (data && typeof data === 'object') {
+    const entries = (data as Record<string, unknown>).entries ?? (data as Record<string, unknown>).allocations;
+    if (Array.isArray(entries)) return entries as AllocationInfo[];
   }
+  return [];
 }
 
 export function addPin(cid: string, replMin?: number, replMax?: number, name?: string): Promise<PinInfo> {
-  invalidate(CACHE_KEY_PINS);
+  invalidate(CACHE_KEY_ALLOCATIONS);
+  invalidate(`pin:${cid}`);
   const params = new URLSearchParams();
   if (replMin !== undefined) params.set('replication-min', String(replMin));
   if (replMax !== undefined) params.set('replication-max', String(replMax));
@@ -270,14 +231,15 @@ export function addPin(cid: string, replMin?: number, replMax?: number, name?: s
 }
 
 export function removePin(cid: string): Promise<PinInfo> {
-  invalidate(CACHE_KEY_PINS);
+  invalidate(CACHE_KEY_ALLOCATIONS);
+  invalidate(`pin:${cid}`);
   return del(`/pins/${cid}`) as Promise<PinInfo>;
 }
 
 export function invalidateCache(): void {
   invalidate(CACHE_KEY_ID);
   invalidate(CACHE_KEY_PEERS);
-  invalidate(CACHE_KEY_PINS);
+  invalidate(CACHE_KEY_ALLOCATIONS);
 }
 
 export function getMetrics(): Record<string, number> {

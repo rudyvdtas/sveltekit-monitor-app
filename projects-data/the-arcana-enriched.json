@@ -1,0 +1,1519 @@
+{
+  "project": "The Arcana Crypto Tarot (WOCA)",
+  "project_metadata": {
+    "name": "The Arcana Crypto Tarot",
+    "description": "Welcome to The Arcana Crypto Tarot. This deck features the 22 cards of the traditional Major Arcana as interpreted by 22 individual artists, the product of a spontaneous collaboration between a group of cryptoartists in 2020/2021, all of them inaugural members of Women of Cryptoart (WOCA).\n\nNo one quite knows exactly how Tarot cards – the precursor to modern playing cards – were invented, or how they came to make the jump from being entertainment to occult divination tool. Generally it’s agreed that Tarot cards as we know them today evolved in medieval Europe. The symbolic archetypes of Tarot decks remained fairly consistent across the centuries, and many people will recognize the figures of the Hermit, the Fool, the Lovers, the Tower, the Hanged Man, and so on as anchors of Western psychology. \n\nIn using this deck, you may find it useful to consult the cards’ traditional meanings. Much has already been written about these universal archetypes, so for these, we refer you to descriptions of the Rider Waite and other traditionally based Tarot decks. \n\nHowever, whenever you use divinatory tools to answer a question or get a perspective on a situation, it’s important to let one’s own associations come to the surface. In other words, the answers are not in the cards. The cards are just a tool to help you discover answers within yourself. That’s the magic.\n\nHow this deck works:\n\nOnce every 24 hours, a three-card spread is automatically generated. Anyone may visit the spread on any day with a question or concern in mind, and see what insights emerge from contemplating the cards. We invite you to follow your intuition: whenever you feel you have a question or concern, formulate your question and visit the Tarot, and reflect on the day’s reading as it pertains to your situation.\n\nThis kind of spread is generally read as follows: \n\nLeft card: What is past, or passing.\nCentre card: What is occurring now. \nRight card: What is to come.\n\nHowever, you may also interpret in other ways. For example, Left card / Centre card / Right card could be: \n\nWhat you wish for / the obstacle being presented / how to overcome the obstacle\nYou / someone else / the relationship\nWhat’s in your heart / what’s in your head / what’s in your spirit\n\n... and so on. There are many more options. What’s important is how you frame the question. Look up Tarot three-card spreads for more suggestions.\n\nCards in the spread may also appear upside-down – or \"reversed”. There are many ways to interpret this reversal. Perhaps the card means the inverse or opposite of its upright intention, or it might be describing an interior, secret or hidden state, or it's indicating a reduced or receding influence. Stay open to the possibilities as you meditate on your question.\n\nWe have also included the possibility of duplicate cards in each position. In other words, this spread encompasses three full decks’ worth of card combinations. If the same card turns up in different positions in the reading, simply integrate the message the card is giving you from the perspective of its position in the spread.\n\n\nHere are a few words from each artist, giving her own particular description of the archetype she chose to depict in this deck.\n\n0\nThe Fool \nArtist: y0b\nA leap into the cliff, a universe of randomness and intent. Colorful hills beyond.\n\nI\nThe Magician\nArtist: Kristy Glas\nShe is pure and passionate, connected to spiritual and material realms. She seeks balance and knowledge through constant growth.\n\nII\nThe High Priestess\nArtist: Cristiana Vettor (combugnera)\nThis card indicates the search for female knowledge, clairvoyance, the search for the secret and the future; her knowledge is mostly initiatory, therefore forbidden to most people and reserved only to a few.\n\n\nIII\nThe Empress\nArtist: SpaceDivers\nShe stands powerful and dancing, between nature and imagination, the pattern of creation and knowledge of birth are flows and breaths of reality, whether material or ethereal. \n\nIV\nThe Emperor\nArtist: Lulu\nControl through intelligence, the strength you need to stand straight.\n\nV\nThe Hierophant\nArtist: Inês Merino\nA rite of passage – infinite wisdom and guidance, magic, shining the brightest light within… As we close this chapter, a new beginning unfolds.\n\nVI\nThe Lovers\nArtist: oculardelusion\nIn the sacred beech grove’s purple light, divine union of requited love, of union with the Divine. All is One.\n\nVII\nThe Chariot\nArtist: The Bad Lament\nThe Chariot brings forth the brave winged warrioress, with the moon at her back, determined and ambitious.\n\nVIII\nStrength\nArtist: LUVRworldwide\nThe aligning of truths in mind-body-spirit, fuels our source from within, empowering a spectrum of peaceful passion and disciplined determination.\n\n\nIX\nThe Hermit\nArtist: Stina Jones\nThe hermit ventures forth, carving her own path through the wilderness.\n\nX\nThe Wheel of Fortune\nArtist: Sparrow\nThe Wheel of Fortune is never not a part of life. When this card appears it is a reminder: change is the only constant.\n\nXI\nJustice\nArtist: Kitty Bast\n“Karma’s a Bitch.”\n\nXII\nThe Hanged Man\nArtist: Daira\nIt is best to be sure to be willing to change.\n\nXIII\nDeath\nArtist: DaniellaDoodles\nWhile there is death, there is also life - death allows for new growth and change.\n\nXIV\nTemperance\nArtist: Vanesa Stati\nTemperance tests waters with one foot on solid ground, it’s the wise step, the guide from a lower plane to a higher one that enjoys natural protection, which denotes and promove a point of balance: moderation, patience, purpose, tenacity, adaptation, acceptance, harmonization, reason, flow...\n\nXV\nThe Devil\nArtist: Cechk\nThe seduction of the devil can materialise in the physical realm as well on the mind, it has lust and obsession, it longs for power, but also lives in fear and strives for domination. The Devil is good and bad, and you’re the one that will decide who it will be. \n\nXVI\nThe Tower\nArtist: Brandi Kyle\nA standing reminder of the perils we face, the Tower card depicts possibilities of catastrophe, destruction, renovation, or just simply unexpected change.\n\nXVII\nThe Star\nArtist: Silje Thorn\nShe is at peace with renewed purpose and hope, nourishing her surroundings with the conscious and the subconscious in equilibrium.\n\nXVIII\nThe Moon\nArtist: St Heresy\nAs she is kind and sweet, she is also deceptive and dangerously beckoning. She is the holder of your secrets, and she holds no judgement.\n\nXIX\nThe Sun\nArtist: Gisel Florez\nCircadian rhythms radiating the ultimate path of purpose & source.  \n\nXX\nJudgement\nArtist: Marigold\nThe announcement of a new era is coming. A new World will be born after the Judgement.\n\nXXI\nThe World\nArtist: CrypticFauna\nShe holds the past and uplifts the future, and provides all pathways into either direction.",
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "WOCA"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Lenara (y0b)"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Kristy Glas"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Cristiana Vettor (combugnera)"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Barbara Tosti (spacedivers)"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Lulú"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Inês Merino"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Karen Frances Eng"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Michelle Brown"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "LUVRworldwide"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Stina Jones"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Sparrow"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Kitty Bast"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Daira"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "DaniellaDoodles"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Vanesa Stati"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Cechk"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Brandi Kyle"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Silje Thorn"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "St Heresy"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Giselxflorez"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "Mariana"
+      },
+      {
+        "trait_type": "Artist",
+        "value": "CrypticFauna"
+      },
+      {
+        "trait_type": "Layer Count",
+        "value": 0
+      }
+    ],
+    "async-attributes": {
+      "forced_render_hours": [
+        0
+      ],
+      "autonomous_description": "Updates once a day.",
+      "timezone": {
+        "default_utc_offset": 0,
+        "name": "(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London"
+      },
+      "artists": [
+        "0xCCa88b952976DA313Fb928111f2D5c390eE0D723",
+        "0x61987699055394c65355F2797D3e4e589f7FaBf4",
+        "0x0EB47BEabd9CE2cab7CbED57aA6B040975BDc1b7",
+        "0xefe2941dc33e8A114d009d932EfFE380DCf15E8C",
+        "0x9DDaE9B61B790E16d4Fe92A6eDE1339dA0F9e7BD",
+        "0xc7Ae132c321bcb10e3F3e77c8F4b7A72C6315Da4",
+        "0xCE8F847e6448a31c3a8FE2477c3F1927B81D8048",
+        "0xBC2c67a59EC004d7127a63F0f99275E31B4883Cf",
+        "0xa1ef6bdCF45072792dbB923c82D4680CD4CE1c5b",
+        "0x4Bd6FeC69579745B9E1970Bd280989A954340e11",
+        "0x92bAffdD6cFb11a4e57a58ffeC4833b4d1ABd25d",
+        "0x92bAffdD6cFb11a4e57a58ffeC4833b4d1ABd25d",
+        "0x15e43b025a909eed84a42212093488ebb3409714",
+        "0x5CC0179300c9dA076479101eD0071b2374D651c9",
+        "0xed8B0F296A201D46066D895998Bc5c191E47086d",
+        "0xF65364f73687045970135889bF945F3589C9Da93",
+        "0x78DA99cD35CC3939D4Bb94707B33469B544b6EaF",
+        "0x4af4aebe930e938fa11ad28cd2c88645cce739a1",
+        "0x61c66a72a3f78707bed77f84cd180998ddc518b6",
+        "0x1D11ceda40fC5A552cd53e1249f395D29FEFe7d2",
+        "0x14287e62B859A3A5E19B3C2D59Ed1F12ac94ba4c",
+        "0x8260977Bb6Bab9dC867d5f274A1F3f8DCd6C608E",
+        "0xe5ae7E62Ee71f675f2FE0FF5Cc83C215a44E76D1"
+      ]
+    },
+    "tokenType": "master",
+    "layout": {
+      "type": "layered_static",
+      "version": 5,
+      "layers": [
+        {
+          "id": "Background",
+          "uri": "QmPxhv8E9434m3aPWTcH8qH5BpjVieGhcoTCNwzw3D1ju7",
+          "label": ""
+        },
+        {
+          "id": "Left",
+          "states": {
+            "options": [
+              {
+                "uri": "QmQUGcZrSBFx96wcn64ymqdgjGuUDzTVaewe4yzFQpPaVF",
+                "label": "1",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbwdbkF4vvje3kK7DGHCu4DBKjmyQvYnD5M8FhDo1zm35",
+                "label": "2",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQoYSuUDMntvdeLwiGLkHYyEqWK44dxt9VtkiH9tNeCRY",
+                "label": "3",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmPk6YNpGP3C5nuuA8ZAi9fCfxmPfva7Xuhi9edZcBWpBP",
+                "label": "4",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUAe1sB7sREFCRJUk2UqRfEzbKtriu1kFs28kK3BzqN6r",
+                "label": "5",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmfJVU2dbo1dtsgWQYyezrst5ifkiKBUV4LJjhsPU1D5Wk",
+                "label": "6",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmP92abCjvQQgfnp6gyMJjPYGTc61mDtgjDrobXD2ARMyi",
+                "label": "7",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNdbQtsHaqMcPLtyqWNXyDphyNS2mjpnkZcn3YYysGaAM",
+                "label": "8",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmchCC2hLdBnXm3tMzLH1vEGbFR8C3JwMVR7ECpZhx8MJb",
+                "label": "9",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmXv5vkyjzFQHNHD7dKGQ9f41ZoXZ7LRXeADhnEDkrTDJn",
+                "label": "10",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUxu3yUHXWzZ5PN77v1RN5ncF1YsnXd55iw7ihGkMYqQa",
+                "label": "11",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdAxoKc9AGp3UU4xSHr1CzbYS2RqkZec6jC7iytnzdwfT",
+                "label": "12",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmcCn7k85XkgNHojZuaqEtEPGwgHsvVUJK91WVpcYSiu95",
+                "label": "13",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmZssoRJHejkk9BAzDBwiaddCC14UTyeQRAzLwU8MEHXJC",
+                "label": "14",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmR84mw2tVfAG7gfwgS7hQ9kHcLxFyMxoaUjpY5BCJnAcz",
+                "label": "15",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYC21wnAdL8Bmq3sK9FAvWaq6oFoQ9b2BtTnzFdzwVkLX",
+                "label": "16",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbWixBc1t5nFQYdWACydssufacbxXWoarNa8QLNNwhgxf",
+                "label": "17",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNg1JoS24VwqiUd9eKViK1Zh8NRqduw4Svkj697erZsrf",
+                "label": "18",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmTMaGep1Pt51tmdbmD5ktfatXRdT5Usa4prisPR7Z1Tyi",
+                "label": "19",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdsPwZDWNDVBizgWieUAwVVrmSEwwFLZ6iap7FdoexB5W",
+                "label": "20",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQMBiKLYSkSAYtqQPDGnQnTAHbUx2WtuZhFeFWFbw1HbW",
+                "label": "21",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYK6QQLULtaWkoM4n2bcbJzC2p45Fk7rR1Kq1F6E8aS4G",
+                "label": "22",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": -687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "random": {
+              "max_value_inclusive": 21,
+              "handler": {
+                "type": "MODULO",
+                "max_bound_inclusive": 21
+              }
+            }
+          }
+        },
+        {
+          "id": "Center",
+          "states": {
+            "options": [
+              {
+                "uri": "QmQUGcZrSBFx96wcn64ymqdgjGuUDzTVaewe4yzFQpPaVF",
+                "label": "1",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbwdbkF4vvje3kK7DGHCu4DBKjmyQvYnD5M8FhDo1zm35",
+                "label": "2",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQoYSuUDMntvdeLwiGLkHYyEqWK44dxt9VtkiH9tNeCRY",
+                "label": "3",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmPk6YNpGP3C5nuuA8ZAi9fCfxmPfva7Xuhi9edZcBWpBP",
+                "label": "4",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUAe1sB7sREFCRJUk2UqRfEzbKtriu1kFs28kK3BzqN6r",
+                "label": "5",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmfJVU2dbo1dtsgWQYyezrst5ifkiKBUV4LJjhsPU1D5Wk",
+                "label": "6",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmP92abCjvQQgfnp6gyMJjPYGTc61mDtgjDrobXD2ARMyi",
+                "label": "7",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNdbQtsHaqMcPLtyqWNXyDphyNS2mjpnkZcn3YYysGaAM",
+                "label": "8",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmchCC2hLdBnXm3tMzLH1vEGbFR8C3JwMVR7ECpZhx8MJb",
+                "label": "9",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmXv5vkyjzFQHNHD7dKGQ9f41ZoXZ7LRXeADhnEDkrTDJn",
+                "label": "10",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUxu3yUHXWzZ5PN77v1RN5ncF1YsnXd55iw7ihGkMYqQa",
+                "label": "11",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdAxoKc9AGp3UU4xSHr1CzbYS2RqkZec6jC7iytnzdwfT",
+                "label": "12",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmcCn7k85XkgNHojZuaqEtEPGwgHsvVUJK91WVpcYSiu95",
+                "label": "13",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmZssoRJHejkk9BAzDBwiaddCC14UTyeQRAzLwU8MEHXJC",
+                "label": "14",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmR84mw2tVfAG7gfwgS7hQ9kHcLxFyMxoaUjpY5BCJnAcz",
+                "label": "15",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYC21wnAdL8Bmq3sK9FAvWaq6oFoQ9b2BtTnzFdzwVkLX",
+                "label": "16",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbWixBc1t5nFQYdWACydssufacbxXWoarNa8QLNNwhgxf",
+                "label": "17",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNg1JoS24VwqiUd9eKViK1Zh8NRqduw4Svkj697erZsrf",
+                "label": "18",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmTMaGep1Pt51tmdbmD5ktfatXRdT5Usa4prisPR7Z1Tyi",
+                "label": "19",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdsPwZDWNDVBizgWieUAwVVrmSEwwFLZ6iap7FdoexB5W",
+                "label": "20",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQMBiKLYSkSAYtqQPDGnQnTAHbUx2WtuZhFeFWFbw1HbW",
+                "label": "21",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYK6QQLULtaWkoM4n2bcbJzC2p45Fk7rR1Kq1F6E8aS4G",
+                "label": "22",
+                "anchor": "Background",
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "random": {
+              "max_value_inclusive": 21,
+              "handler": {
+                "type": "MODULO",
+                "max_bound_inclusive": 21
+              }
+            }
+          }
+        },
+        {
+          "id": "Right",
+          "states": {
+            "options": [
+              {
+                "uri": "QmQUGcZrSBFx96wcn64ymqdgjGuUDzTVaewe4yzFQpPaVF",
+                "label": "1",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbwdbkF4vvje3kK7DGHCu4DBKjmyQvYnD5M8FhDo1zm35",
+                "label": "2",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQoYSuUDMntvdeLwiGLkHYyEqWK44dxt9VtkiH9tNeCRY",
+                "label": "3",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmPk6YNpGP3C5nuuA8ZAi9fCfxmPfva7Xuhi9edZcBWpBP",
+                "label": "4",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUAe1sB7sREFCRJUk2UqRfEzbKtriu1kFs28kK3BzqN6r",
+                "label": "5",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmfJVU2dbo1dtsgWQYyezrst5ifkiKBUV4LJjhsPU1D5Wk",
+                "label": "6",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmP92abCjvQQgfnp6gyMJjPYGTc61mDtgjDrobXD2ARMyi",
+                "label": "7",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNdbQtsHaqMcPLtyqWNXyDphyNS2mjpnkZcn3YYysGaAM",
+                "label": "8",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmchCC2hLdBnXm3tMzLH1vEGbFR8C3JwMVR7ECpZhx8MJb",
+                "label": "9",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmXv5vkyjzFQHNHD7dKGQ9f41ZoXZ7LRXeADhnEDkrTDJn",
+                "label": "10",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmUxu3yUHXWzZ5PN77v1RN5ncF1YsnXd55iw7ihGkMYqQa",
+                "label": "11",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdAxoKc9AGp3UU4xSHr1CzbYS2RqkZec6jC7iytnzdwfT",
+                "label": "12",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmcCn7k85XkgNHojZuaqEtEPGwgHsvVUJK91WVpcYSiu95",
+                "label": "13",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmZssoRJHejkk9BAzDBwiaddCC14UTyeQRAzLwU8MEHXJC",
+                "label": "14",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmR84mw2tVfAG7gfwgS7hQ9kHcLxFyMxoaUjpY5BCJnAcz",
+                "label": "15",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYC21wnAdL8Bmq3sK9FAvWaq6oFoQ9b2BtTnzFdzwVkLX",
+                "label": "16",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmbWixBc1t5nFQYdWACydssufacbxXWoarNa8QLNNwhgxf",
+                "label": "17",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmNg1JoS24VwqiUd9eKViK1Zh8NRqduw4Svkj697erZsrf",
+                "label": "18",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmTMaGep1Pt51tmdbmD5ktfatXRdT5Usa4prisPR7Z1Tyi",
+                "label": "19",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmdsPwZDWNDVBizgWieUAwVVrmSEwwFLZ6iap7FdoexB5W",
+                "label": "20",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmQMBiKLYSkSAYtqQPDGnQnTAHbUx2WtuZhFeFWFbw1HbW",
+                "label": "21",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              },
+              {
+                "uri": "QmYK6QQLULtaWkoM4n2bcbJzC2p45Fk7rR1Kq1F6E8aS4G",
+                "label": "22",
+                "anchor": "Background",
+                "relative-position": {
+                  "x": 687,
+                  "y": 0
+                },
+                "fixed-rotation": {
+                  "multiplier": 180,
+                  "random": {
+                    "max_value_inclusive": 1,
+                    "handler": {
+                      "type": "MODULO",
+                      "max_bound_inclusive": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "random": {
+              "max_value_inclusive": 21,
+              "handler": {
+                "type": "MODULO",
+                "max_bound_inclusive": 21
+              }
+            }
+          }
+        }
+      ]
+    },
+    "image": "QmQx2eRHGp6LNvTsqqGfspQY3yErSuoAH39RQqb7hWhZzZ"
+  },
+  "file": "Async_the-arcana_crypto_tarot.csv",
+  "total_cids": 16,
+  "total_size_bytes": 9259820,
+  "total_size_mb": 8.83,
+  "total_size_gb": 0.0086,
+  "layout_asset_cids_from_metadata": [
+    "QmNdbQtsHaqMcPLtyqWNXyDphyNS2mjpnkZcn3YYysGaAM",
+    "QmNg1JoS24VwqiUd9eKViK1Zh8NRqduw4Svkj697erZsrf",
+    "QmP92abCjvQQgfnp6gyMJjPYGTc61mDtgjDrobXD2ARMyi",
+    "QmPk6YNpGP3C5nuuA8ZAi9fCfxmPfva7Xuhi9edZcBWpBP",
+    "QmPxhv8E9434m3aPWTcH8qH5BpjVieGhcoTCNwzw3D1ju7",
+    "QmQMBiKLYSkSAYtqQPDGnQnTAHbUx2WtuZhFeFWFbw1HbW",
+    "QmQUGcZrSBFx96wcn64ymqdgjGuUDzTVaewe4yzFQpPaVF",
+    "QmQoYSuUDMntvdeLwiGLkHYyEqWK44dxt9VtkiH9tNeCRY",
+    "QmQx2eRHGp6LNvTsqqGfspQY3yErSuoAH39RQqb7hWhZzZ",
+    "QmR84mw2tVfAG7gfwgS7hQ9kHcLxFyMxoaUjpY5BCJnAcz",
+    "QmTMaGep1Pt51tmdbmD5ktfatXRdT5Usa4prisPR7Z1Tyi",
+    "QmUAe1sB7sREFCRJUk2UqRfEzbKtriu1kFs28kK3BzqN6r",
+    "QmUxu3yUHXWzZ5PN77v1RN5ncF1YsnXd55iw7ihGkMYqQa",
+    "QmXv5vkyjzFQHNHD7dKGQ9f41ZoXZ7LRXeADhnEDkrTDJn",
+    "QmYC21wnAdL8Bmq3sK9FAvWaq6oFoQ9b2BtTnzFdzwVkLX",
+    "QmYK6QQLULtaWkoM4n2bcbJzC2p45Fk7rR1Kq1F6E8aS4G",
+    "QmZssoRJHejkk9BAzDBwiaddCC14UTyeQRAzLwU8MEHXJC",
+    "QmbWixBc1t5nFQYdWACydssufacbxXWoarNa8QLNNwhgxf",
+    "QmbwdbkF4vvje3kK7DGHCu4DBKjmyQvYnD5M8FhDo1zm35",
+    "QmcCn7k85XkgNHojZuaqEtEPGwgHsvVUJK91WVpcYSiu95",
+    "QmchCC2hLdBnXm3tMzLH1vEGbFR8C3JwMVR7ECpZhx8MJb",
+    "QmdAxoKc9AGp3UU4xSHr1CzbYS2RqkZec6jC7iytnzdwfT",
+    "QmdsPwZDWNDVBizgWieUAwVVrmSEwwFLZ6iap7FdoexB5W",
+    "QmfJVU2dbo1dtsgWQYyezrst5ifkiKBUV4LJjhsPU1D5Wk"
+  ],
+  "entries": {
+    "QmQz34S5SLcF6z41wdFFhYCUxnCGKCugGDfsEaYwonuWNQ": {
+      "name_from_csv": "qmqz34s5slcf6z41wdffhycuxncgkcuggdfseaywonuwnq.json",
+      "size_bytes": 25762,
+      "size_mb": 0.025,
+      "type": "metadata"
+    },
+    "QmPxhv8E9434m3aPWTcH8qH5BpjVieGhcoTCNwzw3D1ju7": {
+      "name_from_csv": "qmpxhv8e9434m3apwtch8qh5bpjvieghcotcnwzw3d1ju7.png",
+      "size_bytes": null,
+      "size_mb": null,
+      "type": "asset",
+      "layer_name": "Background"
+    },
+    "QmQUGcZrSBFx96wcn64ymqdgjGuUDzTVaewe4yzFQpPaVF": {
+      "name_from_csv": "qmqugczrsbfx96wcn64ymqdgjguudztvaewe4yzfqppavf.png",
+      "size_bytes": 407559,
+      "size_mb": 0.389,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "1"
+    },
+    "QmbwdbkF4vvje3kK7DGHCu4DBKjmyQvYnD5M8FhDo1zm35": {
+      "name_from_csv": "qmbwdbkf4vvje3kk7dghcu4dbkjmyqvynd5m8fhdo1zm35.png",
+      "size_bytes": 713857,
+      "size_mb": 0.681,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "2"
+    },
+    "QmUAe1sB7sREFCRJUk2UqRfEzbKtriu1kFs28kK3BzqN6r": {
+      "name_from_csv": "qmuae1sb7srefcrjuk2uqrfezbktriu1kfs28kk3bzqn6r.png",
+      "size_bytes": 1140298,
+      "size_mb": 1.087,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "5"
+    },
+    "QmfJVU2dbo1dtsgWQYyezrst5ifkiKBUV4LJjhsPU1D5Wk": {
+      "name_from_csv": "qmfjvu2dbo1dtsgwqyyezrst5ifkikbuv4ljjhspu1d5wk.png",
+      "size_bytes": 626781,
+      "size_mb": 0.598,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "6"
+    },
+    "QmP92abCjvQQgfnp6gyMJjPYGTc61mDtgjDrobXD2ARMyi": {
+      "name_from_csv": "qmp92abcjvqqgfnp6gymjjpygtc61mdtgjdrobxd2armyi.png",
+      "size_bytes": 1131847,
+      "size_mb": 1.079,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "7"
+    },
+    "QmNdbQtsHaqMcPLtyqWNXyDphyNS2mjpnkZcn3YYysGaAM": {
+      "name_from_csv": "qmndbqtshaqmcpltyqwnxydphyns2mjpnkzcn3yyysgaam.png",
+      "size_bytes": 461622,
+      "size_mb": 0.44,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "8"
+    },
+    "QmchCC2hLdBnXm3tMzLH1vEGbFR8C3JwMVR7ECpZhx8MJb": {
+      "name_from_csv": "qmchcc2hldbnxm3tmzlh1vegbfr8c3jwmvr7ecpzhx8mjb.png",
+      "size_bytes": 764895,
+      "size_mb": 0.729,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "9"
+    },
+    "QmXv5vkyjzFQHNHD7dKGQ9f41ZoXZ7LRXeADhnEDkrTDJn": {
+      "name_from_csv": "qmxv5vkyjzfqhnhd7dkgq9f41zoxz7lrxeadhnedkrtdjn.png",
+      "size_bytes": 374222,
+      "size_mb": 0.357,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "10"
+    },
+    "QmUxu3yUHXWzZ5PN77v1RN5ncF1YsnXd55iw7ihGkMYqQa": {
+      "name_from_csv": "qmuxu3yuhxwzz5pn77v1rn5ncf1ysnxd55iw7ihgkmyqqa.png",
+      "size_bytes": 862280,
+      "size_mb": 0.822,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "11"
+    },
+    "QmdAxoKc9AGp3UU4xSHr1CzbYS2RqkZec6jC7iytnzdwfT": {
+      "name_from_csv": "qmdaxokc9agp3uu4xshr1czbys2rqkzec6jc7iytnzdwft.png",
+      "size_bytes": 307888,
+      "size_mb": 0.294,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "12"
+    },
+    "QmZssoRJHejkk9BAzDBwiaddCC14UTyeQRAzLwU8MEHXJC": {
+      "name_from_csv": "qmzssorjhejkk9bazdbwiaddcc14utyeqrazlwu8mehxjc.png",
+      "size_bytes": 496524,
+      "size_mb": 0.474,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "14"
+    },
+    "QmR84mw2tVfAG7gfwgS7hQ9kHcLxFyMxoaUjpY5BCJnAcz": {
+      "name_from_csv": "qmr84mw2tvfag7gfwgs7hq9khclxfymxoaujpy5bcjnacz.png",
+      "size_bytes": 772667,
+      "size_mb": 0.737,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "15"
+    },
+    "QmTMaGep1Pt51tmdbmD5ktfatXRdT5Usa4prisPR7Z1Tyi": {
+      "name_from_csv": "qmtmagep1pt51tmdbmd5ktfatxrdt5usa4prispr7z1tyi.png",
+      "size_bytes": 521051,
+      "size_mb": 0.497,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "19"
+    },
+    "QmQMBiKLYSkSAYtqQPDGnQnTAHbUx2WtuZhFeFWFbw1HbW": {
+      "name_from_csv": "qmqmbiklysksaytqqpdgnqntahbux2wtuzhfefwfbw1hbw.png",
+      "size_bytes": 652567,
+      "size_mb": 0.622,
+      "type": "asset",
+      "layer_name": "Right",
+      "option_label": "21"
+    }
+  }
+}

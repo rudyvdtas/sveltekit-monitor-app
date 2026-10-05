@@ -1,0 +1,16 @@
+# Host-level Caddy config — vervangt coolify-proxy als reverse proxy.
+# Dit bestand hoort NIET in Docker te draaien; installeer Caddy als systemd-service
+# op de VPS zelf (`apt install caddy`) en kopieer dit naar /etc/caddy/Caddyfile.
+#
+# Domein bevestigd via de Traefik-labels op de huidige dashboard-container
+# (docker inspect, 3 okt 2026): glimmy.xyz + www.glimmy.xyz → poort 3000.
+
+glimmy.xyz, www.glimmy.xyz {
+	reverse_proxy localhost:3000
+
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		X-Frame-Options "DENY"
+	}
+}

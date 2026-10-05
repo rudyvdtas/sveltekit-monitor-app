@@ -3,10 +3,41 @@
   import DonationButton from '$lib/DonationButton.svelte';
   let data = $props() as { data: any };
   let allProjects = $derived(data.data?.projects ?? []);
-  let activeTab = $state(allProjects.length > 0 ? allProjects[0].id : null);
-  let showCids = $state(false);
+  let activeId = $derived(data.data?.activeId ?? '');
+  let page = $derived(data.data?.page ?? 1);
+  let perPage = $derived(data.data?.perPage ?? 50);
+  let pagedCids = $derived(data.data?.pagedCids ?? []);
+  let totalPages = $derived(data.data?.totalPages ?? 0);
+  let pinStatusMap = $derived(data.data?.pinStatusMap ?? {});
 
-  let activeProject = $derived(allProjects.find((p: any) => p.id === activeTab));
+  function formatSize(mb: number | null): string {
+    if (mb == null) return '—';
+    if (mb < 1) return `${(mb * 1000).toFixed(0)} KB`;
+    if (mb >= 1024) return `${(mb / 1024).toFixed(2)} GB`;
+    return `${mb.toFixed(2)} MB`;
+  }
+
+  let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
+
+  function projectUrl(id: string): string {
+    const p = new URLSearchParams();
+    p.set('project', id);
+    p.set('page', '1');
+    return `?${p.toString()}`;
+  }
+
+  function linkify(text: string): string {
+    return text.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+  }
+
+  function pageUrl(n: number): string {
+    const p = new URLSearchParams();
+    p.set('project', activeId);
+    p.set('page', String(n));
+    return `?${p.toString()}`;
+  }
+
+  let pages = $derived(Array.from({ length: totalPages }, (_, i) => i + 1));
 </script>
 
 <h1 style="margin-bottom: 0.25rem;">Projects</h1>
@@ -16,12 +47,13 @@
 
 <div class="tabs">
   {#each allProjects as project}
-    <button
-      class="tab {activeTab === project.id ? 'active' : ''}"
-      onclick={() => { activeTab = project.id; showCids = false; }}
+    <a
+      href={projectUrl(project.id)}
+      class="tab {activeId === project.id ? 'active' : ''}"
+      role="button"
     >
       {project.name}
-    </button>
+    </a>
   {/each}
 </div>
 
@@ -38,35 +70,37 @@
         {/if}
         <div>
           <strong style="font-size: 1rem;">{activeProject.name}</strong>
-          <p class="text-muted text-sm" style="margin-top: 0.25rem; white-space: pre-line;">{activeProject.description}</p>
+          <p class="text-muted text-sm" style="margin-top: 0.25rem; white-space: pre-line;">{@html linkify(activeProject.description)}</p>
         </div>
       </div>
-      <div class="badge badge-info">{activeProject.cids.length} CIDs</div>
+      <div class="badge badge-info">{activeProject.totalCids} CIDs</div>
     </div>
-    <button
-      class="primary"
-      style="font-size: 0.8rem; margin-top: 0.5rem;"
-      onclick={() => showCids = !showCids}
-    >
-      {showCids ? 'Hide CID list' : 'Show CID list'}
-    </button>
   </div>
 
-  {#if showCids && activeProject.cids.length > 0}
+  {#if pagedCids.length > 0}
     <div class="card" style="margin-bottom: 1rem;">
-      <h2>Curated CIDs ({activeProject.cids.length})</h2>
-      <div style="max-height: 350px; overflow-y: auto; margin-top: 0.5rem;">
+      <div class="flex-between mb-md">
+        <h2>Curated CIDs ({activeProject.totalCids})</h2>
+        <span class="text-muted text-sm">Page {page} of {totalPages}</span>
+      </div>
+      <div style="max-height: 450px; overflow-y: auto; margin-top: 0.5rem;">
         <table>
           <thead>
             <tr>
               <th>CID</th>
-              <th>Artwork</th>
+              <th>Artwork / Layer</th>
               <th>Artist</th>
+              <th>Size</th>
+              <th>Type</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
-            {#each activeProject.cids as cid}
+            {#each pagedCids as cid}
               {@const info = activeProject.meta?.[cid]}
+              {@const ee = activeProject.enrichedEntries?.[cid]}
+              {@const ps = pinStatusMap[cid] ?? { pinnedCount: 0, totalPeers: 0 }}
+              {@const ratio = ps.totalPeers > 0 ? ps.pinnedCount / ps.totalPeers : 0}
               <tr>
                 <td>
                   <a href="https://dweb.link/ipfs/{cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
@@ -74,17 +108,45 @@
                   </a>
                 </td>
                 <td>
-                  {#if info?.artworkName}
+                  {#if ee?.layerName}
+                    {ee.layerName}
+                    {#if ee?.optionLabel}
+                      <span class="text-muted text-sm">({ee.optionLabel})</span>
+                    {/if}
+                  {:else if ee?.tokenName}
+                    {ee.tokenName}
+                  {:else if info?.artworkName}
                     {info.artworkName}
                   {:else}
                     <span class="text-muted">—</span>
                   {/if}
                 </td>
                 <td>
-                  {#if info?.artist}
+                  {#if ee?.artist}
+                    {ee.artist}
+                  {:else if info?.artist}
                     {info.artist}
                   {:else}
                     <span class="text-muted">—</span>
+                  {/if}
+                </td>
+                <td>
+                  <span class="text-muted text-sm">{formatSize(ee?.sizeMb)}</span>
+                </td>
+                <td>
+                  {#if ee?.type}
+                    <span class="badge">{ee.type}</span>
+                  {:else}
+                    <span class="text-muted">—</span>
+                  {/if}
+                </td>
+                <td>
+                  {#if ratio >= 1}
+                    <span class="badge badge-success">{ps.pinnedCount}/{ps.totalPeers}</span>
+                  {:else if ratio > 0}
+                    <span class="badge badge-warning">{ps.pinnedCount}/{ps.totalPeers}</span>
+                  {:else}
+                    <span class="badge">{ps.pinnedCount}/{ps.totalPeers}</span>
                   {/if}
                 </td>
               </tr>
@@ -92,6 +154,26 @@
           </tbody>
         </table>
       </div>
+
+      {#if totalPages > 1}
+        <div class="pagination" style="margin-top: 0.75rem; display:flex; gap:0.25rem; flex-wrap:wrap;">
+          {#if page > 1}
+            <a href={pageUrl(page - 1)} class="button-like" style="font-size:0.8rem;">← Prev</a>
+          {/if}
+          {#each pages as n}
+            {#if n === page}
+              <span style="padding:0.25rem 0.5rem; font-weight:700;">{n}</span>
+            {:else if n === 1 || n === totalPages || (n >= page - 2 && n <= page + 2)}
+              <a href={pageUrl(n)} style="padding:0.25rem 0.5rem;">{n}</a>
+            {:else if n === page - 3 || n === page + 3}
+              <span style="padding:0.25rem 0.5rem;">…</span>
+            {/if}
+          {/each}
+          {#if page < totalPages}
+            <a href={pageUrl(page + 1)} class="button-like" style="font-size:0.8rem;">Next →</a>
+          {/if}
+        </div>
+      {/if}
     </div>
   {/if}
 {/if}
@@ -100,3 +182,26 @@
   <CTA />
   <DonationButton />
 </div>
+
+<style>
+  a.button-like {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.15s;
+  }
+  a.button-like:hover {
+    background: var(--accent-dark);
+    color: #fff;
+  }
+  a.tab {
+    text-decoration: none;
+  }
+  a.tab.active {
+    font-weight: 600;
+  }
+</style>

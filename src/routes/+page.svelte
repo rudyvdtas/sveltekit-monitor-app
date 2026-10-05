@@ -7,10 +7,18 @@
   let cluster = $derived(data.data?.cluster);
   let peers = $derived(data.data?.peers ?? []);
   let volunteers = $derived(data.data?.volunteers ?? 0);
-  let pinStatuses = $derived(data.data?.pinStatuses ?? []);
+  let recentPins = $derived(data.data?.recentPins ?? []);
   let pinCount = $derived(data.data?.pinCount ?? 0);
   let counts = $derived(data.data?.statusCounts ?? { pinned: 0, pinning: 0, queued: 0, error: 0 });
   let failedCids = $derived(data.data?.failedCids ?? []);
+
+  function formatStorage(cids: number): string {
+    const tb = cids * 0.001;
+    if (tb >= 1) return `~${tb.toFixed(1)} TB`;
+    const gb = cids * 1;
+    if (gb >= 1) return `~${gb.toFixed(0)} GB`;
+    return `~${cids * 1000} MB`;
+  }
 </script>
 
 {#if error}
@@ -36,26 +44,13 @@
 
     <div class="card card-accent">
       <h2>Pins</h2>
-      <div class="flex gap-md" style="margin-top: 0.5rem; flex-wrap:wrap;">
-        <div>
-          <div style="font-size: 1.5rem; font-weight: 700;">{counts.pinned}</div>
-          <span class="badge badge-success">PINNED</span>
-        </div>
-        <div>
-          <div style="font-size: 1.5rem; font-weight: 700;">{counts.pinning}</div>
-          <span class="badge badge-warning">PINNING</span>
-        </div>
-        <div>
-          <div style="font-size: 1.5rem; font-weight: 700;">{counts.queued}</div>
-          <span class="badge badge-info">QUEUED</span>
-        </div>
-        {#if counts.error > 0}
-          <div>
-            <div style="font-size: 1.5rem; font-weight: 700;">{counts.error}</div>
-            <span class="badge badge-error">ERROR</span>
-          </div>
-        {/if}
-      </div>
+      <div style="font-size: 2rem; font-weight: 700;">{pinCount.toLocaleString()}</div>
+      <div class="text-muted text-sm">{pinCount.toLocaleString()} CIDs, ~{formatStorage(pinCount)} total</div>
+      {#if counts.error > 0}
+        <p class="text-sm" style="margin-top: 0.5rem; color: var(--red);">
+          {counts.error} error{counts.error > 1 ? 's' : ''} — {counts.pinning} pinning, {counts.queued} queued
+        </p>
+      {/if}
     </div>
   </div>
 
@@ -92,7 +87,7 @@
       <h2 style="margin-bottom:0;">Activity on Volunteers</h2>
       <a href="/projects">View Projects →</a>
     </div>
-    {#if pinStatuses.length === 0}
+    {#if recentPins.length === 0}
       <p class="text-muted">No CIDs pinned yet. No volunteers connected.</p>
     {:else}
       <table>
@@ -100,12 +95,10 @@
           <tr>
             <th>CID</th>
             <th>Project</th>
-            <th>Pinned on peers</th>
           </tr>
         </thead>
         <tbody>
-          {#each pinStatuses.slice(0, 10) as pin}
-            {@const ratio = pin.totalPeers > 0 ? pin.pinnedCount / pin.totalPeers : 0}
+          {#each recentPins as pin}
             <tr>
               <td>
                 <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
@@ -117,15 +110,6 @@
                   <span class="badge badge-info">{pin.projectName}</span>
                 {:else}
                   <span class="text-muted text-sm">—</span>
-                {/if}
-              </td>
-              <td>
-                {#if ratio >= 1}
-                  <span class="badge badge-success">{pin.pinnedCount} / {pin.totalPeers} peers</span>
-                {:else if ratio > 0}
-                  <span class="badge badge-warning">{pin.pinnedCount} / {pin.totalPeers} peers</span>
-                {:else}
-                  <span class="badge">{pin.pinnedCount} / {pin.totalPeers} peers</span>
                 {/if}
               </td>
             </tr>

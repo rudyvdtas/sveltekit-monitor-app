@@ -32,21 +32,27 @@ We are the Cyber Watch.
 
 Participating artists from background to foreground:
 
-Sparrow, Silje Thorn, Surreal Serpentine, FtrSaroth, Loudsqueak, Lapin Mignon, Tom Abbink, Sarah Zucker, Talos, Nika Danny, Arvid Hjorth, ejthek, Benza, Legendary, Rutger van der Tas, Becca Kennedy, Shelly Soneja, Mehak Jain, Airco Caravan, pplpleasr, Fabin Rasheed, The Perfesser, Stellabelle, Matt Kane, Coldie 3D, Shinji Akhirah, Ytje Veenstra, Orabelart, Danil Pan, Jetski, Angie Taylor, SamJ Studios`,
+Sparrow, Silje Thorn, Surreal Serpentine, FtrSaroth, Loudsqueak, Lapin Mignon, Tom Abbink, Sarah Zucker, Talos, Nika Danny, Arvid Hjorth, ejthek, Benza, Legendary, Rutger van der Tas, Becca Kennedy, Shelly Soneja, Mehak Jain, Airco Caravan, pplpleasr, Fabin Rasheed, The Perfesser, Stellabelle, Matt Kane, Coldie 3D, Shinji Akhirah, Ytje Veenstra, Orabelart, Danil Pan, Jetski, Angie Taylor, SamJ Studios
+~ 110 CIDs · 49.3 MB total · 34 layers · 33 artists · 107 states
+
+Check the original piece: https://async.art/`,
     cidFile: 'cyberwatch',
     image: 'cyber_watch_theguild.jpg',
   },
   {
     id: 'the-arcana',
     name: 'The Arcana · Crypto Tarot',
-    description: `Created by Women of Crypto Art (WoCA), bringing together 22 women cryptoartists from 13 countries, The Arcana Crypto Tarot was released on Async Art in April 2021 as the world's first fully functional Major Arcana tarot NFT. Its programmable deck generates a new random three-card reading every day at midnight UTC.`,
+    description: `Created by Women of Crypto Art (WoCA), bringing together 22 women cryptoartists from 13 countries, The Arcana Crypto Tarot was released on Async Art in April 2021 as the world's first fully functional Major Arcana tarot NFT. Its programmable deck generates a new random three-card reading every day at midnight UTC.
+~ 16 CIDs · 8.8 MB total · 22 artists · 22 Major Arcana cards
+
+Check the original piece: https://async.art/`,
     cidFile: 'the-arcana',
     image: 'The_Arcana_crypto_tarot.jpg',
   },
   {
     id: 'async-first-supper',
     name: 'Async · First Supper',
-    description: 'We, cryptoartists, gather in this place to celebrate a new dawn for collaboration, creativity, and interaction between artist, collector, and art-lover alike. We hold these tokens to be self-evident, that all layers are created uniquely by individual artists, that each is endowed by their creator with specific immutable rights; that among these are state, rotation, scale, XY position, visibility, opacity, hue, and RGB. That whenever a token holder desires, it is their sole privilege to alter the value of these rights and constitute a new image. — Features 13 artists: Shortcut, Josie Bellini, BlackBoxDotArt, MLIBTY, VansDesign, Alotta Money, TwistedVacancy, Coldie, Hackatao, XCOPY, Rutger van der Tas, Matt Kane, Connie Digital. 115 CIDs across layer options and composite image.',
+    description: 'We, cryptoartists, gather in this place to celebrate a new dawn for collaboration, creativity, and interaction between artist, collector, and art-lover alike. We hold these tokens to be self-evident, that all layers are created uniquely by individual artists, that each is endowed by their creator with specific immutable rights; that among these are state, rotation, scale, XY position, visibility, opacity, hue, and RGB. That whenever a token holder desires, it is their sole privilege to alter the value of these rights and constitute a new image. — Features 13 artists: Shortcut, Josie Bellini, BlackBoxDotArt, MLIBTY, VansDesign, Alotta Money, TwistedVacancy, Coldie, Hackatao, XCOPY, Rutger van der Tas, Matt Kane, Connie Digital. ~ 116 CIDs · 101.8 MB total · 22 layers.\n\nNote: the original metadata is not correctly built with the names and traits, so you may find wrong images by the artists names. You can check the original piece in the revamped website: https://async.art/',
     cidFile: 'async-first-supper',
     image: 'first_supper_async.jpg',
   },
@@ -60,7 +66,7 @@ Sparrow, Silje Thorn, Surreal Serpentine, FtrSaroth, Loudsqueak, Lapin Mignon, T
   {
     id: 'knownorigin-v2-batch-1',
     name: 'KnownOrigin V2 · Batch 1',
-    description: 'KnownOrigin V2 — eerste batch van 10 GB (3336 CIDs). Wordt in batches gepind voor monitoring.',
+    description: 'KnownOrigin V2 — batch 1 (3336 CIDs, 3334 unique, 1668 metadata + 1668 asset entries, ~10 GB).\n\nKNOWNORIGIN\n2018-2024\nIt\'s been an unforgettable experience. But the time has come to close the lid on KnownOrigin as an active platform, and look back on it as a lasting piece of crypto-art history.\n\nAll NFTs minted from any of the KODA contracts are safe and will live on.\n\nWe can\'t thank you all enough for trusting us over the years to be the place where so many crypto-artists started their journeys and continued to call home.\n\nhttps://knownorigin.io/',
     cidFile: 'kov2-batch-1',
     image: 'knownorigin.avif',
   }
