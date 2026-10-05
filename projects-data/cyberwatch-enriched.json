@@ -1,0 +1,1713 @@
+{
+  "project": "Async Cyber Watch by The Guild",
+  "project_metadata": {
+    "name": "Cyber Watch",
+    "description": "CYBER WATCH \r\n\r\nThis is the first big collab The Guild has made on Async. It is based on the famous painting The Night Watch by Rembrandt (1642). This was initiated and coordinated by Rutger van der Tas. \r\n\r\nA total of 34 layers make this Cyber Watch containing 107 different states made by 33 artists. Some of them are very well-known and some are up and coming. \r\n\r\nWe are all familiar with the famous painting and the composition of the original work by Rembrandt, therefore this digital piece is easily readable although it is a cacophony of styles and colors. \r\n\r\nRutger did not want to hold back the creativity by giving a set of rules. No themes, no color palette was assigned. Just the creative flow and the story every artist wanted to tell. They had to feel the freedom to do whatever they wanted. \r\n\r\nEvery artist was supplied with a figure or piece of the surroundings in the original painting. No one was able to pick a place, a spot or character on beforehand. \r\n\r\nAfter dividing the canvas into separate layers and giving them a number, an online randomizer was used to divide them. This was done three times to get three different options. After this, a vote was made to choose which of the three variations was going to be used. This was done in a special Nachtwacht Telegram group. \r\n\r\nAll artists involved worked hard on their contribution even though we have all been impacted by Covid-19 directly or indirectly.  \r\n\r\nBeing in a lockdown or not free to move in the way we used too, makes this online NFT art community very important.  For both artists and collectors this online realm filled our lives in so many ways.\r\n\r\nWe are the Cyber Watch.\r\n\r\nParticipating artists from background to foreground: \r\n\r\nSparrow, Silje Thorn, Surreal Serpentine, FtrSaroth, Loudsqueak, Lapin Mignon, Tom Abbink, Sarah Zucker, Talos, Nika Danny, Arvid Hjorth, ejthek, Benza, Legendary, Rutger van der Tas, Becca Kennedy, Shelly Soneja, Mehak Jain, Airco Caravan, pplpleasr, Fabin Rasheed, The Perfesser, Stellabelle, Matt Kane, Coldie 3D, Shinji Akhirah, Ytje Veenstra, Orabelart, Danil Pan, Jetski, Angie Taylor, SamJ Studios\r\n\r\n",
+    "tokenType": "master",
+    "artistName": "The Guild_NFT",
+    "layout": {
+      "type": "layered_static",
+      "version": 3,
+      "layers": [
+        {
+          "id": "Walking_Away_From_Omelas_-_Sparrow",
+          "states": {
+            "options": [
+              {
+                "uri": "QmYFQUQWQFrBGbZT2LfTgkcnJd1AcwBEdnohMw8QFSpZve",
+                "label": "Beldene"
+              },
+              {
+                "uri": "QmWmSBZgWZFb5WGa4tY9LozUXzhTaFmAtrYG9CbH7GL5E3",
+                "label": "Athshe"
+              },
+              {
+                "uri": "QmPcmC8B5Kag9BnCmYdLwTRMBRC36Ste1n1btCbC1fzsHv",
+                "label": "Gde"
+              }
+            ],
+            "token-id": 1,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Walled_in_-_Silje_Thorn",
+          "states": {
+            "options": [
+              {
+                "uri": "QmYSMrxbJcNjrTNekGN6owVJJHN7CStKo7HMpv7kSHPScX",
+                "label": "Hands",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmNrDSnfxgjV5Su87oCRyRxwpxGKEJVHnKeiUxSZ67eKZz",
+                "label": "Dragon vs Sea Serpent",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSzu3edGsJBH7SX7TJpjppjqoQAbbPRDmdkazayRUg3uC",
+                "label": "Northern Lights",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 2,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "The_Realms_-_Surreal_Serpentine",
+          "states": {
+            "options": [
+              {
+                "uri": "QmWMw7NPaF9Vs4i5vWfFUUojtHoX2L7d6Fmh7Mz6TkHpwN",
+                "label": "01_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSibM8oTpgr88ZUM8zXSXTtUFpgsGZo7Bfhmegkj8DV2R",
+                "label": "02_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZCjkyceHq7fgZqKPGsQUYcFK3bz7zycvYgknVzNU1hS9",
+                "label": "03_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 3,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Sometimes_-_Moxarra_Gonzales",
+          "states": {
+            "options": [
+              {
+                "uri": "QmT8Ngmqg4DRmTD7NRygPhbfz4dcmHnNxcN4Bitj4Pbqbo",
+                "label": "The Look",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmaQZKfibAAAryhqiwNMwwfPD3L4vbN611rug5pQ1i5yaf",
+                "label": "The Scene",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmYvWiW9hjFXnXwh7aDbhGUhMJs5eJZiP5HYodF4TCvaAP",
+                "label": "The Smile",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 4,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Marvelous_Fire_-_FtrSaroth",
+          "states": {
+            "options": [
+              {
+                "uri": "QmR29y7BfM4CzPtPEBDjKVAnnKFyLnyMawJ2gTVrzu5G5Z",
+                "label": "Ricardo Flores Magón (Calavera)",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmUBoZxiY615SdSFtZudu8GqMBv3gKEFBCStHUtMurZ9oh",
+                "label": "The Hermit with The Caduceo",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmYCoZaiqQDtDweaueX9iE719oTYHUJZTaoQhwdSqJkJSg",
+                "label": " Isis Unveilin",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 5,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "A_study_of_group_and_structure._-_Loudsqueak",
+          "states": {
+            "options": [
+              {
+                "uri": "QmbojFVs7SaaDwqqiqncmKtdFLPCuFqUEdY4hN2gsHvvFa",
+                "label": "01_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmdGRc1Ex1nrBvjRQ22QGU2oCJnBEv3afz6Pc6o31CQE8e",
+                "label": "02_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmXiUXbuKEnc2LkY4aAqf6kxrtqWMqttFn5kSPgnQPGVDc",
+                "label": "03_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 6,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Les_Nachtamouilles_-_Lapin_Mignon",
+          "states": {
+            "options": [
+              {
+                "uri": "QmWdrvsxMQsgCFAdY9UJAdKRzbaVTYeMRib7AA1T2sAKex",
+                "label": "Nachtamo",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmbnficKcidbfywJ5U18t7mfRbwZyPYziephgf2a82mCci",
+                "label": "Nachtamy",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmVcbycGd3nBscy1KGuaTtuRLYbKorutkQDBLMnvzd9VXr",
+                "label": "Nachtamouille",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 7,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Human_behind_the_Code_-_Tom_Abbink",
+          "states": {
+            "options": [
+              {
+                "uri": "QmZ9JxW1ND2f9CiWynL6pASERwznG1buq5mAurgB3yf7R7",
+                "label": "Made By Humans",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmbbZi38Z33P1QULJdFqaKEt6jjAtXHodLYXmJZgKHtZzq",
+                "label": "Made By Satoshi",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmRcs89G3Rw3ojLXr1bsAYXNjLssdq8aXApa8Hm9MJEZXJ",
+                "label": "Fear me Humans",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 8,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Drummer_Troll_-_Sarah_Zucker",
+          "states": {
+            "options": [
+              {
+                "uri": "QmaesW3CUVWermDbfGzv8PgfVJtD2yYBK2W6iVnszYX9r5",
+                "label": "Drummer Troll #1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmPRbUGygiR3iPNBQMJMbD1FqsiA8W4ZEtXEHHfTnDW9Te",
+                "label": "Drummer Troll #2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmVAnS6ptrcq4nVqYxKqhKqatf8Cwhp4ZNVruT1h1cU1s2",
+                "label": "Drummer Troll #3",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 9,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "My_work_is_Mr_Bitey_Art_-_Talos",
+          "states": {
+            "options": [
+              {
+                "uri": "Qmcn4veugcQgHrKCD4eKicxWFt2CtUuNoMhRV3rmxciaf8",
+                "label": "01_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmUFC2x7KPTQaB11mu9uYMqSzjEv26TxwQGrYFykojiPVi",
+                "label": "02_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmYFWy7F5695RW4WaRMk1GmafXR8Yd7QFyPQU1CGQiTE3q",
+                "label": "03_NORMAL",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 10,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Furies_-_Arvid_Hjorth",
+          "states": {
+            "options": [
+              {
+                "uri": "QmdQGLrJ8Vc8Gnc5hf2B7uuUZSwu8QNRTLXMACvoTTSamd",
+                "label": "Allecto",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "Qmck44uWAiyPdzMBy8KryGLrvY262DhLbLhMkCUbFL5i37",
+                "label": "Megaera",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmbGya3FZGCXK21RaAHiZJPEUQdw1SjvfKLhcd2pvkq17S",
+                "label": "Tisiphone",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 11,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Essence_Within_-_Nika_Danny",
+          "states": {
+            "options": [
+              {
+                "uri": "QmUEqnfPDunNQ2qrcuPopbatnUxY8SrVGhvRKbLHkQgN9o",
+                "label": "1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmVMR8AhxbprJpk52e66rGXYVyUsTy84f6rWsepacajW5u",
+                "label": "2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 12,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Hidden_Struggle_-_Shelly_Soneja",
+          "states": {
+            "options": [
+              {
+                "uri": "QmcCiyspppLur8Vi5DEFNLBkTrXRQmi8rjgpdph2vDMzbJ",
+                "label": "Angel",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZ7xZXGNCHpWX6r5HNc3ggB6tyCpFcEqge9wznqWasN1z",
+                "label": "Devil",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 13,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Aliens_-_Becca_Kennedy",
+          "states": {
+            "options": [
+              {
+                "uri": "QmVe9uT2ZU86dPkdd9hoA4vVrua4BtSRw44YWr31p6TBgm",
+                "label": "Alien #1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmeKCNuQ33utk2KrdNauzqX6eM1YS1N888ondR1UEfdNS3",
+                "label": "Alien #2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmNtkrmVWoUYUfT8TnMRvsuMBCorUTQHqQiNWnXXEYfVgN",
+                "label": "Alien #3",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 14,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Duo_layer_by_ejthek_and_Benza",
+          "states": {
+            "options": [
+              {
+                "uri": "QmekEP3wCD26i3LxPT8E75gCy1w4c24gtPgEsTye43KWau",
+                "label": "Cogitatio-Sapiens",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmTFYn1pBb9xCbByodqLrbBtTVvMcbAXMXrhUGECYFxHzq",
+                "label": "Wedgiewoman",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 15,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Chao_-_Rutger_van_der_Tas",
+          "states": {
+            "options": [
+              {
+                "uri": "QmcLzNWr1Lhr81z2FHX3Tdq3YsNHczp3krur4Q8v1gCtCC",
+                "label": "New Moon",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmU7qLbw1E6Xj4P4Cf3LJhpGny4kA2ejPcoHHtpkQYWdEw",
+                "label": "Abnormal",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmRPMA52LnEXyHKYke2f18JdzPxMSMR5BqQmr7qamCGqF6",
+                "label": "Transparency",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmaAkayCxzCca8FeqENpd9KJgdrFvo1543yELvYs42iDnD",
+                "label": "New Normal",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 16,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "The_Art_of_War_-_Legendary",
+          "states": {
+            "options": [
+              {
+                "uri": "QmctMT2hxJFwUCnysryHcwRrUZDnHxRrGEHfmgNgBxjfub",
+                "label": "Pop",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmW8N3ELVNWRBgjnB42J222SKE1AVJBQquniVBfHyWY344",
+                "label": "Reflection",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmXh1j9dnVd8mNHEdrsWxvVFUcTNQm2EiuGr4FSU1URVui",
+                "label": "Observer",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 17,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Officers_Of_The_Guild_NFT",
+          "states": {
+            "options": [
+              {
+                "uri": "QmaEdYTfBRe82EFjfNMYtF5DjXF4g3EnfhH42wBYgy6CAZ",
+                "label": "Sea Knight",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmdNYZxzub6FxMDu6ERzPvmxnxMTV1t5oqjegALETcPo7G",
+                "label": "Dragon",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmaYrUwuta87uu15Sqh7hoibPVdSgG6CeFh3rABRcnSEdk",
+                "label": "Skin of the Shadow",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmWEkLGvFWsWNVb8feNCds87VFpBP9NoN7MbNbzCMrgSzG",
+                "label": "Very Ape",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 18,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Duo_layer_by_Benza_and_ejthek",
+          "states": {
+            "options": [
+              {
+                "uri": "QmbC1pED6ne9R8QC4y1QRVm33QR781dL5DmSPcEdBcV5zQ",
+                "label": "Wedgieman ",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmcGQGz4RxT4KHdjb4i53EoFJ22KATeZzGqWhNQcDAdfji",
+                "label": "Actio-Statim",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 19,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Warrior_-_Mehak_Jain",
+          "states": {
+            "options": [
+              {
+                "uri": "QmXqATxepKnLr3V9o9VKqUHmmk8p91hbrS1pkS8zxTeazU",
+                "label": "Warrior 1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmT3WZMQ1scF8bJ8uEB2xAmadqVF72Rr1YUeexTJpNdSdX",
+                "label": "Warrior 2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmbrwComdVzRLcdGKwvux5uJqSv1p8gCryrCrWZySYCHrL",
+                "label": "Warrior 3",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 20,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Freedom_is_a_constant_struggle._-_Airco_Caravan",
+          "states": {
+            "options": [
+              {
+                "uri": "QmbspKAVePaFJj2QB73Ryqjasv2nip5r2213z7WBYUPMuG",
+                "label": "Angela Davis",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSbRgjyKrJMfePAFJDu7SzoXXv3DujeHKTtSg8P4h2fEs",
+                "label": "Rosa Parks",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmdeLgE95p6X45JMoTtrWiZz4WKWiScnosqfKJNBrPLnHh",
+                "label": "Harriet Tubman",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 21,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Nyx_-_pplpleasr",
+          "states": {
+            "options": [
+              {
+                "uri": "QmbdeMqSRaBfgrpY1pkomLdJXG2JQ1oeEghZKAVUs1zd3c",
+                "label": "1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmTuQGUPshR7kmMmwJnytxM2kwXdphGkguxrC4X1x3MJxr",
+                "label": "2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmPjbRcVtGTCdw3HcC8E6AAxg5i2WBppaNkGC16cpfvFUb",
+                "label": "3",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 22,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Being_-_Fabin_Rasheed",
+          "states": {
+            "options": [
+              {
+                "uri": "QmcL4sqPRFCRAk8fa6HEzCUdu5iqcdFLGpQmB13VXX3QXc",
+                "label": "Fab1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZfv47CVzaS7yY9cLVe9HeH4r1YVyq8rfsLePCC2SVsZN",
+                "label": "Fab2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmQKESxSpoe6SeksWuZBLzkors7Y9AnJWoGhfRFa4gohqQ",
+                "label": "Fab3",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 23,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Dreamers_Beware_-_The_Perfesser",
+          "states": {
+            "options": [
+              {
+                "uri": "QmSgDPoQAFzggrdfL5HxogQewGVi8EVSZzMsoeYf14Ys1L",
+                "label": "Caustic Nightmare",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmagKccCVrZRzLXFsvgt3p3s9xRZghvvKUeF9vKqaXckQ5",
+                "label": "Post-Lucidity",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "Qme9wYNFRWqV2H99sDzd8MGUqizJ2yNBhUCMJB4DGr1rdP",
+                "label": "Tomorrow's Daydream",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 24,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Monsters_-_Stellabelle",
+          "states": {
+            "options": [
+              {
+                "uri": "QmSSfdra5szVztGvXmdwCeHWQcrnQxFfdkaw3pKVuwDRBW",
+                "label": "$GME",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZrg658oQin74QSK1DScHCkMye9ynH5jSY2zVkWHtqURG",
+                "label": "Monsters",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "Qmbd1Fcpz2uWy1NRLxvZ4u6ABZ5Khqpnthgz1ftav284ga",
+                "label": "Egg Layer",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 25,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "The_Table_Has_Turned_-_Matt_Kane",
+          "states": {
+            "options": [
+              {
+                "uri": "QmTKBBGb4LeciYo5TRUiNDEU5npBVU9Rt7bPBAGDG1LiWd",
+                "label": "Purple Diamonds with TNT",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmbyNrJQKDWi9NV3G4msnVQQTpzfAE36Us1ztaWDGP9HyN",
+                "label": "Purple Diamonds",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZDPrDyuvKp4V2fsdDK9YvcAGrEZPrm1hq33GdNKTtvbs",
+                "label": "RGB Maggots",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmUSknBKdwehpuzFyvjcXYRxGUkC1Ry9o45aY9Jv5VQFg6",
+                "label": "RGB",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmWS2DAWJuKY9mBaK3vTKjTbZTnkZEigZoQQ88kKeRcJs4",
+                "label": "Memories of Blue",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmRDo35R4hEp2REK1hHpEJKB8xUctAewA9xA6T78ExQWyd",
+                "label": "After DaVinci",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "Qma2hB4rMNziYhGgtwj1zgfjovaGb63LhHTbRsf5dawgyt",
+                "label": "Lost Culture Maggot",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmYwGBzr1gf6cc8zfj5CaEpbDPLb522kyZs2Prtc2pL8Ym",
+                "label": "Lost Culture",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmeGcvtj7hH2jjcpwnP8cVzytNz3v7pwHKGHMWQzPKLNsg",
+                "label": "Neon",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmYiWtUDd8NfK51rQ9CgA8rJ3V8Q8H3QhAtmfwbmd2CHae",
+                "label": "Pink Diamonds",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSXYbd8LbgwzWKuyid9A7br6skX9vzFucKd2WS6Am4F3o",
+                "label": "Fat Maggot",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmZttoY4iXWA2TgsJGn4MtWoe9bCTLd2ZAoHr2EBukDpKg",
+                "label": "Dimension 1",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmXCCMxWWkZX2ro1eu58GvSDUhjcqe4NZkFYfvK4jgN88C",
+                "label": "Dimension 2",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 26,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Windows_to_the_Soul_-_Coldie_3D",
+          "states": {
+            "options": [
+              {
+                "uri": "QmbDxqD7sx8D4M3KYKq3taK4tKTMy8DD9L7Bje1ZhK68xb",
+                "label": "Clouds",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmPZkCnz4pB5UBsDdjnMG7a637au3KQGnNji4EsAXvkBH9",
+                "label": "Lines",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 27,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Cohesion_-_Shinji_Akhirah",
+          "states": {
+            "options": [
+              {
+                "uri": "QmcTFWC1H5d5MRXbSHrFmyzgZNzzKn1cHuj1zae4EwBEfB",
+                "label": "Samuryze",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmV3UqeEiShQybEFTzv1o8EN4vboAgg2Uu37ASwMJzEurR",
+                "label": "Sakura",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmNmvnKmgZNSvaLYYzqbVXa2gs7JqukHUmCnqDZiLheLCP",
+                "label": "Unravelling",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 28,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "The_Life_and_Times_of_Mrs._Malda_-_Ytje_Veenstra",
+          "states": {
+            "options": [
+              {
+                "uri": "QmXrdSM6ANymju96cwZF277cjcEpeK2cQNbJdNecE5nne7",
+                "label": "Calling Cato, NY",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmUirtJYEgFX7gSJ7zrusATXi8BC9xF8TqyWJwgmZjFi5n",
+                "label": "Resistance fighter ",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmR5gpMgiUyeGHgjusTfdRKqMo12atq2YovYwSWTC2y8A5",
+                "label": "Frisian Girl with Chicken",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 29,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Two_Ladies_-_Orabelart",
+          "states": {
+            "options": [
+              {
+                "uri": "QmQaFBZTWXhjC6dR6PR9PoyqC2M71PzEiWEveMLmstiK7P",
+                "label": "Urani Oni",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmTwvTc3fmPyHUZxj4MntqU6CQTtGx4UjU1dwCk5hLefL2",
+                "label": "Lady Coq",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 30,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "The_Objects_of_Enlightenment_-_Danil_Pan",
+          "states": {
+            "options": [
+              {
+                "uri": "QmeanzWs2FDSNJnPqSiVdUtLE5gu4WxhUxNvKsXJ2mBkBg",
+                "label": "Harmony",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmPD1dsKDB7P4diadbGUeU7si8Qt5h7kEDgT8ZnuwKCrAv",
+                "label": "Tranquility",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmXJXFBQAegzt9FckxLvoKKSd3xG7vrKZP5wiqz8MWWyaB",
+                "label": "Solace",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 31,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Three_Realms_-_Jetski",
+          "states": {
+            "options": [
+              {
+                "uri": "QmUmEBf8WxgrA4RJWq4PD8c5GyehjWs12d7CN5pKjwtfCe",
+                "label": "Half Native American Man - Shapeshifter",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmcrdtT3uvKsm81bChRx2vd7tx3AMWbNVW7PxRi5Hqj2nF",
+                "label": "Lady Cat & Forest Cat Spirit",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSVLUXT6sUddMYuZjLntJeoVumKMTZZABDHW2Y6KUqYYb",
+                "label": "Red Flower Treasure Vase",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 32,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "We’re_all_the_same,_but_different._-_Angie_Taylor",
+          "states": {
+            "options": [
+              {
+                "uri": "Qmb5Kw7AW5ZxpDhJh7byUrsjvdKo5X9C837r7ziBeHxqBc",
+                "label": "Ziggy & her carer, Sheila",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmdwG9Am4X3bzCswzf8nyGSLi5XURC65Z1gibke5z73NNc",
+                "label": "Arnold the flamboyant",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmSbKUwVbrHD4dxCX58cB9UAPibbb2ktrVYNfjAEStuSxy",
+                "label": "Jo Strummer - the she-punk",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 33,
+            "lever-id": 0
+          }
+        },
+        {
+          "id": "Workwear,_Regal,_Tron_-_SamJ_Studios",
+          "states": {
+            "options": [
+              {
+                "uri": "QmQuGTXg5zDPaTdcVdB5vv8MfZv1czQnHARmTGcRLw3aG4",
+                "label": "Workwear",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmU8jGdHUYR1e8LpWK5STbvFMswnVJCpmBxhxWSL9CqUQG",
+                "label": "Regal",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              },
+              {
+                "uri": "QmXGDKnz5MwzRrMFTW6dFBAPM8Kh6AALcgyStcw27AjnBY",
+                "label": "Tron",
+                "anchor": "Walking_Away_From_Omelas_-_Sparrow"
+              }
+            ],
+            "token-id": 34,
+            "lever-id": 0
+          }
+        }
+      ]
+    },
+    "attributes": [
+      {
+        "trait_type": "Artist",
+        "value": "The Guild_NFT"
+      },
+      {
+        "trait_type": "Layer Count",
+        "value": 34
+      }
+    ],
+    "async-attributes": {
+      "artists": [
+        "0xcb24e0487cc832c11d292944eff1e4928360322f"
+      ],
+      "unminted-token-values": {
+        "1": [
+          0,
+          2,
+          0
+        ],
+        "2": [
+          0,
+          2,
+          0
+        ],
+        "3": [
+          0,
+          2,
+          0
+        ],
+        "4": [
+          0,
+          2,
+          0
+        ],
+        "5": [
+          0,
+          2,
+          0
+        ],
+        "6": [
+          0,
+          2,
+          0
+        ],
+        "7": [
+          0,
+          2,
+          0
+        ],
+        "8": [
+          0,
+          2,
+          0
+        ],
+        "9": [
+          0,
+          2,
+          0
+        ],
+        "10": [
+          0,
+          2,
+          0
+        ],
+        "11": [
+          0,
+          2,
+          0
+        ],
+        "12": [
+          0,
+          1,
+          0
+        ],
+        "13": [
+          0,
+          1,
+          0
+        ],
+        "14": [
+          0,
+          2,
+          0
+        ],
+        "15": [
+          0,
+          1,
+          0
+        ],
+        "16": [
+          0,
+          3,
+          0
+        ],
+        "17": [
+          0,
+          2,
+          0
+        ],
+        "18": [
+          0,
+          3,
+          0
+        ],
+        "19": [
+          0,
+          1,
+          0
+        ],
+        "20": [
+          0,
+          2,
+          0
+        ],
+        "21": [
+          0,
+          2,
+          0
+        ],
+        "22": [
+          0,
+          2,
+          0
+        ],
+        "23": [
+          0,
+          2,
+          0
+        ],
+        "24": [
+          0,
+          2,
+          0
+        ],
+        "25": [
+          0,
+          2,
+          0
+        ],
+        "26": [
+          0,
+          12,
+          0
+        ],
+        "27": [
+          0,
+          1,
+          0
+        ],
+        "28": [
+          0,
+          2,
+          0
+        ],
+        "29": [
+          0,
+          2,
+          0
+        ],
+        "30": [
+          0,
+          1,
+          0
+        ],
+        "31": [
+          0,
+          2,
+          0
+        ],
+        "32": [
+          0,
+          2,
+          0
+        ],
+        "33": [
+          0,
+          2,
+          0
+        ],
+        "34": [
+          0,
+          2,
+          0
+        ]
+      }
+    },
+    "image": "QmS6UvvjmEkbeRHLi8tvAYAubeAAm4q6Zxb4t9BWpX2cAy"
+  },
+  "file": "Async_CyberWatch_By_the_Guild.csv",
+  "total_cids": 110,
+  "total_size_bytes": 51674783,
+  "total_size_mb": 49.28,
+  "total_size_gb": 0.0481,
+  "entries": {
+    "bafybeiamje7nvpgo5q4o7jupp2euy53pb5e6cfi2cbsalqeadci6dwtkme": {
+      "name_from_csv": "QmPAcP2g6nXXQmwanXQsRWHjNrPAPPKfSv79HZZK4qj1sW",
+      "size_bytes": 32013,
+      "size_mb": 0.031,
+      "type": "json"
+    },
+    "bafybeiethtpeo3as3fcay6xzn3yrmwp75handob3pez7firbxz75zptkr4": {
+      "name_from_csv": "QmYFQUQWQFrBGbZT2LfTgkcnJd1AcwBEdnohMw8QFSpZve",
+      "size_bytes": 4085968,
+      "size_mb": 3.897,
+      "type": "other"
+    },
+    "bafybeid5g3na3ztcnd5r6ub3vpqefde5rynv5r6reaskws6z2ch7i24wfq": {
+      "name_from_csv": "QmWmSBZgWZFb5WGa4tY9LozUXzhTaFmAtrYG9CbH7GL5E3",
+      "size_bytes": 4382255,
+      "size_mb": 4.179,
+      "type": "other"
+    },
+    "bafybeias7rhw7nktvgruwq2tro2w543nw7za5vwhcs4x53vm7wgy6cgs4u": {
+      "name_from_csv": "QmPcmC8B5Kag9BnCmYdLwTRMBRC36Ste1n1btCbC1fzsHv",
+      "size_bytes": 3518946,
+      "size_mb": 3.356,
+      "type": "other"
+    },
+    "bafybeiewbnhagujjp6ooyajmvbjjs2eed3g2khtfpbtb25qnuj4bi33uma": {
+      "name_from_csv": "QmYSMrxbJcNjrTNekGN6owVJJHN7CStKo7HMpv7kSHPScX",
+      "size_bytes": 3032900,
+      "size_mb": 2.892,
+      "type": "other"
+    },
+    "bafybeiahsln2ss5p5dlvvtdixf3sypt6kvuewisy652maq4j7xkotolfze": {
+      "name_from_csv": "QmNrDSnfxgjV5Su87oCRyRxwpxGKEJVHnKeiUxSZ67eKZz",
+      "size_bytes": 4567940,
+      "size_mb": 4.356,
+      "type": "other"
+    },
+    "bafybeicfhmdx6xpgv2ch7kz7lqtpahtabejtlhmmbzhi5vnlpfzhxaxbmm": {
+      "name_from_csv": "QmSzu3edGsJBH7SX7TJpjppjqoQAbbPRDmdkazayRUg3uC",
+      "size_bytes": 1797288,
+      "size_mb": 1.714,
+      "type": "other"
+    },
+    "bafybeidxggppr5mxj3k2t42p3pd5gdjyrjxunanukbpjp6gr2m5j6f2cdu": {
+      "name_from_csv": "QmWMw7NPaF9Vs4i5vWfFUUojtHoX2L7d6Fmh7Mz6TkHpwN",
+      "size_bytes": 1070768,
+      "size_mb": 1.021,
+      "type": "other"
+    },
+    "bafybeicbbw4xztq3wf6haafyornr7n2rs73cdnvb6oz5j4frghgyikofci": {
+      "name_from_csv": "QmSibM8oTpgr88ZUM8zXSXTtUFpgsGZo7Bfhmegkj8DV2R",
+      "size_bytes": 872361,
+      "size_mb": 0.832,
+      "type": "other"
+    },
+    "bafybeifbngpigummmyx2cvcui6727hsuisnhx75grxyl725cphd7szztmi": {
+      "name_from_csv": "QmZCjkyceHq7fgZqKPGsQUYcFK3bz7zycvYgknVzNU1hS9",
+      "size_bytes": 965464,
+      "size_mb": 0.921,
+      "type": "other"
+    },
+    "bafybeichevmqdtbf5scaybgp3yaurzwmvusxxvzwn6s55spikj4vlluhgi": {
+      "name_from_csv": "QmT8Ngmqg4DRmTD7NRygPhbfz4dcmHnNxcN4Bitj4Pbqbo",
+      "size_bytes": 593467,
+      "size_mb": 0.566,
+      "type": "other"
+    },
+    "bafybeiftjr43h6zkcumtg63t3phvqmlrksbwssnaaphaszi2eqwei3aw6a": {
+      "name_from_csv": "QmaQZKfibAAAryhqiwNMwwfPD3L4vbN611rug5pQ1i5yaf",
+      "size_bytes": 546715,
+      "size_mb": 0.521,
+      "type": "other"
+    },
+    "bafybeie5igkdcwvv2ijcjfax43tojoqflveqzw2fsx46ff3mk6tlkokrxq": {
+      "name_from_csv": "QmYvWiW9hjFXnXwh7aDbhGUhMJs5eJZiP5HYodF4TCvaAP",
+      "size_bytes": 905018,
+      "size_mb": 0.863,
+      "type": "other"
+    },
+    "bafybeibh2yn3mrlckgo3jrgocsgpty6syqpqtowdhbfxmjlb7bhlwhp24q": {
+      "name_from_csv": "QmR29y7BfM4CzPtPEBDjKVAnnKFyLnyMawJ2gTVrzu5G5Z",
+      "size_bytes": 272046,
+      "size_mb": 0.259,
+      "type": "other"
+    },
+    "bafybeicw4huwz6oqce7s73xio756z52vv6purnvmnsfrow77frsjaloqyq": {
+      "name_from_csv": "QmUBoZxiY615SdSFtZudu8GqMBv3gKEFBCStHUtMurZ9oh",
+      "size_bytes": 364090,
+      "size_mb": 0.347,
+      "type": "other"
+    },
+    "bafybeiessi52eachdmssgb2emqi3prjo54v5xbw3wyy45evbqr43y6xohu": {
+      "name_from_csv": "QmYCoZaiqQDtDweaueX9iE719oTYHUJZTaoQhwdSqJkJSg",
+      "size_bytes": 288857,
+      "size_mb": 0.275,
+      "type": "other"
+    },
+    "bafybeigic67snetevyyrppbmjwh73unnchoxa3bdjncgmljupwkhuvlxre": {
+      "name_from_csv": "QmbojFVs7SaaDwqqiqncmKtdFLPCuFqUEdY4hN2gsHvvFa",
+      "size_bytes": 376352,
+      "size_mb": 0.359,
+      "type": "other"
+    },
+    "bafybeig5ziuz3erschhmntzcbnnysaphg27bmvsvjug7srch23q6aj6ik4": {
+      "name_from_csv": "QmdGRc1Ex1nrBvjRQ22QGU2oCJnBEv3afz6Pc6o31CQE8e",
+      "size_bytes": 245992,
+      "size_mb": 0.235,
+      "type": "image"
+    },
+    "bafybeielkbzmk4b5aoalyyzutqc7n27seknx37uk2hz2pzzozft2n7z2um": {
+      "name_from_csv": "QmXiUXbuKEnc2LkY4aAqf6kxrtqWMqttFn5kSPgnQPGVDc",
+      "size_bytes": 184581,
+      "size_mb": 0.176,
+      "type": "image"
+    },
+    "bafybeid3iyx4lochqdcsyfbsfk6lpudbzvpdm35kp5sbxcxyyibdbkwqze": {
+      "name_from_csv": "QmWdrvsxMQsgCFAdY9UJAdKRzbaVTYeMRib7AA1T2sAKex",
+      "size_bytes": 96074,
+      "size_mb": 0.092,
+      "type": "image"
+    },
+    "bafybeigh2iv62zoluuqvmzkc2bs37wiugwahds7sor3gx4w6f4cplgtywm": {
+      "name_from_csv": "QmbnficKcidbfywJ5U18t7mfRbwZyPYziephgf2a82mCci",
+      "size_bytes": 88018,
+      "size_mb": 0.084,
+      "type": "image"
+    },
+    "bafybeidmdabphyqrm44ifbleml2vpxwzlxht73sbmlh3m3efwbw77ntmzu": {
+      "name_from_csv": "QmVcbycGd3nBscy1KGuaTtuRLYbKorutkQDBLMnvzd9VXr",
+      "size_bytes": 127663,
+      "size_mb": 0.122,
+      "type": "image"
+    },
+    "bafybeifardkxme4fo6n7hzgu7zcr3bgtcodoownvca65jntaauo6dgfr7y": {
+      "name_from_csv": "QmZ9JxW1ND2f9CiWynL6pASERwznG1buq5mAurgB3yf7R7",
+      "size_bytes": 239790,
+      "size_mb": 0.229,
+      "type": "image"
+    },
+    "bafybeige7h6mbfuq6zi3agqsowo4hyjndkaoi3eylsgyvdjmk65f55bksi": {
+      "name_from_csv": "QmbbZi38Z33P1QULJdFqaKEt6jjAtXHodLYXmJZgKHtZzq",
+      "size_bytes": 241295,
+      "size_mb": 0.23,
+      "type": "image"
+    },
+    "bafybeibqxjsarnwbq5hoku2cxcpgamhf5ddqie2sig7wryvji63zlud76u": {
+      "name_from_csv": "QmRcs89G3Rw3ojLXr1bsAYXNjLssdq8aXApa8Hm9MJEZXJ",
+      "size_bytes": 256848,
+      "size_mb": 0.245,
+      "type": "image"
+    },
+    "bafybeifw64uvyoj3fi5lby7uwd6ik2xxxntojrwkl3onmtbkho5xeqcnpy": {
+      "name_from_csv": "QmaesW3CUVWermDbfGzv8PgfVJtD2yYBK2W6iVnszYX9r5",
+      "size_bytes": 200863,
+      "size_mb": 0.192,
+      "type": "image"
+    },
+    "bafybeiaqd7w6fj2vcxyntpaenbfc67365kzzlzsqlh4nojkxfdbxt6afce": {
+      "name_from_csv": "QmPRbUGygiR3iPNBQMJMbD1FqsiA8W4ZEtXEHHfTnDW9Te",
+      "size_bytes": 179995,
+      "size_mb": 0.172,
+      "type": "image"
+    },
+    "bafybeidfpk56oyzhpdjiywkgsceuon5xmiibdgg5jygwhft6hwegmiugxu": {
+      "name_from_csv": "QmVAnS6ptrcq4nVqYxKqhKqatf8Cwhp4ZNVruT1h1cU1s2",
+      "size_bytes": 238129,
+      "size_mb": 0.227,
+      "type": "image"
+    },
+    "bafybeigwq2cmtad6k7g4mumc2rqp2qx6eesjusnkkz4httwnyyygbsnix4": {
+      "name_from_csv": "Qmcn4veugcQgHrKCD4eKicxWFt2CtUuNoMhRV3rmxciaf8",
+      "size_bytes": 218375,
+      "size_mb": 0.208,
+      "type": "image"
+    },
+    "bafybeicxyahe4ysdccvtx2u2iql3wkefqv5doiptnup4fcpukbmgz6byee": {
+      "name_from_csv": "QmUFC2x7KPTQaB11mu9uYMqSzjEv26TxwQGrYFykojiPVi",
+      "size_bytes": 66199,
+      "size_mb": 0.063,
+      "type": "image"
+    },
+    "bafybeietiq3errjkceclntamjnfobmajaqgpf6srozswmjsfa5p4rlbxxa": {
+      "name_from_csv": "QmYFWy7F5695RW4WaRMk1GmafXR8Yd7QFyPQU1CGQiTE3q",
+      "size_bytes": 171925,
+      "size_mb": 0.164,
+      "type": "image"
+    },
+    "bafybeig7zrlfoyekdxxfmnlrbnmhmrule7tex3ahusvnrdgrdly4b4aara": {
+      "name_from_csv": "QmdQGLrJ8Vc8Gnc5hf2B7uuUZSwu8QNRTLXMACvoTTSamd",
+      "size_bytes": 308928,
+      "size_mb": 0.295,
+      "type": "other"
+    },
+    "bafybeigwajrseu6vfaub66tuag2aqagxxyd66diet7bzkilz5y7l4imdzy": {
+      "name_from_csv": "Qmck44uWAiyPdzMBy8KryGLrvY262DhLbLhMkCUbFL5i37",
+      "size_bytes": 262767,
+      "size_mb": 0.251,
+      "type": "other"
+    },
+    "bafybeigag3xngi4bqywh52p57gx7s2lox3d27stsctklkiblautukdwpau": {
+      "name_from_csv": "QmbGya3FZGCXK21RaAHiZJPEUQdw1SjvfKLhcd2pvkq17S",
+      "size_bytes": 211968,
+      "size_mb": 0.202,
+      "type": "image"
+    },
+    "bafybeicxveu4w64hfno2timggrympamcqb6pdld2oep7q7wunwyjtyoj3i": {
+      "name_from_csv": "QmUEqnfPDunNQ2qrcuPopbatnUxY8SrVGhvRKbLHkQgN9o",
+      "size_bytes": 363399,
+      "size_mb": 0.347,
+      "type": "other"
+    },
+    "bafybeidigqdu2e3lf2v6mmuwc7i74vmfqd7pnm7oay2alwth5bydlaqnoa": {
+      "name_from_csv": "QmVMR8AhxbprJpk52e66rGXYVyUsTy84f6rWsepacajW5u",
+      "size_bytes": 143140,
+      "size_mb": 0.137,
+      "type": "image"
+    },
+    "bafybeign7pgp4omjeibotjcrr6ocfyutngqyrrsqi24ujhh7nculhlhmbe": {
+      "name_from_csv": "QmcCiyspppLur8Vi5DEFNLBkTrXRQmi8rjgpdph2vDMzbJ",
+      "size_bytes": 354923,
+      "size_mb": 0.338,
+      "type": "other"
+    },
+    "bafybeifagayojya27rxai2lcqjyhyuk7z7b5fvkdydb6nq7cewo6vsrdvu": {
+      "name_from_csv": "QmZ7xZXGNCHpWX6r5HNc3ggB6tyCpFcEqge9wznqWasN1z",
+      "size_bytes": 334886,
+      "size_mb": 0.319,
+      "type": "other"
+    },
+    "bafybeidmpwyzwdmkfqqyxzyfmn3z5vowlcc6yq3awo2pf6iw4f7aiyxkfi": {
+      "name_from_csv": "QmVe9uT2ZU86dPkdd9hoA4vVrua4BtSRw44YWr31p6TBgm",
+      "size_bytes": 92622,
+      "size_mb": 0.088,
+      "type": "image"
+    },
+    "bafybeihnlorsvkhv2yw35uf3w3tan6pyqwk4s4kprlplp54ln6hkonqnqa": {
+      "name_from_csv": "QmeKCNuQ33utk2KrdNauzqX6eM1YS1N888ondR1UEfdNS3",
+      "size_bytes": 217934,
+      "size_mb": 0.208,
+      "type": "image"
+    },
+    "bafybeiaihge7s46nx4cb6izlwnqm7pmytkrzi5nlnl7dd3iql2wek5nklm": {
+      "name_from_csv": "QmNtkrmVWoUYUfT8TnMRvsuMBCorUTQHqQiNWnXXEYfVgN",
+      "size_bytes": 275181,
+      "size_mb": 0.262,
+      "type": "other"
+    },
+    "bafybeihtyvv77y2rlwgzili7blltostzylohnkhnx7sgynigh7675bqd2i": {
+      "name_from_csv": "QmekEP3wCD26i3LxPT8E75gCy1w4c24gtPgEsTye43KWau",
+      "size_bytes": 205641,
+      "size_mb": 0.196,
+      "type": "image"
+    },
+    "bafybeici7pjjf4r6bh6gzzr7etr6swgfgy6wafcftipajsiqq3owtjgvoi": {
+      "name_from_csv": "QmTFYn1pBb9xCbByodqLrbBtTVvMcbAXMXrhUGECYFxHzq",
+      "size_bytes": 317410,
+      "size_mb": 0.303,
+      "type": "other"
+    },
+    "bafybeigqdhmv6ymmkhjyx3o5nat4mo55pycq4daot4b5hv2oimm2x7nltu": {
+      "name_from_csv": "QmcLzNWr1Lhr81z2FHX3Tdq3YsNHczp3krur4Q8v1gCtCC",
+      "size_bytes": 688906,
+      "size_mb": 0.657,
+      "type": "other"
+    },
+    "bafybeicv3wlo4etquh656gxldp4ubsjru7mbojucxptp4bqtgvh4qyggka": {
+      "name_from_csv": "QmU7qLbw1E6Xj4P4Cf3LJhpGny4kA2ejPcoHHtpkQYWdEw",
+      "size_bytes": 650906,
+      "size_mb": 0.621,
+      "type": "other"
+    },
+    "bafybeibnip2oujgsju55pw33pvgiyc4l3rgjbuzgwj3niogeupslrzgxxe": {
+      "name_from_csv": "QmRPMA52LnEXyHKYke2f18JdzPxMSMR5BqQmr7qamCGqF6",
+      "size_bytes": 292449,
+      "size_mb": 0.279,
+      "type": "other"
+    },
+    "bafybeifpymkifc32klqrkokz6sz3y3i7bif3amgs3uzdfp45jbnemfm3iy": {
+      "name_from_csv": "QmaAkayCxzCca8FeqENpd9KJgdrFvo1543yELvYs42iDnD",
+      "size_bytes": 820892,
+      "size_mb": 0.783,
+      "type": "other"
+    },
+    "bafybeigyekx54qpvgo2jtnmbcyavnbllkgclvljgfepjf2jnrfiaaj7hyi": {
+      "name_from_csv": "QmctMT2hxJFwUCnysryHcwRrUZDnHxRrGEHfmgNgBxjfub",
+      "size_bytes": 106095,
+      "size_mb": 0.101,
+      "type": "image"
+    },
+    "bafybeidtw6wtgo5jvn5pub3q6hrg7kafo47iczy2zpoycik6gcgxwck4ue": {
+      "name_from_csv": "QmW8N3ELVNWRBgjnB42J222SKE1AVJBQquniVBfHyWY344",
+      "size_bytes": 112257,
+      "size_mb": 0.107,
+      "type": "image"
+    },
+    "bafybeiek6ciet4vstt6dlqmnrrxnw5xcvav2ekiq6te4qqsmt2qbyilxse": {
+      "name_from_csv": "QmXh1j9dnVd8mNHEdrsWxvVFUcTNQm2EiuGr4FSU1URVui",
+      "size_bytes": 131254,
+      "size_mb": 0.125,
+      "type": "image"
+    },
+    "bafybeifqyfyihai3hdegvl3yibfiwvmkuct4hsnj2hnlrkshk6zsdknddy": {
+      "name_from_csv": "QmaEdYTfBRe82EFjfNMYtF5DjXF4g3EnfhH42wBYgy6CAZ",
+      "size_bytes": 134157,
+      "size_mb": 0.128,
+      "type": "image"
+    },
+    "bafybeig7loc4r2gvc2k3vq6exanjsmb5mezyhaddvhi5lxdasyo33t2uqm": {
+      "name_from_csv": "QmdNYZxzub6FxMDu6ERzPvmxnxMTV1t5oqjegALETcPo7G",
+      "size_bytes": 151949,
+      "size_mb": 0.145,
+      "type": "image"
+    },
+    "bafybeifvnsdfj5fb7kpwu66vyylqg34asi4mgqjkfm23ahdwz6ntkdplx4": {
+      "name_from_csv": "QmaYrUwuta87uu15Sqh7hoibPVdSgG6CeFh3rABRcnSEdk",
+      "size_bytes": 117237,
+      "size_mb": 0.112,
+      "type": "image"
+    },
+    "bafybeidvljpie3z4wq2oagiq3uyo6jjupjcn6sdr2zhtrfijoadbrvzjmu": {
+      "name_from_csv": "QmWEkLGvFWsWNVb8feNCds87VFpBP9NoN7MbNbzCMrgSzG",
+      "size_bytes": 126212,
+      "size_mb": 0.12,
+      "type": "image"
+    },
+    "bafybeif66gir6n4inlh43mistrhzoe6wnlmutrzwtqjqqaexhhd3hy6l4e": {
+      "name_from_csv": "QmbC1pED6ne9R8QC4y1QRVm33QR781dL5DmSPcEdBcV5zQ",
+      "size_bytes": 441862,
+      "size_mb": 0.421,
+      "type": "other"
+    },
+    "bafybeigo5t4wbidwyw557427g6c2rv7qn2itroqo3mzz3sj3killsivy6u": {
+      "name_from_csv": "QmcGQGz4RxT4KHdjb4i53EoFJ22KATeZzGqWhNQcDAdfji",
+      "size_bytes": 207058,
+      "size_mb": 0.197,
+      "type": "image"
+    },
+    "bafybeiena4lr6igftz7chjls4g3cajdaquw6uwi7i7tpiuloazk5lgzqge": {
+      "name_from_csv": "QmXqATxepKnLr3V9o9VKqUHmmk8p91hbrS1pkS8zxTeazU",
+      "size_bytes": 233908,
+      "size_mb": 0.223,
+      "type": "image"
+    },
+    "bafybeicf4zmdnyfoxd7dxeskl3cw2btg66xqc3gk6b6qjbswuzmsy35zli": {
+      "name_from_csv": "QmT3WZMQ1scF8bJ8uEB2xAmadqVF72Rr1YUeexTJpNdSdX",
+      "size_bytes": 237350,
+      "size_mb": 0.226,
+      "type": "image"
+    },
+    "bafybeigi5iau2wjr2y4ph5jglbqsbz5yw2ngd5ymevllwv5gtshundjhwu": {
+      "name_from_csv": "QmbrwComdVzRLcdGKwvux5uJqSv1p8gCryrCrWZySYCHrL",
+      "size_bytes": 229971,
+      "size_mb": 0.219,
+      "type": "image"
+    },
+    "bafybeigjepfx53oz2tahc4wa5j2ct4c3z2qazs5mlrn7pdosxb2rjskie4": {
+      "name_from_csv": "QmbspKAVePaFJj2QB73Ryqjasv2nip5r2213z7WBYUPMuG",
+      "size_bytes": 287973,
+      "size_mb": 0.275,
+      "type": "other"
+    },
+    "bafybeib7g6562azb3jwx4ou7vnk6ngyepny7lmxckih4ylpydnvmi3i4aq": {
+      "name_from_csv": "QmSbRgjyKrJMfePAFJDu7SzoXXv3DujeHKTtSg8P4h2fEs",
+      "size_bytes": 324609,
+      "size_mb": 0.31,
+      "type": "other"
+    },
+    "bafybeihdm5picgcoc742gcmnhojlhd3ak76tmrrn3dvhrsmuzswtu4j7cq": {
+      "name_from_csv": "QmdeLgE95p6X45JMoTtrWiZz4WKWiScnosqfKJNBrPLnHh",
+      "size_bytes": 376789,
+      "size_mb": 0.359,
+      "type": "other"
+    },
+    "bafybeigfqjujw5u6t6xazh4ompsimt3e6om2yqepl4rtjidkioc435ebr4": {
+      "name_from_csv": "QmbdeMqSRaBfgrpY1pkomLdJXG2JQ1oeEghZKAVUs1zd3c",
+      "size_bytes": 269917,
+      "size_mb": 0.257,
+      "type": "other"
+    },
+    "bafybeicsvzczd5iiccdpbo3a2liwovffahcwr346ra4t6kjqdtbfujsovm": {
+      "name_from_csv": "QmTuQGUPshR7kmMmwJnytxM2kwXdphGkguxrC4X1x3MJxr",
+      "size_bytes": 273682,
+      "size_mb": 0.261,
+      "type": "other"
+    },
+    "bafybeiauxrkpmefs5hps2asmn6h5uba2gzeesqsl62vx4dcu4dwnq5tcqa": {
+      "name_from_csv": "QmPjbRcVtGTCdw3HcC8E6AAxg5i2WBppaNkGC16cpfvFUb",
+      "size_bytes": 291489,
+      "size_mb": 0.278,
+      "type": "other"
+    },
+    "bafybeigp3vont6em37fsrw4psdsllpbham527bzeumpvfi6d7vsnqbw2dm": {
+      "name_from_csv": "QmcL4sqPRFCRAk8fa6HEzCUdu5iqcdFLGpQmB13VXX3QXc",
+      "size_bytes": 143963,
+      "size_mb": 0.137,
+      "type": "image"
+    },
+    "bafybeifil7ysslcduwb4c5yigwt6mqkzuajsg5yolqb77ek4ac5nllz5fu": {
+      "name_from_csv": "QmZfv47CVzaS7yY9cLVe9HeH4r1YVyq8rfsLePCC2SVsZN",
+      "size_bytes": 131136,
+      "size_mb": 0.125,
+      "type": "image"
+    },
+    "bafybeia5ljof4lmwidnlfpkdvazk43ni7rcotojzhfiwigceoxfzcpjxk4": {
+      "name_from_csv": "QmQKESxSpoe6SeksWuZBLzkors7Y9AnJWoGhfRFa4gohqQ",
+      "size_bytes": 119907,
+      "size_mb": 0.114,
+      "type": "image"
+    },
+    "bafybeicaog6uwdweaz5fq3xsplgfidbg2rszee4sfvkhc6ng6nksal27em": {
+      "name_from_csv": "QmSgDPoQAFzggrdfL5HxogQewGVi8EVSZzMsoeYf14Ys1L",
+      "size_bytes": 185150,
+      "size_mb": 0.177,
+      "type": "image"
+    },
+    "bafybeifxkzcmwvqlgwh6k4g6a2p7wwvvdtt6b4gzea76dplbxynp2jc5hy": {
+      "name_from_csv": "QmagKccCVrZRzLXFsvgt3p3s9xRZghvvKUeF9vKqaXckQ5",
+      "size_bytes": 191268,
+      "size_mb": 0.182,
+      "type": "image"
+    },
+    "bafybeihk7sre5mjpg35tp7l3g2xyqet6r4oityg3ykao3mcu5nfg2qrxci": {
+      "name_from_csv": "Qme9wYNFRWqV2H99sDzd8MGUqizJ2yNBhUCMJB4DGr1rdP",
+      "size_bytes": 174460,
+      "size_mb": 0.166,
+      "type": "image"
+    },
+    "bafybeib47fd4o6smunfkihnyl3n4q7ou743i7tmvgrvskai3dgimbkl4qe": {
+      "name_from_csv": "QmSSfdra5szVztGvXmdwCeHWQcrnQxFfdkaw3pKVuwDRBW",
+      "size_bytes": 94991,
+      "size_mb": 0.091,
+      "type": "image"
+    },
+    "bafybeiflegfbjtqvajhf7wozk6xep2chdvuwj7wrj25bybcj6x52orroxm": {
+      "name_from_csv": "QmZrg658oQin74QSK1DScHCkMye9ynH5jSY2zVkWHtqURG",
+      "size_bytes": 96296,
+      "size_mb": 0.092,
+      "type": "image"
+    },
+    "bafybeigflbzy3lwzvqoownqyymtvqiepn4hvokbhayrr25ai3g4obd2wnm": {
+      "name_from_csv": "Qmbd1Fcpz2uWy1NRLxvZ4u6ABZ5Khqpnthgz1ftav284ga",
+      "size_bytes": 165320,
+      "size_mb": 0.158,
+      "type": "image"
+    },
+    "bafybeicj5g4udrt5n5yjxlv6f4anas6pqd2ikpfagzmibrdb7onl4lfuki": {
+      "name_from_csv": "QmTKBBGb4LeciYo5TRUiNDEU5npBVU9Rt7bPBAGDG1LiWd",
+      "size_bytes": 654519,
+      "size_mb": 0.624,
+      "type": "other"
+    },
+    "bafybeigksb6qygpspwgqcs7wvyufaihdev4ohzge6eefewnczgcwbn5cqu": {
+      "name_from_csv": "QmbyNrJQKDWi9NV3G4msnVQQTpzfAE36Us1ztaWDGP9HyN",
+      "size_bytes": 650034,
+      "size_mb": 0.62,
+      "type": "other"
+    },
+    "bafybeifbssyc74trewsakdmnllko4ios2cmrrwzdvokxo3slzzhjtgbxoi": {
+      "name_from_csv": "QmZDPrDyuvKp4V2fsdDK9YvcAGrEZPrm1hq33GdNKTtvbs",
+      "size_bytes": 134213,
+      "size_mb": 0.128,
+      "type": "image"
+    },
+    "bafybeic2wz4fgonrwfauqp2px63k2enh347z73vldyv472rlbmnn5cf6nm": {
+      "name_from_csv": "QmUSknBKdwehpuzFyvjcXYRxGUkC1Ry9o45aY9Jv5VQFg6",
+      "size_bytes": 105544,
+      "size_mb": 0.101,
+      "type": "image"
+    },
+    "bafybeidyhw27c5hpnlhx2xwb6uojrh7oi2vof5glbde7azwcsqjngrm42m": {
+      "name_from_csv": "QmWS2DAWJuKY9mBaK3vTKjTbZTnkZEigZoQQ88kKeRcJs4",
+      "size_bytes": 355832,
+      "size_mb": 0.339,
+      "type": "other"
+    },
+    "bafybeibk2furv7x6lgwgm45rdqlx5tmljqwzknhwt2mbfc4x3bwpknjn2a": {
+      "name_from_csv": "QmRDo35R4hEp2REK1hHpEJKB8xUctAewA9xA6T78ExQWyd",
+      "size_bytes": 316874,
+      "size_mb": 0.302,
+      "type": "other"
+    },
+    "bafybeifnwkjvo6dbhhswv35ko42h2sk3gcf5eub34qwxb7qg5taf2gqnl4": {
+      "name_from_csv": "Qma2hB4rMNziYhGgtwj1zgfjovaGb63LhHTbRsf5dawgyt",
+      "size_bytes": 386812,
+      "size_mb": 0.369,
+      "type": "other"
+    },
+    "bafybeie5ok6deiz7oui3whvhzncrjlj3ky64c73vfscpnihfgx7s5izc6y": {
+      "name_from_csv": "QmYwGBzr1gf6cc8zfj5CaEpbDPLb522kyZs2Prtc2pL8Ym",
+      "size_bytes": 365594,
+      "size_mb": 0.349,
+      "type": "other"
+    },
+    "bafybeihmwkt4v2gvmpix6bfsvpe3sis6tixmez7jqte3tix5hsfzdvoka4": {
+      "name_from_csv": "QmeGcvtj7hH2jjcpwnP8cVzytNz3v7pwHKGHMWQzPKLNsg",
+      "size_bytes": 63116,
+      "size_mb": 0.06,
+      "type": "image"
+    },
+    "bafybeie2f3g3ahnvdapnmd7fhw52mb7syuzsk437fci2kkyn66ngxt4te4": {
+      "name_from_csv": "QmYiWtUDd8NfK51rQ9CgA8rJ3V8Q8H3QhAtmfwbmd2CHae",
+      "size_bytes": 449534,
+      "size_mb": 0.429,
+      "type": "other"
+    },
+    "bafybeib6he45wfe5z5u24oiju22himsl5el6367wkbpzijplcy2gnwxvgi": {
+      "name_from_csv": "QmSXYbd8LbgwzWKuyid9A7br6skX9vzFucKd2WS6Am4F3o",
+      "size_bytes": 218620,
+      "size_mb": 0.208,
+      "type": "image"
+    },
+    "bafybeiflwmj6thfdmnxxi5zrbpm4azx2oxioqw3h7w3z3vtdahqqrwd744": {
+      "name_from_csv": "QmZttoY4iXWA2TgsJGn4MtWoe9bCTLd2ZAoHr2EBukDpKg",
+      "size_bytes": 371804,
+      "size_mb": 0.355,
+      "type": "other"
+    },
+    "bafybeiedr27ks3ed2r2q6xmknjrfrkz7qlvsf5sghgx3xjwknkkvxzdjku": {
+      "name_from_csv": "QmXCCMxWWkZX2ro1eu58GvSDUhjcqe4NZkFYfvK4jgN88C",
+      "size_bytes": 468918,
+      "size_mb": 0.447,
+      "type": "other"
+    },
+    "bafybeif7ofnqgqmcbwiyyxjaff7npikcrqco66pl4syegvwbj2qeazdqpq": {
+      "name_from_csv": "QmbDxqD7sx8D4M3KYKq3taK4tKTMy8DD9L7Bje1ZhK68xb",
+      "size_bytes": 169325,
+      "size_mb": 0.161,
+      "type": "image"
+    },
+    "bafybeiasgzzuchgrz4v2yvnca45nvvlhsctasplmnaemykkesuqnwulnda": {
+      "name_from_csv": "QmPZkCnz4pB5UBsDdjnMG7a637au3KQGnNji4EsAXvkBH9",
+      "size_bytes": 85647,
+      "size_mb": 0.082,
+      "type": "image"
+    },
+    "bafybeigrwry3hgrdpbiz7cglqfmp6egulwla6zm4wm6vwegc47rbvv2fzi": {
+      "name_from_csv": "QmcTFWC1H5d5MRXbSHrFmyzgZNzzKn1cHuj1zae4EwBEfB",
+      "size_bytes": 334608,
+      "size_mb": 0.319,
+      "type": "other"
+    },
+    "bafybeiddtpdez256frch73oevgwmfdo2lbex2xqy6qjnwomovwis4r4bxi": {
+      "name_from_csv": "QmV3UqeEiShQybEFTzv1o8EN4vboAgg2Uu37ASwMJzEurR",
+      "size_bytes": 297326,
+      "size_mb": 0.284,
+      "type": "other"
+    },
+    "bafybeiagpgyzn7j6qha2jept2lg6nl6xalrx533aj6xomvyes5nv4r5rva": {
+      "name_from_csv": "QmNmvnKmgZNSvaLYYzqbVXa2gs7JqukHUmCnqDZiLheLCP",
+      "size_bytes": 317118,
+      "size_mb": 0.302,
+      "type": "other"
+    },
+    "bafybeienm4vs4z66skyfrzrrh5cjf3gnfesho52qixbyxyhkegzo3li6mq": {
+      "name_from_csv": "QmXrdSM6ANymju96cwZF277cjcEpeK2cQNbJdNecE5nne7",
+      "size_bytes": 178342,
+      "size_mb": 0.17,
+      "type": "image"
+    },
+    "bafybeic622vkkhieldmj4niygnekfk27tncjywm6yfraikhbbfcwvowtfe": {
+      "name_from_csv": "QmUirtJYEgFX7gSJ7zrusATXi8BC9xF8TqyWJwgmZjFi5n",
+      "size_bytes": 93143,
+      "size_mb": 0.089,
+      "type": "image"
+    },
+    "bafybeibixw5v4yzesgxmxrghhr7e6pw4sg4zyzfipaplqu4f6in26ec5xi": {
+      "name_from_csv": "QmR5gpMgiUyeGHgjusTfdRKqMo12atq2YovYwSWTC2y8A5",
+      "size_bytes": 123167,
+      "size_mb": 0.117,
+      "type": "image"
+    },
+    "bafybeibbgltuxyuv42xum4f73pgom25dxmbpi5bdeagtmrgf2os5nvuoki": {
+      "name_from_csv": "QmQaFBZTWXhjC6dR6PR9PoyqC2M71PzEiWEveMLmstiK7P",
+      "size_bytes": 225895,
+      "size_mb": 0.215,
+      "type": "image"
+    },
+    "bafybeictkoje3wbwlthb3wd6y2djvcb7tzcrwimen3g53m5bfiu6szd4d4": {
+      "name_from_csv": "QmTwvTc3fmPyHUZxj4MntqU6CQTtGx4UjU1dwCk5hLefL2",
+      "size_bytes": 173490,
+      "size_mb": 0.165,
+      "type": "image"
+    },
+    "bafybeihrlj6np4p7ofoy6ip4mxokikzyfcbwzfcvqufgo24pzrhnva4iu4": {
+      "name_from_csv": "QmeanzWs2FDSNJnPqSiVdUtLE5gu4WxhUxNvKsXJ2mBkBg",
+      "size_bytes": 66964,
+      "size_mb": 0.064,
+      "type": "image"
+    },
+    "bafybeiam42z53uoho24w5zv6sy54qj57qkqow6eeiwo2i3dhoqk5dmkuhm": {
+      "name_from_csv": "QmPD1dsKDB7P4diadbGUeU7si8Qt5h7kEDgT8ZnuwKCrAv",
+      "size_bytes": 251807,
+      "size_mb": 0.24,
+      "type": "image"
+    },
+    "bafybeieffwklha6smibdiozfwlweng6uyaqrt3zfbskeyxccdnzyrzc5pq": {
+      "name_from_csv": "QmXJXFBQAegzt9FckxLvoKKSd3xG7vrKZP5wiqz8MWWyaB",
+      "size_bytes": 161084,
+      "size_mb": 0.154,
+      "type": "image"
+    },
+    "bafybeic7ohuuxg6baej5ked6s4tcnbkczdxbklyyzzfnptg73bt2kvdzsm": {
+      "name_from_csv": "QmUmEBf8WxgrA4RJWq4PD8c5GyehjWs12d7CN5pKjwtfCe",
+      "size_bytes": 176732,
+      "size_mb": 0.169,
+      "type": "image"
+    },
+    "bafybeigxwiolpssudqmnq65ow3sse2hlmuqu2g7psuygvpg3cy56h4f4oq": {
+      "name_from_csv": "QmcrdtT3uvKsm81bChRx2vd7tx3AMWbNVW7PxRi5Hqj2nF",
+      "size_bytes": 133602,
+      "size_mb": 0.127,
+      "type": "image"
+    },
+    "bafybeib5vbnys2svdr3l3cekdhchjxcnhckvkgr5ggqc3pare3xlt56dwq": {
+      "name_from_csv": "QmSVLUXT6sUddMYuZjLntJeoVumKMTZZABDHW2Y6KUqYYb",
+      "size_bytes": 119835,
+      "size_mb": 0.114,
+      "type": "image"
+    },
+    "bafybeif5hl6oyrut3zmgydg45ul2maojlmbmkuycowokif2id7jq6mw634": {
+      "name_from_csv": "Qmb5Kw7AW5ZxpDhJh7byUrsjvdKo5X9C837r7ziBeHxqBc",
+      "size_bytes": 330569,
+      "size_mb": 0.315,
+      "type": "other"
+    },
+    "bafybeihhxuovpnsdlusgokzqxoqgiw226v7kmznbeaf4ravkfl732wleve": {
+      "name_from_csv": "QmdwG9Am4X3bzCswzf8nyGSLi5XURC65Z1gibke5z73NNc",
+      "size_bytes": 296932,
+      "size_mb": 0.283,
+      "type": "other"
+    },
+    "bafybeib7gc4ejkpfnlefslce7wbzcsqa6bssyt4od6zkjodkpue7reb54i": {
+      "name_from_csv": "QmSbKUwVbrHD4dxCX58cB9UAPibbb2ktrVYNfjAEStuSxy",
+      "size_bytes": 271436,
+      "size_mb": 0.259,
+      "type": "other"
+    },
+    "bafybeibgcjqye4bkqkmdyrklrobud3ec2ipok52cquaq2ukvk4jpmay6du": {
+      "name_from_csv": "QmQuGTXg5zDPaTdcVdB5vv8MfZv1czQnHARmTGcRLw3aG4",
+      "size_bytes": 411203,
+      "size_mb": 0.392,
+      "type": "other"
+    },
+    "bafybeicwdbhqfd5f4iwq652yoevj7ury65dazlv26ecqtblsxmszsghuqe": {
+      "name_from_csv": "QmU8jGdHUYR1e8LpWK5STbvFMswnVJCpmBxhxWSL9CqUQG",
+      "size_bytes": 467790,
+      "size_mb": 0.446,
+      "type": "other"
+    },
+    "bafybeieesyubdsgn3isqbzsjvlrqilkjgcqcxtfqzxkelz4jc6cphe3v24": {
+      "name_from_csv": "QmXGDKnz5MwzRrMFTW6dFBAPM8Kh6AALcgyStcw27AjnBY",
+      "size_bytes": 459611,
+      "size_mb": 0.438,
+      "type": "other"
+    },
+    "bafybeibxzwhsz6vajljhpiasexwhv6hqwbf2cqaph4emuns7vheigyzi2y": {
+      "name_from_csv": "QmS6UvvjmEkbeRHLi8tvAYAubeAAm4q6Zxb4t9BWpX2cAy",
+      "size_bytes": 861336,
+      "size_mb": 0.821,
+      "type": "other"
+    }
+  }
+}

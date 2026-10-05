@@ -1,13 +1,13 @@
-import { getPeers, getPins } from '$lib/server/cluster';
+import { getPeers, getAllocations } from '$lib/server/cluster';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
   try {
     const peersData = await getPeers();
-    const pins = await getPins();
+    const allocations = await getAllocations();
     const peers = Array.isArray(peersData) ? peersData : [peersData];
     const volunteers = Math.max(0, peers.length - 1);
-    const cidCount = pins.length;
+    const cidCount = allocations.length;
     return { volunteers, cidCount, peerCount: peers.length };
   } catch (e) {
     console.error('Volunteer load failed', e);
