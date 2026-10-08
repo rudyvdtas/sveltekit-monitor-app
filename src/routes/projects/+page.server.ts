@@ -18,9 +18,11 @@ const projectImages: Record<string, string> = {
   'async-first-supper': firstSupperImg,
   'knownorigin-v1': knownoriginV1Img,
   'knownorigin-v2-batch-1': knownoriginV1Img,
+  'knownorigin-v2-batch-2': knownoriginV1Img,
+  'knownorigin-v2-batch-3': knownoriginV1Img,
 };
 
-const ENRICHED_FILE_NAMES = ['cyberwatch', 'the-arcana', 'async-first-supper', 'knownorigin-v1', 'kov2-batch-1'];
+const ENRICHED_FILE_NAMES = ['cyberwatch', 'the-arcana', 'async-first-supper', 'knownorigin-v1', 'kov2-batch-1', 'kov2-batch-2', 'kov2-batch-3'];
 
 let failedCache: { cids: string[]; enriched: Record<string, EnrichedEntry>; meta: Record<string, any> } | null = null;
 
