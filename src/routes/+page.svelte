@@ -158,8 +158,8 @@
     <p class="text-muted text-sm" style="margin-bottom: 1rem;">
       Each CID in a project is replicated across multiple peers. The cluster
       automatically assigns CIDs to peers so that each stays within the
-      configured replication factor. The table below shows how <strong>{Math.max(pinCount, 1000)} CIDs</strong>
-      (or ~1 TB of content) distribute across different cluster sizes.
+      configured replication factor. The table below shows how <strong>{pinCount.toLocaleString()} CIDs</strong>
+      (or {formatStorage(totalActualSizeMb)} of content) distribute across different cluster sizes.
     </p>
 
     <table>
@@ -176,29 +176,29 @@
         <tr>
           <td>2</td>
           <td>2</td>
-          <td>{Math.max(pinCount, 1000)}</td>
-          <td>~1 TB</td>
+          <td>{pinCount.toLocaleString()}</td>
+          <td>{formatStorage(totalActualSizeMb)}</td>
           <td>1 peer can be offline</td>
         </tr>
         <tr>
           <td>3</td>
           <td>3</td>
-          <td>{Math.max(pinCount, 1000)}</td>
-          <td>~1 TB</td>
+          <td>{pinCount.toLocaleString()}</td>
+          <td>{formatStorage(totalActualSizeMb)}</td>
           <td>2 peers can be offline</td>
         </tr>
         <tr>
           <td>5</td>
           <td>3</td>
-          <td>~600</td>
-          <td>~600 GB</td>
+          <td>~{(pinCount * 3 / 5).toFixed(0)}</td>
+          <td>{formatStorage(totalActualSizeMb * 3 / 5)}</td>
           <td>2 peers can be offline</td>
         </tr>
         <tr>
           <td>10</td>
           <td>3</td>
-          <td>~300</td>
-          <td>~300 GB</td>
+          <td>~{(pinCount * 3 / 10).toFixed(0)}</td>
+          <td>{formatStorage(totalActualSizeMb * 3 / 10)}</td>
           <td>2 peers can be offline</td>
         </tr>
       </tbody>

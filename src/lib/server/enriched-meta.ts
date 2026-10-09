@@ -45,21 +45,22 @@ export function loadEnrichedMeta(name: string): { project: EnrichedProject; entr
   if (!raw || typeof raw !== 'object') return null;
 
   const pm = raw.project_metadata ?? {};
+  const summary = raw.summary ?? {};
   const asyncAttrs = pm['async-attributes'] ?? {};
-  const attrs = (pm.attributes ?? []) as Array<{ trait_type: string; value: string | number }>;
+  const attrs = (pm.attributes ?? asyncAttrs.attributes ?? []) as Array<{ trait_type: string; value: string | number }>;
   const artistNames = attrs
     .filter((a: any) => a.trait_type === 'Artist')
     .map((a: any) => String(a.value));
 
   const project: EnrichedProject = {
     project: raw.project ?? '',
-    projectName: pm.name ?? '',
+    projectName: pm.name ?? summary.project_name ?? '',
     artistName: pm.artistName ?? undefined,
-    description: pm.description ?? '',
+    description: pm.description ?? summary.project_description ?? '',
     image: pm.image ?? undefined,
-    totalCids: raw.total_cids ?? 0,
-    totalSizeMb: raw.total_size_mb ?? 0,
-    totalSizeGb: raw.total_size_gb ?? 0,
+    totalCids: raw.unique_cids ?? raw.total_cids ?? 0,
+    totalSizeMb: summary.total_size_mb ?? raw.total_size_mb ?? 0,
+    totalSizeGb: summary.total_size_gb ?? raw.total_size_gb ?? 0,
     artists: artistNames,
     attributes: attrs,
   };
