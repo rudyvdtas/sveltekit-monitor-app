@@ -22,9 +22,18 @@ const projectImages: Record<string, string> = {
   'knownorigin-v2-batch-3': knownoriginV1Img,
   'knownorigin-v2-batch-4': knownoriginV1Img,
   'knownorigin-v2-batch-5': knownoriginV1Img,
+  'knownorigin-v2-batch-6': knownoriginV1Img,
+  'knownorigin-v2-batch-7': knownoriginV1Img,
+  'knownorigin-v2-batch-8': knownoriginV1Img,
+  'knownorigin-v2-batch-9': knownoriginV1Img,
+  'knownorigin-v2-batch-10': knownoriginV1Img,
+  'knownorigin-v2-batch-11': knownoriginV1Img,
+  'knownorigin-v2-batch-12': knownoriginV1Img,
+  'knownorigin-v2-batch-13': knownoriginV1Img,
+  'knownorigin-v2-batch-14': knownoriginV1Img,
 };
 
-const ENRICHED_FILE_NAMES = ['cyberwatch', 'the-arcana', 'async-first-supper', 'knownorigin-v1', 'kov2-batch-1', 'kov2-batch-2', 'kov2-batch-3', 'kov2-batch-4', 'kov2-batch-5'];
+const ENRICHED_FILE_NAMES = ['cyberwatch', 'the-arcana', 'async-first-supper', 'knownorigin-v1', 'kov2-batch-1', 'kov2-batch-2', 'kov2-batch-3', 'kov2-batch-4', 'kov2-batch-5', 'kov2-batch-6', 'kov2-batch-7', 'kov2-batch-8', 'kov2-batch-9', 'kov2-batch-10', 'kov2-batch-11', 'kov2-batch-12', 'kov2-batch-13', 'kov2-batch-14'];
 
 let failedCache: { cids: string[]; enriched: Record<string, EnrichedEntry>; meta: Record<string, any> } | null = null;
 
