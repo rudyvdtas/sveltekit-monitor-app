@@ -1,9 +1,6 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
   import DonationButton from '$lib/DonationButton.svelte';
-  import mplogo from '$lib/assets/makersplace_logo_banner.avif';
-  import asynclogo from '$lib/assets/async-logo_banner.svg';
-  import kologo from '$lib/assets/knownorigin_logo_banner.png';
   let data = $props() as { data: any };
 
   let error = $derived(data.data?.error);
@@ -28,15 +25,18 @@
 {:else if cluster}
   <div class="banner">
     <div class="banner-track">
-      <img src={mplogo} alt="makersplace" />
-      <img src={asynclogo} alt="async" />
-      <img src={kologo} alt="knownorigin" />
-      <img src={mplogo} alt="makersplace" />
-      <img src={asynclogo} alt="async" />
-      <img src={kologo} alt="knownorigin" />
-      <img src={mplogo} alt="makersplace" />
-      <img src={asynclogo} alt="async" />
-      <img src={kologo} alt="knownorigin" />
+      <span class="banner-logo">makersplace</span>
+      <span class="banner-logo">async</span>
+      <span class="banner-logo">knownorigin</span>
+      <span class="banner-logo">??</span>
+      <span class="banner-logo">makersplace</span>
+      <span class="banner-logo">async</span>
+      <span class="banner-logo">knownorigin</span>
+      <span class="banner-logo">??</span>
+      <span class="banner-logo">makersplace</span>
+      <span class="banner-logo">async</span>
+      <span class="banner-logo">knownorigin</span>
+      <span class="banner-logo">??</span>
     </div>
   </div>
 
@@ -146,7 +146,7 @@
 <style>
   .banner {
     overflow: hidden;
-    height: 2rem;
+    height: 1.6rem;
     display: flex;
     align-items: center;
   }
@@ -154,14 +154,17 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    animation: scrollBanner 30s linear infinite;
+    white-space: nowrap;
+    animation: scrollBanner 40s linear infinite;
   }
-  .banner-track img {
-    height: 1.2rem;
-    width: auto;
-    object-fit: contain;
-    filter: grayscale(1) brightness(1.7);
-    opacity: 0.5;
+  .banner-logo {
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #999;
+    opacity: 0.45;
   }
   @keyframes scrollBanner {
     0% { transform: translateX(0); }
