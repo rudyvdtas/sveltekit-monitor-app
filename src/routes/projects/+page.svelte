@@ -221,9 +221,30 @@
   }
   a.tab {
     text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    border-radius: 8px;
+    transition: all 0.15s;
+  }
+  a.tab:hover {
+    background: var(--bg-hover);
+    color: var(--text);
   }
   a.tab.active {
-    font-weight: 600;
+    background: var(--accent);
+    color: #fff;
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
   }
   .group-tabs {
     display: flex;
