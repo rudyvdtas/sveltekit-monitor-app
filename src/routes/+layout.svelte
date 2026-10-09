@@ -1,12 +1,13 @@
 <script lang="ts">
   import '../app.css';
+  import drlLogo from '$lib/assets/DRL_navbar_logo.svg';
   let { children } = $props();
   let menuOpen = $state(false);
 </script>
 
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="/" class="logo">Dashboard</a>
+    <a href="/" class="logo"><img src={drlLogo} alt="DRL" class="logo-img" /></a>
     <button class="hamburger" onclick={() => (menuOpen = !menuOpen)} aria-label="Menu" class:hamburger-open={menuOpen}>
       <span></span><span></span><span></span>
     </button>
@@ -44,10 +45,14 @@
   }
 
   .logo {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--text);
-    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .logo-img {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
   }
 
   .nav-links { display: flex; gap: 1.75rem; }
