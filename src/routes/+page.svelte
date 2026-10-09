@@ -66,40 +66,16 @@
   </div>
 
   <div class="card">
-    <div class="flex-between mb-md">
-      <h2 style="margin-bottom:0;">Activity on Volunteers</h2>
-      <a href="/projects">View Projects →</a>
-    </div>
-    {#if recentPins.length === 0}
-      <p class="text-muted">No CIDs pinned yet. No volunteers connected.</p>
-    {:else}
-      <table>
-        <thead>
-          <tr>
-            <th>CID</th>
-            <th>Project</th>
-          </tr>
-        </thead>
-        <tbody>
-          {#each recentPins as pin}
-            <tr>
-              <td>
-                <a href="https://dweb.link/ipfs/{pin.cid}" target="_blank" rel="noopener" title="Open via IPFS gateway">
-                  <code style="color:var(--accent);">{pin.cid.slice(0, 28)}</code>
-                </a>
-              </td>
-              <td>
-                {#if pin.projectName}
-                  <span class="badge badge-info">{pin.projectName}</span>
-                {:else}
-                  <span class="text-muted text-sm">—</span>
-                {/if}
-              </td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
-    {/if}
+    <h2 style="margin-bottom: 0.25rem;">About Digital Rescue Lab</h2>
+    <p class="text-muted text-sm" style="margin-bottom: 1rem; line-height: 1.7; white-space: pre-line;">
+      Digital Rescue Lab is an initiative led by artists and creative technologists rooted in the cryptoart community. We are working to recover, stabilize, and preserve early blockchain artworks that are disappearing as the platforms and infrastructure they depend on fail.
+
+      Our first restoration, the Arcana Crypto Tarot, proved that recovery is possible. We've since rebuilt a public viewer for Async Classic (V1/V2) artworks, restoring viewing and layer functionality that had broken down.
+
+      We have also written a document laying out the scope of the cryptoart conservation challenge, noting work in progress as well as a starting strategy. We have shared it with the public because, just as with traditional art conservation, this is a collective responsibility: it belongs to artists, collectors, platforms, and anyone who cares about art and digital culture — particularly this strange and genuinely significant moment in art history. <a href="https://app.notion.com/p/Cryptoart-Conservation-Overview-Current-Efforts-August-2026-3cb5139de07c8172ab6bc6dea803d14e?source=copy_link" target="_blank" rel="noopener">Read here &gt;&gt;&gt;</a>
+
+      This page is a fixed starting point. For ongoing progress and the full picture, see our <a href="https://karenfranceseng.notion.site/drl?v=2f55139de07c807f9765000c982e94a4" target="_blank" rel="noopener">Notion Overview</a> — our hub for information and updates.
+    </p>
   </div>
 
   {#if failedCids.length > 0}
