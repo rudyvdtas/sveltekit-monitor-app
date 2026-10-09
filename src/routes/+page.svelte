@@ -146,18 +146,22 @@
 <style>
   .banner {
     overflow: hidden;
-    height: 2.2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
   }
   .banner-track {
     display: flex;
-    gap: 3rem;
+    align-items: center;
+    gap: 4rem;
     animation: scrollBanner 30s linear infinite;
   }
   .banner-track img {
-    height: 1.4rem;
+    height: 1.2rem;
+    width: auto;
     object-fit: contain;
+    filter: grayscale(1) brightness(1.7);
+    opacity: 0.5;
   }
   @keyframes scrollBanner {
     0% { transform: translateX(0); }
