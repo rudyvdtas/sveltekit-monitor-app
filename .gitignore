@@ -21,3 +21,19 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Credentials & keys
+*.pem
+*.key
+*.crt
+service.json
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Docker
+docker-compose.override.yml

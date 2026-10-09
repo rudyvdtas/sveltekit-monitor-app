@@ -2,11 +2,15 @@ services:
   dashboard:
     build: .
     container_name: cluster-dashboard
+    ports:
+      - "3000:3000"
     restart: unless-stopped
     environment:
       - HOST=0.0.0.0
       - PORT=3000
       - CLUSTER_API_URL=${CLUSTER_API_URL:-http://cluster:9094}
+      - MAX_CONCURRENT_CLUSTER_REQUESTS=20
+      - CLUSTER_MAX_RESPONSE_BYTES=104857600
     networks:
       - default
       - cluster-internal
