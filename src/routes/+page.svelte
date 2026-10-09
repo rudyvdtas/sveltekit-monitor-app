@@ -1,6 +1,9 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
   import DonationButton from '$lib/DonationButton.svelte';
+  import mplogo from '$lib/assets/makersplace_logo_banner.avif';
+  import asynclogo from '$lib/assets/async-logo_banner.svg';
+  import kologo from '$lib/assets/knownorigin_logo_banner.png';
   let data = $props() as { data: any };
 
   let error = $derived(data.data?.error);
@@ -23,10 +26,19 @@
 {#if error}
   <div class="card" style="border-color: var(--red); color: var(--red);">{error}</div>
 {:else if cluster}
-  <h1 style="margin-bottom: 0.25rem;">Cluster</h1>
-  <p class="text-muted" style="margin-bottom: 1.5rem;">
-    {cluster.peername}
-  </p>
+  <div class="banner">
+    <div class="banner-track">
+      <img src={mplogo} alt="makersplace" />
+      <img src={asynclogo} alt="async" />
+      <img src={kologo} alt="knownorigin" />
+      <img src={mplogo} alt="makersplace" />
+      <img src={asynclogo} alt="async" />
+      <img src={kologo} alt="knownorigin" />
+      <img src={mplogo} alt="makersplace" />
+      <img src={asynclogo} alt="async" />
+      <img src={kologo} alt="knownorigin" />
+    </div>
+  </div>
 
   <div class="grid grid-3 mb-md">
     <div class="card card-accent">
@@ -130,3 +142,28 @@
     <DonationButton />
   </div>
 {/if}
+
+<style>
+  .banner {
+    overflow: hidden;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+  .banner-track {
+    display: flex;
+    gap: 3rem;
+    animation: scrollBanner 30s linear infinite;
+  }
+  .banner-track img {
+    height: 1.4rem;
+    object-fit: contain;
+    filter: brightness(0);
+  }
+  @keyframes scrollBanner {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.33%); }
+  }
+</style>
