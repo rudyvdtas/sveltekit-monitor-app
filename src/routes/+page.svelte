@@ -146,8 +146,6 @@
 <style>
   .banner {
     overflow: hidden;
-    background: var(--bg-card);
-    border-bottom: 1px solid var(--border);
     height: 2.2rem;
     display: flex;
     align-items: center;
@@ -160,7 +158,6 @@
   .banner-track img {
     height: 1.4rem;
     object-fit: contain;
-    filter: brightness(0);
   }
   @keyframes scrollBanner {
     0% { transform: translateX(0); }
