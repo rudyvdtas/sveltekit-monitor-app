@@ -23,7 +23,7 @@
 {#if error}
   <div class="card" style="border-color: var(--red); color: var(--red);">{error}</div>
 {:else if cluster}
-  <h1 style="margin-bottom: 0.25rem;">DRL Co&ouml;rdinator</h1>
+  <h1 style="margin-bottom: 0.25rem;">Cluster</h1>
   <p class="text-muted" style="margin-bottom: 1.5rem;">
     {cluster.peername}
   </p>
@@ -51,34 +51,6 @@
         </p>
       {/if}
     </div>
-  </div>
-
-  <div class="card mb-md">
-    <div class="flex-between mb-md">
-      <h2 style="margin-bottom:0;">Cluster Peers</h2>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Peer Name</th>
-          <th>Role</th>
-        </tr>
-      </thead>
-      <tbody>
-        {#each peers as p, i}
-          <tr>
-            <td><strong>{p.peername}</strong></td>
-            <td>
-              {#if i === 0}
-                <span class="badge badge-warning">Coordinator</span>
-              {:else}
-                <span class="badge badge-info">Volunteer</span>
-              {/if}
-            </td>
-          </tr>
-        {/each}
-      </tbody>
-    </table>
   </div>
 
   <div class="card">
@@ -152,78 +124,6 @@
       </table>
     </div>
   {/if}
-
-  <div class="card">
-    <h2>Creating Redundancy</h2>
-    <p class="text-muted text-sm" style="margin-bottom: 1rem;">
-      Each CID in a project is replicated across multiple peers. The cluster
-      automatically assigns CIDs to peers so that each stays within the
-      configured replication factor. The table below shows how <strong>{pinCount.toLocaleString()} CIDs</strong>
-      (or {formatStorage(totalActualSizeMb)} of content) distribute across different cluster sizes.
-    </p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Peers</th>
-          <th>Replication</th>
-          <th>CIDs per peer</th>
-          <th>Storage per peer</th>
-          <th>Offline resilience</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2</td>
-          <td>2</td>
-          <td>{pinCount.toLocaleString()}</td>
-          <td>{formatStorage(totalActualSizeMb)}</td>
-          <td>1 peer can be offline</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>3</td>
-          <td>{pinCount.toLocaleString()}</td>
-          <td>{formatStorage(totalActualSizeMb)}</td>
-          <td>2 peers can be offline</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>3</td>
-          <td>~{(pinCount * 3 / 5).toFixed(0)}</td>
-          <td>{formatStorage(totalActualSizeMb * 3 / 5)}</td>
-          <td>2 peers can be offline</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>3</td>
-          <td>~{(pinCount * 3 / 10).toFixed(0)}</td>
-          <td>{formatStorage(totalActualSizeMb * 3 / 10)}</td>
-          <td>2 peers can be offline</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div style="margin-top: 1rem; display:grid; grid-template-columns: repeat(2,1fr); gap:0.75rem;">
-      <div class="card" style="border-left: 3px solid var(--green-light);">
-        <strong style="font-size:0.9rem;">Partial uptime</strong>
-        <p class="text-muted text-sm" style="margin-top:0.25rem;">
-          With replication ≥ 2, no CID becomes unavailable when a peer goes offline.
-          The other peer(s) still host the content. When the peer returns, it
-          resumes hosting. Run <code>rebalance.sh</code> after a long absence
-          to restore full coverage.
-        </p>
-      </div>
-      <div class="card" style="border-left: 3px solid var(--green-light);">
-        <strong style="font-size:0.9rem;">Scaling up</strong>
-        <p class="text-muted text-sm" style="margin-top:0.25rem;">
-          More peers = less storage per peer. The coordinator (trusted peer) sets the target
-          via <code>scripts/rebalance.sh</code> which redistributes CIDs across
-          all available peers up to replication 3.
-        </p>
-      </div>
-    </div>
-  </div>
 
   <div class="flex gap-sm" style="flex-wrap: wrap; margin-top: 0;">
     <CTA />

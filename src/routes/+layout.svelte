@@ -5,10 +5,11 @@
 
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="/" class="logo">DRL Cluster</a>
+    <a href="/" class="logo">Dashboard</a>
     <div class="nav-links">
       <a href="/">Dashboard</a>
       <a href="/projects">Projects</a>
+      <a href="/info">Info</a>
       <a href="/about">About</a>
     </div>
   </div>
