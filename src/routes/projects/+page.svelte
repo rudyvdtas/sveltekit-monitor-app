@@ -273,9 +273,12 @@
   }
   .tabs {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.2rem;
     margin-bottom: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
   }
   .group-tabs {
     display: flex;
@@ -285,6 +288,9 @@
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 0.25rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
   }
   .group-tab {
     display: inline-block;
