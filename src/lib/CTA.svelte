@@ -1,5 +1,5 @@
 <a
-  href="https://x.com/digitalrescuelab"
+  href="https://x.com/ArtRescueLab"
   target="_blank"
   rel="noopener"
   class="cta-box"

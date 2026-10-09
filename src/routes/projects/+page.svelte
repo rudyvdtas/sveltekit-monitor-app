@@ -16,6 +16,11 @@
   let activeGroup = $derived(activeProject?.group ?? 'async');
   let groupProjects = $derived(allProjects.filter((p: any) => p.group === activeGroup));
 
+  let showKov2 = $state(activeId.startsWith('knownorigin-v2-batch-'));
+  let kov2Projects = $derived(groupProjects.filter((p: any) => p.id.startsWith('knownorigin-v2-batch-')));
+  let knownoriginV1 = $derived(groupProjects.find((p: any) => p.id === 'knownorigin-v1'));
+  let otherProjects = $derived(activeGroup !== 'knownorigin' ? groupProjects : knownoriginV1 ? [knownoriginV1] : []);
+
   function formatSize(mb: number | null): string {
     if (mb == null) return '—';
     if (mb < 1) return `${(mb * 1000).toFixed(0)} KB`;
@@ -67,7 +72,7 @@
 </div>
 
 <div class="tabs">
-  {#each groupProjects as project}
+  {#each otherProjects as project}
     <a
       href={projectUrl(project.id)}
       class="tab {activeId === project.id ? 'active' : ''}"
@@ -76,6 +81,22 @@
       {project.name}
     </a>
   {/each}
+  {#if activeGroup === 'knownorigin' && kov2Projects.length > 0}
+    <button class="tab dropdown-toggle" onclick={() => (showKov2 = !showKov2)} role="button">
+      KOV2 {showKov2 ? '▲' : '▼'}
+    </button>
+    {#if showKov2}
+      {#each kov2Projects as project}
+        <a
+          href={projectUrl(project.id)}
+          class="tab {activeId === project.id ? 'active' : ''}"
+          role="button"
+        >
+          {project.name}
+        </a>
+      {/each}
+    {/if}
+  {/if}
 </div>
 
 {#if activeProject}
@@ -219,7 +240,7 @@
     background: var(--accent-dark);
     color: #fff;
   }
-  a.tab {
+  a.tab, button.tab {
     text-decoration: none;
     display: inline-block;
     padding: 0.4rem 0.9rem;
@@ -232,11 +253,21 @@
     border-radius: 8px;
     transition: all 0.15s;
   }
-  a.tab:hover {
+  a.tab:hover, button.tab:hover {
     background: var(--bg-hover);
     color: var(--text);
   }
-  a.tab.active {
+  a.tab.active, button.tab.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  button.dropdown-toggle {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    font-size: 0.78rem;
+    padding: 0.4rem 0.7rem;
+  }
+  button.dropdown-toggle:hover {
     background: var(--accent);
     color: #fff;
   }
