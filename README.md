@@ -1,25 +1,25 @@
 # IPFS Cluster Monitor Dashboard
 
-SvelteKit dashboard for monitoring an IPFS Cluster. Communicates with the
-cluster REST API and the tracker sidecar.
+SvelteKit dashboard voor het IPFS Cluster: een statische uitleg-site plus een
+projectpagina die curated CIDs toont met enriched metadata en per CID de live
+pin-status (bv. `2/5` of `3/5` gepind).
 
 ## Prerequisites
 
 - Node.js 20+
-- The IPFS Cluster Coordinator (separate repo) must be running on the same host
-- The tracker sidecar (for `/summary` and `/failed-cids`) should be running
+- De IPFS Cluster Coordinator (separate repo) moet op dezelfde host draaien
+  en de cluster REST API beschikbaar stellen op `127.0.0.1:9094`
 
 ## Environment variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `CLUSTER_API_URL` | `http://cluster:9094` | URL of the cluster REST API |
-| `TRACKER_API_URL` | `http://tracker:9095` | URL of the tracker sidecar |
-| `CACHE_TTL_MS` | `15000` | Cache TTL for cluster API responses |
-| `MAX_CONCURRENT_CLUSTER_REQUESTS` | `5` | Concurrent request limit to cluster API |
+| `CLUSTER_API_URL` | `http://cluster:9094` | URL van de cluster REST API |
+| `CACHE_TTL_MS` | `15000` | Cache TTL voor per-CID pin-status responses |
+| `MAX_CONCURRENT_CLUSTER_REQUESTS` | `5` | Maximaal gelijktijdige requests naar de cluster API |
 | `CLUSTER_TIMEOUT_MS` | `30000` | Cluster API request timeout |
-| `CLUSTER_MAX_RESPONSE_BYTES` | `5242880` | Max response body size (5 MB) |
-| `PAGE_SIZE` | `50` | Default pagination page size for project CID lists |
+| `CLUSTER_MAX_RESPONSE_BYTES` | `5242880` | Maximale response-grootte (5 MB) |
+| `PAGE_SIZE` | `50` | Default paginagrootte voor project CID-lijsten |
 
 ## Deploy
 
@@ -40,9 +40,8 @@ rsync -avz --delete build/ root@<vps>:/opt/sveltekit-monitor-app/build/
 systemctl restart sveltekit-monitor
 ```
 
-`.env` op de VPS bevat `HOST=127.0.0.1`, `PORT=3000`,
-`CLUSTER_API_URL=http://127.0.0.1:9094`,
-`TRACKER_API_URL=http://127.0.0.1:9095` (loopback).
+`.env` op de VPS bevat `HOST=127.0.0.1`, `PORT=3000` en
+`CLUSTER_API_URL=http://127.0.0.1:9094` (loopback).
 De systemd-unit (`/etc/systemd/system/sveltekit-monitor.service`) zet
 `MemoryMax=256M` en basis-hardening.
 Caddy (host-level, `/etc/caddy/Caddyfile`) is de reverse proxy
@@ -58,25 +57,25 @@ docker compose up -d --build
 
 ```
 Browser → Caddy (HTTPS, glimmy.xyz) → localhost:3000 (SvelteKit)
-                                                      ├── cluster:9094 (per-CID via /pins/{cid}, allocaties via /allocations)
-                                                      └── tracker:9095 (samenvatting via /summary, failed CIDs)
+                                              └── cluster:9094 (per-CID via /pins/{cid})
 ```
 
-Alle communicatie met de cluster REST API gebeurt server-side
-(SvelteKit `+page.server.ts`). De browser praat nooit direct met de cluster.
+De enige server-side call naar het cluster is de per-CID lookup
+(`GET /pins/{cid}`) voor de pin-status-badge op de projectpagina. Alle overige
+pagina's zijn statisch en raken het cluster niet.
 
 ## Endpoints
 
-| Method | Path | Data source | Schaalbaarheid |
-|--------|------|-------------|----------------|
-| `GET` | `/` | Tracker `/summary` (cached) + cluster `/allocations` | O(1) — geen live broadcast |
-| `GET` | `/volunteer` | Cluster `/allocations` (alleen `pins.length`) | O(1) |
-| `GET` | `/projects?project=&page=&per_page=` | Lokale CID-lijst + `getPinStatus` per pagina | O(peers × page_size) — per-CID lookup |
-| `GET` | `/about` | Statisch | — |
+| Method | Path | Data source |
+|--------|------|-------------|
+| `GET` | `/` | Statisch |
+| `GET` | `/projects?project=&page=&per_page=` | Lokale CID-lijst + `getPinStatus` per pagina |
+| `GET` | `/volunteer` | Statisch |
+| `GET` | `/about` | Statisch |
 
 Per-CID lookups (`getPinStatus`) gebruiken `GET /pins/{cid}` (zonder `local=true`),
-wat **altijd de volledige `peer_map`** teruggeeft met echte multi-peer status.
-De kosten schalen met het aantal peers (vast, klein), **niet** met het totale
+wat altijd de volledige `peer_map` teruggeeft met echte multi-peer status.
+De kosten schalen met het aantal peers (vast, klein), niet met het totale
 aantal CIDs. Dit blijft dus goedkoop bij 200K+ CIDs.
 
 ## Paginering

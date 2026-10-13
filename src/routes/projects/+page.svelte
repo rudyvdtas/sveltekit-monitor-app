@@ -11,7 +11,7 @@
   let pinStatusMap = $derived(data.data?.pinStatusMap ?? {});
   let groupLogos = $derived(data.data?.groupLogos ?? {});
 
-  let groups = $derived(['async', 'knownorigin', 'fails']);
+  let groups = $derived(['async', 'knownorigin']);
   let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
   let activeGroup = $derived(activeProject?.group ?? 'async');
   let groupProjects = $derived(allProjects.filter((p: any) => p.group === activeGroup));
@@ -62,11 +62,7 @@
 <div class="group-tabs">
   {#each groups as g}
     <a href={groupUrl(g)} class="group-tab {activeGroup === g ? 'active' : ''}" role="button">
-      {#if g === 'fails'}
-        <span class="emoji-logo">🚨</span> FAILS
-      {:else}
-        <img src={groupLogos[g]} alt={g} class="group-logo" />
-      {/if}
+      <img src={groupLogos[g]} alt={g} class="group-logo" />
     </a>
   {/each}
 </div>
@@ -319,9 +315,5 @@
     object-fit: contain;
     vertical-align: middle;
     margin-right: 2px;
-  }
-  .emoji-logo {
-    font-size: 1.2rem;
-    vertical-align: middle;
   }
 </style>

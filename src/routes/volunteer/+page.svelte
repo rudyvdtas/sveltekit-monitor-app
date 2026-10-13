@@ -1,17 +1,11 @@
 <script lang="ts">
-  let data = $props() as { data: any };
-  let volunteers = $derived(data.data.volunteers ?? 0);
-  let cidCount = $derived(data.data.cidCount ?? 0);
-  let peerCount = $derived(data.data.peerCount ?? 1);
-
   type Setup = 'docker' | 'existing-ipfs' | 'artbox' | 'faq';
   let selected: Setup = $state('docker');
 </script>
 
 <h1 style="margin-bottom: 0.25rem;">Volunteer</h1>
 <p class="text-muted" style="margin-bottom: 1.5rem;">
-  {volunteers === 0 ? 'No volunteers yet — be the first!' : `${volunteers} active volunteer${volunteers > 1 ? 's' : ''}`}
-  · {peerCount} peer{peerCount > 1 ? 's' : ''} · {cidCount} CIDs
+  Join the DRL cluster as a volunteer peer and help keep cryptoart available.
 </p>
 
 <div class="tabs">

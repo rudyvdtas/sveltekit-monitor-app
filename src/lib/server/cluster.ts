@@ -1,4 +1,4 @@
-import { getOrSet, invalidate } from './cache';
+import { getOrSet } from './cache';
 
 const API = process.env.CLUSTER_API_URL || 'http://cluster:9094';
 
@@ -21,12 +21,10 @@ export class ClusterError extends Error {
 }
 
 let activeRequests = 0;
-let rejectedCount = 0;
 
 async function withConcurrencyLimit<T>(fn: () => Promise<T>): Promise<T> {
   const max = currentMaxConcurrentRequests();
   if (activeRequests >= max) {
-    rejectedCount++;
     throw new ClusterError('Too many concurrent cluster requests', 429, nextId());
   }
   activeRequests++;
@@ -105,49 +103,6 @@ async function get(path: string): Promise<unknown> {
   return JSON.parse(trimmed);
 }
 
-async function post(path: string): Promise<unknown> {
-  const id = nextId();
-  let res: Response;
-  try {
-    res = await fetchWithTimeout(`${API}${path}`, { method: 'POST' });
-  } catch (e) {
-    console.error(`[${id}] POST ${path}: request failed`, e);
-    throw new ClusterError('Cluster unavailable', 0, id);
-  }
-  if (!res.ok) {
-    const err = await res.text().catch(() => '');
-    console.error(`[${id}] POST ${path}: HTTP ${res.status} — ${sanitize(err)}`);
-    throw new ClusterError('Cluster request failed', res.status, id);
-  }
-  return res.json();
-}
-
-async function del(path: string): Promise<unknown> {
-  const id = nextId();
-  let res: Response;
-  try {
-    res = await fetchWithTimeout(`${API}${path}`, { method: 'DELETE' });
-  } catch (e) {
-    console.error(`[${id}] DELETE ${path}: request failed`, e);
-    throw new ClusterError('Cluster unavailable', 0, id);
-  }
-  if (!res.ok) {
-    const err = await res.text().catch(() => '');
-    console.error(`[${id}] DELETE ${path}: HTTP ${res.status} — ${sanitize(err)}`);
-    throw new ClusterError('Cluster request failed', res.status, id);
-  }
-  return res.json();
-}
-
-export type PeerInfo = {
-  id: string;
-  addresses: string[];
-  cluster_peers: string[];
-  version: string;
-  ipfs: { id: string; addresses: string[]; error: string };
-  peername: string;
-};
-
 export type PinInfo = {
   cid: string;
   name: string;
@@ -156,22 +111,6 @@ export type PinInfo = {
   replication_factor_min: number;
   replication_factor_max: number;
 };
-
-const CACHE_KEY_ID = 'id';
-const CACHE_KEY_PEERS = 'peers';
-const CACHE_KEY_ALLOCATIONS = 'allocations';
-
-export function getId(): Promise<PeerInfo> {
-  return withConcurrencyLimit(() =>
-    getOrSet(CACHE_KEY_ID, () => get('/id') as Promise<PeerInfo>, currentCacheTtl())
-  );
-}
-
-export function getPeers(): Promise<PeerInfo | PeerInfo[]> {
-  return withConcurrencyLimit(() =>
-    getOrSet(CACHE_KEY_PEERS, () => get('/peers') as Promise<PeerInfo | PeerInfo[]>, currentCacheTtl())
-  );
-}
 
 /**
  * Live per-CID redundancy status (`GET /pins/{cid}`) — cost scales with peer count,
@@ -187,64 +126,4 @@ export function getPinStatus(cid: string): Promise<PinInfo> {
       currentCacheTtl()
     )
   );
-}
-
-/**
- * Lichte pinset-ophaling (`GET /allocations`) — retourneert de CID-lijst met
- * replicatiefactor en toegewezen peers, maar géén live per-peer status.
- * Schaalbaar tot 200K+ CIDs (~100MB respons is acceptabel server-side).
- * Gebruik voor overzichten en tellingen i.p.v. bulk-`/pins`.
- */
-export type AllocationInfo = {
-  cid: string;
-  name: string;
-  allocations: string[];
-  replication_factor_min: number;
-  replication_factor_max: number;
-};
-
-export function getAllocations(): Promise<AllocationInfo[]> {
-  return withConcurrencyLimit(() =>
-    getOrSet(CACHE_KEY_ALLOCATIONS, () => getAllocationsRaw(), currentCacheTtl())
-  );
-}
-
-async function getAllocationsRaw(): Promise<AllocationInfo[]> {
-  const data = await get('/allocations');
-  if (Array.isArray(data)) return data as AllocationInfo[];
-  if (data && typeof data === 'object') {
-    const entries = (data as Record<string, unknown>).entries ?? (data as Record<string, unknown>).allocations;
-    if (Array.isArray(entries)) return entries as AllocationInfo[];
-  }
-  return [];
-}
-
-export function addPin(cid: string, replMin?: number, replMax?: number, name?: string): Promise<PinInfo> {
-  invalidate(CACHE_KEY_ALLOCATIONS);
-  invalidate(`pin:${cid}`);
-  const params = new URLSearchParams();
-  if (replMin !== undefined) params.set('replication-min', String(replMin));
-  if (replMax !== undefined) params.set('replication-max', String(replMax));
-  if (name) params.set('name', name);
-  const qs = params.toString();
-  return post(`/pins/${cid}${qs ? '?' + qs : ''}`) as Promise<PinInfo>;
-}
-
-export function removePin(cid: string): Promise<PinInfo> {
-  invalidate(CACHE_KEY_ALLOCATIONS);
-  invalidate(`pin:${cid}`);
-  return del(`/pins/${cid}`) as Promise<PinInfo>;
-}
-
-export function invalidateCache(): void {
-  invalidate(CACHE_KEY_ID);
-  invalidate(CACHE_KEY_PEERS);
-  invalidate(CACHE_KEY_ALLOCATIONS);
-}
-
-export function getMetrics(): Record<string, number> {
-  return {
-    activeRequests,
-    totalRejected: rejectedCount,
-  };
 }

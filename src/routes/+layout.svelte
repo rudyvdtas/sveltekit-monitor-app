@@ -14,7 +14,6 @@
     <div class="nav-links" class:open={menuOpen}>
       <a href="/">Dashboard</a>
       <a href="/projects">Projects</a>
-      <a href="/info">Info</a>
       <a href="/about">About</a>
     </div>
   </div>

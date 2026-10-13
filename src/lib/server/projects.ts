@@ -177,14 +177,6 @@ Check the original piece: https://async.art/`,
     cidFile: 'kov2-batch-14',
     image: 'knownorigin.avif',
   },
-  {
-    id: 'failed',
-    name: 'FAILS',
-    group: 'fails',
-    description: 'CIDs that could not be pinned after 24 hours with an interval repeated attempts by the cluster are placed in this folder. They remain in the curated list and can be retried manually at a later moment, or picked up by the community for further investigation.\n\nCommon causes: content no longer available on IPFS, network timeouts, or corrupted data.',
-    cidFile: 'failed',
-    image: 'knownorigin.avif',
-  }
 ];
 
 export function getProject(id: string): Project | undefined {
