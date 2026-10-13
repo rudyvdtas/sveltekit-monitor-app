@@ -30,6 +30,14 @@ const projectImages: Record<string, string> = {
   'knownorigin-v2-batch-12': knownoriginV1Img,
   'knownorigin-v2-batch-13': knownoriginV1Img,
   'knownorigin-v2-batch-14': knownoriginV1Img,
+  'knownorigin-v3-batch-1': knownoriginV1Img,
+  'knownorigin-v3-batch-2': knownoriginV1Img,
+  'knownorigin-v3-batch-3': knownoriginV1Img,
+  'knownorigin-v3-batch-4': knownoriginV1Img,
+  'knownorigin-v3-batch-5': knownoriginV1Img,
+  'knownorigin-v3-batch-6': knownoriginV1Img,
+  'knownorigin-v3-batch-7': knownoriginV1Img,
+  'knownorigin-v3-batch-8': knownoriginV1Img,
 };
 
 export const load: PageServerLoad = async ({ url }) => {

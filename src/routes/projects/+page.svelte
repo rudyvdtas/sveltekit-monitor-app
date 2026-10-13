@@ -18,6 +18,8 @@
 
   let showKov2 = $state(activeId.startsWith('knownorigin-v2-batch-'));
   let kov2Projects = $derived(groupProjects.filter((p: any) => p.id.startsWith('knownorigin-v2-batch-')));
+  let showKov3 = $state(activeId.startsWith('knownorigin-v3-batch-'));
+  let kov3Projects = $derived(groupProjects.filter((p: any) => p.id.startsWith('knownorigin-v3-batch-')));
   let knownoriginV1 = $derived(groupProjects.find((p: any) => p.id === 'knownorigin-v1'));
   let otherProjects = $derived(activeGroup !== 'knownorigin' ? groupProjects : knownoriginV1 ? [knownoriginV1] : []);
 
@@ -83,6 +85,22 @@
     </button>
     {#if showKov2}
       {#each kov2Projects as project}
+        <a
+          href={projectUrl(project.id)}
+          class="tab {activeId === project.id ? 'active' : ''}"
+          role="button"
+        >
+          {project.name}
+        </a>
+      {/each}
+    {/if}
+  {/if}
+  {#if activeGroup === 'knownorigin' && kov3Projects.length > 0}
+    <button class="tab dropdown-toggle" onclick={() => (showKov3 = !showKov3)} role="button">
+      KOV3 {showKov3 ? '▲' : '▼'}
+    </button>
+    {#if showKov3}
+      {#each kov3Projects as project}
         <a
           href={projectUrl(project.id)}
           class="tab {activeId === project.id ? 'active' : ''}"
