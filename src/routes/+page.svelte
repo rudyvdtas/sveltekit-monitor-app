@@ -1,6 +1,15 @@
 <script lang="ts">
   import CTA from '$lib/CTA.svelte';
   import DonationButton from '$lib/DonationButton.svelte';
+
+  let data = $props() as { data: any };
+  let stats = $derived(data.data?.stats ?? null);
+
+  function formatGb(gb: number): string {
+    if (gb == null) return '—';
+    if (gb >= 1000) return `${(gb / 1000).toFixed(2)} TB`;
+    return `${gb.toFixed(1)} GB`;
+  }
 </script>
 
 <div class="banner">
@@ -19,6 +28,23 @@
     <span class="banner-logo">??</span>
   </div>
 </div>
+
+{#if stats}
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-value">{stats.totalCids.toLocaleString('en-US')}</span>
+      <span class="stat-label">CIDs pinned</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">{formatGb(stats.uniqueSizeGb)}</span>
+      <span class="stat-label">unique data</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">{formatGb(stats.replicatedSizeGb)}</span>
+      <span class="stat-label">replicated ×{stats.replicationFactor}</span>
+    </div>
+  </div>
+{/if}
 
 <div class="card">
   <h2 style="margin-bottom: 0.25rem;">About Digital Rescue Lab</h2>
@@ -64,5 +90,30 @@
   @keyframes scrollBanner {
     0% { transform: translateX(0); }
     100% { transform: translateX(-33.33%); }
+  }
+  .stats-bar {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 </style>

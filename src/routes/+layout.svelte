@@ -12,7 +12,6 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" class:open={menuOpen}>
-      <a href="/">Dashboard</a>
       <a href="/projects">Projects</a>
       <a href="/about">About</a>
     </div>
