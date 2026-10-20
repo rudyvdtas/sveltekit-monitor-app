@@ -29,20 +29,36 @@ development.
 
 ### Deploy op VPS (production, via GitHub)
 
+De source repo en build-output zijn gescheiden directories op de VPS:
+
+| Directory | Inhoud |
+|---|---|
+| `/opt/sveltekit-monitor-source` | Git repo (source code) |
+| `/opt/sveltekit-monitor-app` | Build output + `projects-data/` + systemd working dir |
+
+**Eerste setup op de VPS:**
+
 ```bash
-# Op de VPS: pull de laatste code en bouw
+git clone https://github.com/rudyvdtas/sveltekit-monitor-app.git /opt/sveltekit-monitor-source
+# Als projects-data/ al in /opt/sveltekit-monitor-app staat, kopieer naar source:
+cp -r /opt/sveltekit-monitor-app/projects-data /opt/sveltekit-monitor-source/
+```
+
+**Elke deploy:**
+
+```bash
 ssh root@149.210.143.16 << 'EOF'
-  cd /opt/sveltekit-monitor-app
+  cd /opt/sveltekit-monitor-source
   git pull origin main
   npm ci
   npm run build
-  cp -r projects-data build/client/projects-data 2>/dev/null || true
+  rsync -av --delete .svelte-kit/output/ /opt/sveltekit-monitor-app/
+  # projects-data/ moet al in /opt/sveltekit-monitor-app/ staan (wordt niet overschreven)
   systemctl restart glimmy
 EOF
 ```
 
-De systemd-unit (`/etc/systemd/system/glimmy.service`) draait `node index.js`
-vanuit `/opt/sveltekit-monitor-app` met env-vars voor `CLUSTER_API_URL` etc.
+De systemd-unit (`/etc/systemd/system/glimmy.service`) draait `/opt/sveltekit-monitor-app/index.js` met env-vars voor `CLUSTER_API_URL=http://127.0.0.1:9094`.
 Caddy (host-level, `/etc/caddy/Caddyfile`) is de reverse proxy
 en regelt HTTPS voor `glimmy.xyz`.
 
