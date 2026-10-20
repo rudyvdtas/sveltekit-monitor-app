@@ -27,30 +27,22 @@ pin-status (bv. `2/5` of `3/5` gepind).
 The `Dockerfile`/`docker-compose.yaml` in this repo still work for local
 development.
 
-### Deploy op VPS (production, systemd)
-
-> **NB:** GitHub is only a backup. Never `git pull` from GitHub on the VPS; deploy via rsync of your local build.
+### Deploy op VPS (production, via GitHub)
 
 ```bash
-# Op je Mac: bouw lokaal
-npm ci && npm run build
+# Op de VPS: pull de laatste code en bouw
+ssh root@149.210.143.16 << 'EOF'
+  cd /opt/sveltekit-monitor-app
+  git pull origin main
+  npm ci
+  npm run build
+  cp -r projects-data build/client/projects-data 2>/dev/null || true
+  systemctl restart glimmy
+EOF
+```
 
-# Kopieer output naar de VPS (publickey-authenticatie)
-rsync -avz --delete build/ monitor@149.210.143.16:/opt/sveltekit-monitor-app/
-
-# Voor password-based SSH-authenticatie, forceer fallback naar wachtwoordprompt:
-rsync -avz --delete -e 'ssh -o PubkeyAuthentication=no' \
-  build/ monitor@149.210.143.16:/opt/sveltekit-monitor-app/
-
-# Als je als root deployt in plaats van monitor:
-rsync -avz --delete build/ root@149.210.143.16:/opt/sveltekit-monitor-app/
-ssh root@149.210.143.16 'systemctl restart sveltekit-monitor'
-``` 
-
-`.env` op de VPS bevat `HOST=127.0.0.1`, `PORT=3000` en
-`CLUSTER_API_URL=http://127.0.0.1:9094` (loopback).
-De systemd-unit (`/etc/systemd/system/sveltekit-monitor.service`) zet
-`MemoryMax=256M` en basis-hardening.
+De systemd-unit (`/etc/systemd/system/glimmy.service`) draait `node index.js`
+vanuit `/opt/sveltekit-monitor-app` met env-vars voor `CLUSTER_API_URL` etc.
 Caddy (host-level, `/etc/caddy/Caddyfile`) is de reverse proxy
 en regelt HTTPS voor `glimmy.xyz`.
 
