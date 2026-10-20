@@ -60,6 +60,9 @@
 <p class="text-muted" style="margin-bottom: 1rem;">
   Curated CIDs grouped by platform — each project's content is replicated across volunteer peers.
 </p>
+<p class="text-muted" style="margin-bottom: 1rem; font-size: 0.85rem;">
+  Getting the data of the current state of each CID takes some time; while you're on this page the tracker is working. At first it might show 0/0 but give it a few minutes and the replication factor will turn up. Some are 2/4, some are 3/4. The first digit stands for the replication factor, the second digit is the amount of active peers in the cluster.
+</p>
 
 <div class="group-tabs">
   {#each groups as g}
