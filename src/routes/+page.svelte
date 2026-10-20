@@ -47,15 +47,9 @@
 {/if}
 
 <div class="card">
-  <h2 style="margin-bottom: 0.25rem;">About Digital Rescue Lab</h2>
+  <h2 style="margin-bottom: 0.25rem;">What is Glimmy?</h2>
   <p class="text-muted text-sm" style="margin-bottom: 1rem; line-height: 1.7; white-space: pre-line;">
-    Digital Rescue Lab is an initiative led by artists and creative technologists rooted in the cryptoart community. We are working to recover, stabilize, and preserve early blockchain artworks that are disappearing as the platforms and infrastructure they depend on fail.
-
-    Our first restoration, the Arcana Crypto Tarot, proved that recovery is possible. We've since rebuilt a public viewer for Async Classic (V1/V2) artworks, restoring viewing and layer functionality that had broken down.
-
-    We have also written a document laying out the scope of the cryptoart conservation challenge, noting work in progress as well as a starting strategy. We have shared it with the public because, just as with traditional art conservation, this is a collective responsibility: it belongs to artists, collectors, platforms, and anyone who cares about art and digital culture — particularly this strange and genuinely significant moment in art history. <a href="https://app.notion.com/p/Cryptoart-Conservation-Overview-Current-Efforts-August-2026-3cb5139de07c8172ab6bc6dea803d14e?source=copy_link" target="_blank" rel="noopener">Read here &gt;&gt;&gt;</a>
-
-    This page is a fixed starting point. For ongoing progress and the full picture, see our <a href="https://karenfranceseng.notion.site/drl?v=2f55139de07c807f9765000c982e94a4" target="_blank" rel="noopener">Notion Overview</a> — our hub for information and updates.
+    What is Glimmy? Glimmy is the live monitor for Digital Rescue Lab’s Steward Swarm — our distributed preservation network for endangered cryptoart. The Swarm uses independently operated IPFS nodes to keep multiple copies of selected artworks and their underlying data across different volunteer stewards, reducing reliance on any single platform, provider, server, device, or person. Glimmy shows what is currently pinned, how much unique data is being preserved, and how much replicated storage the network is maintaining. The aim is simple: if one node disappears, the art should not disappear with it.
   </p>
 </div>
 

@@ -29,16 +29,23 @@ development.
 
 ### Deploy op VPS (production, systemd)
 
+> **NB:** GitHub is only a backup. Never `git pull` from GitHub on the VPS; deploy via rsync of your local build.
+
 ```bash
 # Op je Mac: bouw lokaal
 npm ci && npm run build
 
-# Kopieer output naar de VPS
-rsync -avz --delete build/ root@<vps>:/opt/sveltekit-monitor-app/build/
+# Kopieer output naar de VPS (publickey-authenticatie)
+rsync -avz --delete build/ monitor@149.210.143.16:/opt/sveltekit-monitor-app/
 
-# Op de VPS: herstart de service
-systemctl restart sveltekit-monitor
-```
+# Voor password-based SSH-authenticatie, forceer fallback naar wachtwoordprompt:
+rsync -avz --delete -e 'ssh -o PubkeyAuthentication=no' \
+  build/ monitor@149.210.143.16:/opt/sveltekit-monitor-app/
+
+# Als je als root deployt in plaats van monitor:
+rsync -avz --delete build/ root@149.210.143.16:/opt/sveltekit-monitor-app/
+ssh root@149.210.143.16 'systemctl restart sveltekit-monitor'
+``` 
 
 `.env` op de VPS bevat `HOST=127.0.0.1`, `PORT=3000` en
 `CLUSTER_API_URL=http://127.0.0.1:9094` (loopback).
@@ -47,9 +54,15 @@ De systemd-unit (`/etc/systemd/system/sveltekit-monitor.service`) zet
 Caddy (host-level, `/etc/caddy/Caddyfile`) is de reverse proxy
 en regelt HTTPS voor `glimmy.xyz`.
 
-### Deploy via Docker (alternatief / lokale ontwikkeling)
+### Deploy via Docker (alternatief voor productie of lokale ontwikkeling)
 
-```
+> Gebruik Docker Compose op de VPS in plaats van systemd of lokaal voor ontwikkeling.
+
+```bash
+# In /opt/sveltekit-monitor-app op de VPS (met .env in dezelfde map):
+docker compose up -d --build
+
+# Lokaal (om te testen):
 docker compose up -d --build
 ```
 

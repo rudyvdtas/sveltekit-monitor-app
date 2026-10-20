@@ -21,4 +21,4 @@ ENV CLUSTER_API_URL=http://cluster:9094
 USER app
 
 EXPOSE 3000
-CMD ["node", "build"]
+CMD ["node", "build/index.js"]
