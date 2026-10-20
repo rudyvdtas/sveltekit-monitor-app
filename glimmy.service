@@ -11,7 +11,7 @@ Environment=PORT=3000
 Environment=CLUSTER_API_URL=http://127.0.0.1:9094
 Environment=MAX_CONCURRENT_CLUSTER_REQUESTS=20
 Environment=CLUSTER_MAX_RESPONSE_BYTES=104857600
-ExecStart=/usr/bin/node /opt/sveltekit-monitor-app/index.js
+ExecStart=/usr/bin/node /opt/sveltekit-monitor-app/server/index.js
 Restart=always
 RestartSec=5
 StandardOutput=append:/var/log/glimmy.log
