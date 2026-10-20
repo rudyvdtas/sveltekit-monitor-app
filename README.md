@@ -52,8 +52,7 @@ ssh root@149.210.143.16 << 'EOF'
   git pull origin main
   npm ci
   npm run build
-  rsync -av --delete .svelte-kit/output/ /opt/sveltekit-monitor-app/
-  # projects-data/ moet al in /opt/sveltekit-monitor-app/ staan (wordt niet overschreven)
+  rsync -av --delete --exclude=projects-data .svelte-kit/output/ /opt/sveltekit-monitor-app/
   systemctl restart glimmy
 EOF
 ```
