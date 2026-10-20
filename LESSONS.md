@@ -168,24 +168,78 @@ Deze module:
 |---|---|---|
 | `TRACKER_API_URL` | `http://tracker:9095` | URL van de failed-CID tracker API |
 
-# Deployment (huidige architectuur, 15 okt 2026)
+# Deployment (huidige architectuur, 20 okt 2026)
 
 De monitor draait via **systemd** op de VPS-host (niet in Docker):
-- Lokaal gebouwd op Mac (`npm run build`)
-- Output gesynct naar `/opt/sveltekit-monitor-app`
-- systemd-unit: `MemoryHigh=192M`, `MemoryMax=256M`, non-root user `monitor`
-- Cluster REST API en tracker API bereikbaar via `127.0.0.1:9094` / `127.0.0.1:9095`
-- Caddy op de host proxied `glimmy.xyz` → `localhost:3000`
 
-**Kritieke ontdekking (3 okt 2026):** `/pins` (bulk) geeft een 31MB respons
-bij 3336+ CIDs. Drie gelijktijdige requests (monitor + tracker + diagnose) kunnen
-stacken tot >35s. Oplossing sindsdien: monitor gebruikt per-CID lookups en cached
-summaries i.p.v. bulk-`/pins`. De tracker pollt nog steeds bulk-`/pins` (1× per 60s)
-voor error-detectie.
+| Directory | Inhoud |
+|---|---|
+| `/opt/sveltekit-monitor-source` | Git repo (`git pull` + `npm run build`) |
+| `/opt/sveltekit-monitor-app` | Build output (`build/`) + `projects-data/` + `node_modules/` |
+
+**Systemd unit:** `/etc/systemd/system/glimmy.service` (zie `glimmy.service` in repo).
+Draait als `root`, `WorkingDirectory=/opt/sveltekit-monitor-app`, `ExecStart=/usr/bin/node /opt/sveltekit-monitor-app/index.js`. Env-vars voor `CLUSTER_API_URL=http://127.0.0.1:9094`, `PORT=3000`, etc.
+Logs in `/var/log/glimmy.log` en `/var/log/glimmy.error.log`.
+
+**Deploy flow:**
+```bash
+cd /opt/sveltekit-monitor-source
+git pull origin main
+npm ci
+npm run build
+rsync -av --delete --exclude=projects-data build/ /opt/sveltekit-monitor-app/
+systemctl restart glimmy
+```
+
+**Let op:** rsync de `build/` directory (adapter-node output), **niet** `.svelte-kit/output/`.
+`build/` bevat `index.js` (entry point die de HTTP-server start), `handler.js`, `env.js`,
+`server/`, `client/`. `.svelte-kit/output/` is alleen de raw Vite output en mist de server-wrapper
+van adapter-node. Zie outage van 20 okt 2026.
+
+**VPS vereisten:** Node.js 22+ (vitest engine check). Caddy op de host proxied `glimmy.xyz` → `localhost:3000`.
+Cluster REST API (9094) en tracker API (9095) bereikbaar via `127.0.0.1`.
 
 ---
 
-## Batch 2 — KnownOrigin V2 verrijkte metadata (5 okt 2026)
+# Outage & recovery (20 okt 2026)
+
+## Tijdlijn
+
+1. **Site lag volledig plat** — geen proces op poort 3000. De oude `nohup node index.js` was gestopt na disconnect/reboot.
+2. **`projects-data/` ontbrak** in `/opt/sveltekit-monitor-app` — `scp`'ed vanaf lokale machine.
+3. **`CLUSTER_API_URL=http://cluster:9094` werkte niet** — hostname `cluster` resolved alleen op Docker-netwerk `cluster-internal`. Gewijzigd naar `http://127.0.0.1:9094`.
+4. **systemd unit aangemaakt** (`glimmy.service`, `Restart=always`).
+5. **Deploy-flow via GitHub opgezet** — source repo naar `/opt/sveltekit-monitor-source`, build output naar `/opt/sveltekit-monitor-app`. Git pull + npm build + rsync + systemctl restart.
+6. **Node 20 → 22 upgrade** — `vitest@5.0.1` engine check blokkeerde `npm ci` op Node 20.
+7. **`rsync` van verkeerde directory** — deploy syncte `.svelte-kit/output/` i.p.v. `build/`. `build/index.js` is de adapter-node wrapper die de HTTP-server start; `.svelte-kit/output/server/index.js` is alleen een module. Oorzaak: `npm run build` output is `build/`, niet `.svelte-kit/output/`.
+8. **`--delete` zonder `--exclude=projects-data`** — wist de data-directory. Gefixt met `--exclude=projects-data`.
+
+## Root cause van de 2e outage (na GitHub-deploy)
+
+Adapter-node (`@sveltejs/adapter-node`) schrijft de volledige productie-output naar `build/`:
+```
+build/
+  index.js       ← entry point, start HTTP server
+  handler.js
+  env.js
+  server/        ← SvelteKit handler
+  client/        ← statische assets
+```
+
+`npm run build` → `.svelte-kit/output/` (Vite) → adapter kopieert/wrapt naar `build/`.
+
+De deploy moet `build/` rsyncen, **niet** `.svelte-kit/output/`.
+
+## Leerpunten
+
+- **Docker hostnames (`cluster`, `tracker`) bestaan alleen op Docker-netwerken.** Buiten Docker: `127.0.0.1`.
+- **`nohup` in een terminal is geen productie-deployment.** Altijd systemd, PM2, of Docker `restart: unless-stopped`.
+- **`rsync --delete` kan data-directories wissen.** Gebruik `--exclude` voor directories die niet in de build-output zitten (`projects-data/`, `node_modules/`).
+- **Adapter-node output directory is `build/`, niet `.svelte-kit/output/`.** De Vite output mist de server-wrapper.
+- **Node-versie op VPS moet matchen met `package.json` engines.** Upgrade Node op de VPS bij breaking changes in devDependencies.
+- **Source en build-output moeten gescheiden directories zijn** als je vanaf GitHub deployed (git repo vs runtime dir).
+- **`systemctl daemon-reload` vóór `restart`** — anders gebruikt de service de oude unit-file.
+- **Check na deploy altijd of de running service de juiste env-vars heeft:** `cat /proc/$PID/environ | tr '\0' '\n'`.
 
 `kov2-batch-2-enriched.json` toegevoegd aan `projects-data/`. Bevat 1922 entries
 (961 metadata + 961 assets) uit KOv2 batch 2, ~10 GB, met token-namen, artiesten,
