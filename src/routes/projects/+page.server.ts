@@ -2,6 +2,8 @@ import { projects } from '$lib/server/projects';
 import { loadCids } from '$lib/server/projects-data';
 import { loadProjectMeta } from '$lib/server/project-meta';
 import { loadEnrichedMeta, type EnrichedEntry } from '$lib/server/enriched-meta';
+import { loadAsyncNested } from '$lib/server/async-nested';
+import { loadKovCombined } from '$lib/server/kov-combined';
 import { getPinStatus } from '$lib/server/cluster';
 import type { PageServerLoad } from './$types';
 
@@ -15,29 +17,10 @@ const projectImages: Record<string, string> = {
   'cyberwatch': cyberwatchImg,
   'the-arcana': theArcanaImg,
   'async-first-supper': firstSupperImg,
+  'async-nested': asyncLogoImg,
   'knownorigin-v1': knownoriginV1Img,
-  'knownorigin-v2-batch-1': knownoriginV1Img,
-  'knownorigin-v2-batch-2': knownoriginV1Img,
-  'knownorigin-v2-batch-3': knownoriginV1Img,
-  'knownorigin-v2-batch-4': knownoriginV1Img,
-  'knownorigin-v2-batch-5': knownoriginV1Img,
-  'knownorigin-v2-batch-6': knownoriginV1Img,
-  'knownorigin-v2-batch-7': knownoriginV1Img,
-  'knownorigin-v2-batch-8': knownoriginV1Img,
-  'knownorigin-v2-batch-9': knownoriginV1Img,
-  'knownorigin-v2-batch-10': knownoriginV1Img,
-  'knownorigin-v2-batch-11': knownoriginV1Img,
-  'knownorigin-v2-batch-12': knownoriginV1Img,
-  'knownorigin-v2-batch-13': knownoriginV1Img,
-  'knownorigin-v2-batch-14': knownoriginV1Img,
-  'knownorigin-v3-batch-1': knownoriginV1Img,
-  'knownorigin-v3-batch-2': knownoriginV1Img,
-  'knownorigin-v3-batch-3': knownoriginV1Img,
-  'knownorigin-v3-batch-4': knownoriginV1Img,
-  'knownorigin-v3-batch-5': knownoriginV1Img,
-  'knownorigin-v3-batch-6': knownoriginV1Img,
-  'knownorigin-v3-batch-7': knownoriginV1Img,
-  'knownorigin-v3-batch-8': knownoriginV1Img,
+  'knownorigin-v2': knownoriginV1Img,
+  'knownorigin-v3': knownoriginV1Img,
 };
 
 export const load: PageServerLoad = async ({ url }) => {
@@ -56,6 +39,76 @@ export const load: PageServerLoad = async ({ url }) => {
 
     if (p.id !== activeId) {
       return { ...base, cids: [], meta: {}, enrichedEntries: {}, enrichedProject: null, totalCids: 0 };
+    }
+
+    if (p.id === 'async-nested') {
+      const nested = loadAsyncNested();
+
+      if (!nested) {
+        return { ...base, cids: [], meta: {}, enrichedEntries: {}, enrichedProject: null, totalCids: 0 };
+      }
+
+      const meta: Record<string, { artworkName: string; artist?: string; description?: string }> = {};
+      for (const [cid, info] of Object.entries(nested.meta)) meta[cid] = info;
+
+      const enrichedEntries: Record<string, EnrichedEntry> = {};
+      for (const [cid, entry] of Object.entries(nested.entries)) {
+        enrichedEntries[cid] = {
+          cid,
+          nameFromCsv: entry.nameFromCsv,
+          sizeBytes: entry.sizeBytes,
+          sizeMb: entry.sizeMb,
+          type: entry.type,
+          layerName: entry.layerName,
+          optionLabel: entry.optionLabel,
+          artist: entry.artist,
+          tokenName: entry.tokenName,
+        };
+      }
+
+      return {
+        ...base,
+        cids: nested.cids,
+        meta,
+        enrichedEntries,
+        enrichedProject: null,
+        totalCids: nested.totalCids,
+      };
+    }
+
+    if (p.id === 'knownorigin-v2' || p.id === 'knownorigin-v3') {
+      const combined = loadKovCombined(p.id === 'knownorigin-v2' ? 'kov2' : 'kov3');
+
+      if (!combined) {
+        return { ...base, cids: [], meta: {}, enrichedEntries: {}, enrichedProject: null, totalCids: 0 };
+      }
+
+      const meta: Record<string, { artworkName: string; artist?: string; description?: string }> = {};
+      for (const [cid, info] of Object.entries(combined.meta)) meta[cid] = info;
+
+      const enrichedEntries: Record<string, EnrichedEntry> = {};
+      for (const [cid, entry] of Object.entries(combined.entries)) {
+        enrichedEntries[cid] = {
+          cid,
+          nameFromCsv: entry.nameFromCsv,
+          sizeBytes: entry.sizeBytes,
+          sizeMb: entry.sizeMb,
+          type: entry.type,
+          layerName: entry.layerName,
+          optionLabel: entry.optionLabel,
+          artist: entry.artist,
+          tokenName: entry.tokenName,
+        };
+      }
+
+      return {
+        ...base,
+        cids: combined.cids,
+        meta,
+        enrichedEntries,
+        enrichedProject: null,
+        totalCids: combined.totalCids,
+      };
     }
 
     const cids = Array.from(loadCids(p.cidFile));

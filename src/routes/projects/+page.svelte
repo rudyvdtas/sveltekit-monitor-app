@@ -15,13 +15,7 @@
   let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
   let activeGroup = $derived(activeProject?.group ?? 'async');
   let groupProjects = $derived(allProjects.filter((p: any) => p.group === activeGroup));
-
-  let showKov2 = $state(activeId.startsWith('knownorigin-v2-batch-'));
-  let kov2Projects = $derived(groupProjects.filter((p: any) => p.id.startsWith('knownorigin-v2-batch-')));
-  let showKov3 = $state(activeId.startsWith('knownorigin-v3-batch-'));
-  let kov3Projects = $derived(groupProjects.filter((p: any) => p.id.startsWith('knownorigin-v3-batch-')));
-  let knownoriginV1 = $derived(groupProjects.find((p: any) => p.id === 'knownorigin-v1'));
-  let otherProjects = $derived(activeGroup !== 'knownorigin' ? groupProjects : knownoriginV1 ? [knownoriginV1] : []);
+  let otherProjects = $derived(groupProjects);
 
   function formatSize(mb: number | null): string {
     if (mb == null) return '—';
@@ -82,38 +76,6 @@
       {project.name}
     </a>
   {/each}
-  {#if activeGroup === 'knownorigin' && kov2Projects.length > 0}
-    <button class="tab dropdown-toggle" onclick={() => (showKov2 = !showKov2)} role="button">
-      KOV2 {showKov2 ? '▲' : '▼'}
-    </button>
-    {#if showKov2}
-      {#each kov2Projects as project}
-        <a
-          href={projectUrl(project.id)}
-          class="tab {activeId === project.id ? 'active' : ''}"
-          role="button"
-        >
-          {project.name}
-        </a>
-      {/each}
-    {/if}
-  {/if}
-  {#if activeGroup === 'knownorigin' && kov3Projects.length > 0}
-    <button class="tab dropdown-toggle" onclick={() => (showKov3 = !showKov3)} role="button">
-      KOV3 {showKov3 ? '▲' : '▼'}
-    </button>
-    {#if showKov3}
-      {#each kov3Projects as project}
-        <a
-          href={projectUrl(project.id)}
-          class="tab {activeId === project.id ? 'active' : ''}"
-          role="button"
-        >
-          {project.name}
-        </a>
-      {/each}
-    {/if}
-  {/if}
 </div>
 
 {#if activeProject}
@@ -257,7 +219,7 @@
     background: var(--accent-dark);
     color: #fff;
   }
-  a.tab, button.tab {
+  a.tab {
     text-decoration: none;
     display: inline-block;
     padding: 0.4rem 0.9rem;
@@ -270,21 +232,11 @@
     border-radius: 8px;
     transition: all 0.15s;
   }
-  a.tab:hover, button.tab:hover {
+  a.tab:hover {
     background: var(--bg-hover);
     color: var(--text);
   }
-  a.tab.active, button.tab.active {
-    background: var(--accent);
-    color: #fff;
-  }
-  button.dropdown-toggle {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    font-size: 0.78rem;
-    padding: 0.4rem 0.7rem;
-  }
-  button.dropdown-toggle:hover {
+  a.tab.active {
     background: var(--accent);
     color: #fff;
   }
