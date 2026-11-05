@@ -96,7 +96,7 @@
           <p class="text-muted text-sm" style="margin-top: 0.25rem; white-space: pre-line;">{@html linkify(activeProject.description)}</p>
         </div>
       </div>
-      <div class="badge badge-info">{activeProject.totalCids} CIDs</div>
+      <div class="stat-chip">{activeProject.totalCids.toLocaleString('en-US')} CIDs</div>
     </div>
   </div>
 
@@ -249,7 +249,19 @@
     margin-bottom: 0.5rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.25rem;
+  }
+  .stat-chip {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   }
   .group-tabs {
     display: flex;
