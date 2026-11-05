@@ -103,6 +103,35 @@ for (const p of nestedFiles) {
   }
 }
 
+// 5. Async Blueprints batches: enriched JSON for CIDs + CSV for size_bytes
+for (let b = 1; b <= 3; b++) {
+  const jsonPath = path.join(dir, `async-blueprints-batch-${b}-enriched.json`);
+  const csvPath = path.join(dir, `async-blueprints-batch-${b}.csv`);
+  if (!fs.existsSync(jsonPath)) continue;
+
+  const sizes = new Map();
+  if (fs.existsSync(csvPath)) {
+    const rows = parseCsv(fs.readFileSync(csvPath, 'utf-8'));
+    for (let i = 1; i < rows.length; i++) {
+      const cid = (rows[i][0] || '').trim();
+      const size = Number(rows[i][1]) || 0;
+      if (cid && size > 0) sizes.set(cid, size);
+    }
+  }
+
+  const raw = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+  for (const cid of Object.keys(raw)) {
+    if (seen.has(cid)) continue;
+    seen.add(cid);
+    totalCids++;
+    const sb = sizes.get(cid);
+    if (sb) {
+      totalBytes += sb;
+      sizedCids++;
+    }
+  }
+}
+
 const round = (n, d = 1) => Math.round(n * Math.pow(10, d)) / Math.pow(10, d);
 const uniqueGb = totalBytes / 1e9;
 

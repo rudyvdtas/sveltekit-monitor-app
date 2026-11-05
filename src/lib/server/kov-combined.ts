@@ -20,7 +20,7 @@ export type KovBatches = {
 };
 
 function batchNames(version: 'kov2' | 'kov3'): string[] {
-  const count = version === 'kov2' ? 14 : 8;
+  const count = version === 'kov2' ? 14 : 19;
   return Array.from({ length: count }, (_, i) => `${version}-batch-${i + 1}`);
 }
 
