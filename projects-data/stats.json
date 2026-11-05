@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-05T07:51:52.880Z",
-  "totalCids": 74551,
-  "sizedCids": 63471,
-  "uniqueSizeGb": 343.47,
+  "updatedAt": "2026-11-05T08:09:03.533Z",
+  "totalCids": 121834,
+  "sizedCids": 110752,
+  "uniqueSizeGb": 616.85,
   "replicationFactor": 2.5,
-  "replicatedSizeGb": 858.67
+  "replicatedSizeGb": 1542.12
 }

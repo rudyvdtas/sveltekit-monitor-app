@@ -3,20 +3,16 @@ import { loadCids } from '$lib/server/projects-data';
 import { loadProjectMeta } from '$lib/server/project-meta';
 import { loadEnrichedMeta, type EnrichedEntry } from '$lib/server/enriched-meta';
 import { loadAsyncNested } from '$lib/server/async-nested';
+import { loadAsyncBlueprints } from '$lib/server/async-blueprints';
 import { loadKovCombined } from '$lib/server/kov-combined';
 import { getPinStatus } from '$lib/server/cluster';
 import type { PageServerLoad } from './$types';
 
-import cyberwatchImg from '$lib/assets/cyber_watch_theguild.jpg';
-import theArcanaImg from '$lib/assets/The_Arcana_crypto_tarot.jpg';
-import firstSupperImg from '$lib/assets/first_supper_async.jpg';
 import knownoriginV1Img from '$lib/assets/knownorigin.avif';
 import asyncLogoImg from '$lib/assets/async_art_logo.avif';
 
 const projectImages: Record<string, string> = {
-  'cyberwatch': cyberwatchImg,
-  'the-arcana': theArcanaImg,
-  'async-first-supper': firstSupperImg,
+  'async-blueprints': asyncLogoImg,
   'async-nested': asyncLogoImg,
   'knownorigin-v1': knownoriginV1Img,
   'knownorigin-v2': knownoriginV1Img,
@@ -39,6 +35,39 @@ export const load: PageServerLoad = async ({ url }) => {
 
     if (p.id !== activeId) {
       return { ...base, cids: [], meta: {}, enrichedEntries: {}, enrichedProject: null, totalCids: 0 };
+    }
+
+    if (p.id === 'async-blueprints') {
+      const blueprints = loadAsyncBlueprints();
+
+      if (!blueprints) {
+        return { ...base, cids: [], meta: {}, enrichedEntries: {}, enrichedProject: null, totalCids: 0 };
+      }
+
+      const meta: Record<string, { artworkName: string; artist?: string; description?: string }> = {};
+      for (const [cid, info] of Object.entries(blueprints.meta)) meta[cid] = info;
+
+      const enrichedEntries: Record<string, EnrichedEntry> = {};
+      for (const [cid, entry] of Object.entries(blueprints.entries)) {
+        enrichedEntries[cid] = {
+          cid,
+          nameFromCsv: entry.nameFromCsv,
+          sizeBytes: entry.sizeBytes,
+          sizeMb: entry.sizeMb,
+          type: entry.type,
+          artist: entry.artist,
+          tokenName: entry.tokenName,
+        };
+      }
+
+      return {
+        ...base,
+        cids: blueprints.cids,
+        meta,
+        enrichedEntries,
+        enrichedProject: null,
+        totalCids: blueprints.totalCids,
+      };
     }
 
     if (p.id === 'async-nested') {
