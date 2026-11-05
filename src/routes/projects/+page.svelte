@@ -7,12 +7,14 @@
   let page = $derived(data.data?.page ?? 1);
   let perPage = $derived(data.data?.perPage ?? 50);
   let pagedCids = $derived(data.data?.pagedCids ?? []);
+  let pagedMeta = $derived(data.data?.pagedMeta ?? {});
+  let pagedEntries = $derived(data.data?.pagedEntries ?? {});
   let totalPages = $derived(data.data?.totalPages ?? 0);
   let pinStatusMap = $derived(data.data?.pinStatusMap ?? {});
   let groupLogos = $derived(data.data?.groupLogos ?? {});
 
   let groups = $derived(['async', 'knownorigin']);
-  let activeProject = $derived(allProjects.find((p: any) => p.id === activeId));
+  let activeProject = $derived(data.data?.activeProject ?? allProjects.find((p: any) => p.id === activeId) ?? null);
   let activeGroup = $derived(activeProject?.group ?? 'async');
   let groupProjects = $derived(allProjects.filter((p: any) => p.group === activeGroup));
   let otherProjects = $derived(groupProjects);
@@ -118,8 +120,8 @@
           </thead>
           <tbody>
             {#each pagedCids as cid}
-              {@const info = activeProject.meta?.[cid]}
-              {@const ee = activeProject.enrichedEntries?.[cid]}
+              {@const info = pagedMeta[cid]}
+              {@const ee = pagedEntries[cid]}
               {@const ps = pinStatusMap[cid] ?? { pinnedCount: 0, totalPeers: 0 }}
               {@const ratio = ps.totalPeers > 0 ? ps.pinnedCount / ps.totalPeers : 0}
               <tr>
